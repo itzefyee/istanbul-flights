@@ -1,0 +1,1184 @@
+﻿{
+    "query":  "KUL â Istanbul on 08/12/2026â14/12/2026, 1 adult, 7â8 nights [â¤0 stops/sector]",
+    "currency":  "MYR",
+    "passengers":  {
+                       "adults":  1,
+                       "children":  0,
+                       "infants":  0
+                   },
+    "resultsCount":  15,
+    "itineraries":  [
+                        {
+                            "id":  "10ff1db8513c000028c5188b_0|1db810ff514300006e9b97b3_0",
+                            "tripType":  "return",
+                            "price":  3005.899904,
+                            "priceFormatted":  "3006 MYR",
+                            "totalDurationSeconds":  79800,
+                            "bookingUrl":  "https://kiwi.com/u/vh95uz",
+                            "imageId":  "istanbul_tr",
+                            "baggage":  {
+                                            "personalItem":  0,
+                                            "cabinBag":  1,
+                                            "checkedBag":  1
+                                        },
+                            "outbound":  {
+                                             "from":  "KUL",
+                                             "to":  "SAW",
+                                             "departureTime":  "2026-12-09T09:20:00",
+                                             "arrivalTime":  "2026-12-09T16:05:00",
+                                             "durationSeconds":  42300,
+                                             "stops":  0,
+                                             "route":  [
+                                                           "KUL",
+                                                           "SAW"
+                                                       ],
+                                             "cabinClass":  "Economy",
+                                             "segments":  [
+                                                              {
+                                                                  "from":  "KUL",
+                                                                  "to":  "SAW",
+                                                                  "fromCity":  "Kuala Lumpur",
+                                                                  "toCity":  "Istanbul",
+                                                                  "fromName":  "Kuala Lumpur International",
+                                                                  "toName":  "Sabiha GÃ¶kÃ§en International",
+                                                                  "fromCountry":  "Malaysia",
+                                                                  "toCountry":  "Turkey",
+                                                                  "departureTime":  "2026-12-09T09:20:00",
+                                                                  "arrivalTime":  "2026-12-09T16:05:00",
+                                                                  "durationSeconds":  42300,
+                                                                  "carrier":  "D7",
+                                                                  "carrierName":  "AirAsia X",
+                                                                  "flightNumber":  "D7604",
+                                                                  "cabinClass":  "Economy"
+                                                              }
+                                                          ]
+                                         },
+                            "inbound":  {
+                                            "from":  "SAW",
+                                            "to":  "KUL",
+                                            "departureTime":  "2026-12-16T17:20:00",
+                                            "arrivalTime":  "2026-12-17T08:45:00",
+                                            "durationSeconds":  37500,
+                                            "stops":  0,
+                                            "route":  [
+                                                          "SAW",
+                                                          "KUL"
+                                                      ],
+                                            "cabinClass":  "Economy",
+                                            "segments":  [
+                                                             {
+                                                                 "from":  "SAW",
+                                                                 "to":  "KUL",
+                                                                 "fromCity":  "Istanbul",
+                                                                 "toCity":  "Kuala Lumpur",
+                                                                 "fromName":  "Sabiha GÃ¶kÃ§en International",
+                                                                 "toName":  "Kuala Lumpur International",
+                                                                 "fromCountry":  "Turkey",
+                                                                 "toCountry":  "Malaysia",
+                                                                 "departureTime":  "2026-12-16T17:20:00",
+                                                                 "arrivalTime":  "2026-12-17T08:45:00",
+                                                                 "durationSeconds":  37500,
+                                                                 "carrier":  "D7",
+                                                                 "carrierName":  "AirAsia X",
+                                                                 "flightNumber":  "D7605",
+                                                                 "cabinClass":  "Economy"
+                                                             }
+                                                         ]
+                                        }
+                        },
+                        {
+                            "id":  "10ff1db8513e514581c79712_0|10ff1db8513e514581c79712_1",
+                            "tripType":  "return",
+                            "price":  3463.899904,
+                            "priceFormatted":  "3464 MYR",
+                            "totalDurationSeconds":  79800,
+                            "bookingUrl":  "https://kiwi.com/u/6kvtrg",
+                            "imageId":  "istanbul_tr",
+                            "baggage":  {
+                                            "personalItem":  0,
+                                            "cabinBag":  1,
+                                            "checkedBag":  1
+                                        },
+                            "outbound":  {
+                                             "from":  "KUL",
+                                             "to":  "SAW",
+                                             "departureTime":  "2026-12-11T09:20:00",
+                                             "arrivalTime":  "2026-12-11T16:05:00",
+                                             "durationSeconds":  42300,
+                                             "stops":  0,
+                                             "route":  [
+                                                           "KUL",
+                                                           "SAW"
+                                                       ],
+                                             "cabinClass":  "Economy",
+                                             "segments":  [
+                                                              {
+                                                                  "from":  "KUL",
+                                                                  "to":  "SAW",
+                                                                  "fromCity":  "Kuala Lumpur",
+                                                                  "toCity":  "Istanbul",
+                                                                  "fromName":  "Kuala Lumpur International",
+                                                                  "toName":  "Sabiha GÃ¶kÃ§en International",
+                                                                  "fromCountry":  "Malaysia",
+                                                                  "toCountry":  "Turkey",
+                                                                  "departureTime":  "2026-12-11T09:20:00",
+                                                                  "arrivalTime":  "2026-12-11T16:05:00",
+                                                                  "durationSeconds":  42300,
+                                                                  "carrier":  "D7",
+                                                                  "carrierName":  "AirAsia X",
+                                                                  "flightNumber":  "D7604",
+                                                                  "cabinClass":  "Economy"
+                                                              }
+                                                          ]
+                                         },
+                            "inbound":  {
+                                            "from":  "SAW",
+                                            "to":  "KUL",
+                                            "departureTime":  "2026-12-18T17:20:00",
+                                            "arrivalTime":  "2026-12-19T08:45:00",
+                                            "durationSeconds":  37500,
+                                            "stops":  0,
+                                            "route":  [
+                                                          "SAW",
+                                                          "KUL"
+                                                      ],
+                                            "cabinClass":  "Economy",
+                                            "segments":  [
+                                                             {
+                                                                 "from":  "SAW",
+                                                                 "to":  "KUL",
+                                                                 "fromCity":  "Istanbul",
+                                                                 "toCity":  "Kuala Lumpur",
+                                                                 "fromName":  "Sabiha GÃ¶kÃ§en International",
+                                                                 "toName":  "Kuala Lumpur International",
+                                                                 "fromCountry":  "Turkey",
+                                                                 "toCountry":  "Malaysia",
+                                                                 "departureTime":  "2026-12-18T17:20:00",
+                                                                 "arrivalTime":  "2026-12-19T08:45:00",
+                                                                 "durationSeconds":  37500,
+                                                                 "carrier":  "D7",
+                                                                 "carrierName":  "AirAsia X",
+                                                                 "flightNumber":  "D7605",
+                                                                 "cabinClass":  "Economy"
+                                                             }
+                                                         ]
+                                        }
+                        },
+                        {
+                            "id":  "10ff170f513b0000acdda1ee_0|1db810ff514300006e9b97b3_0",
+                            "tripType":  "return",
+                            "price":  3682.949952,
+                            "priceFormatted":  "3683 MYR",
+                            "totalDurationSeconds":  78600,
+                            "bookingUrl":  "https://kiwi.com/u/365f8jn",
+                            "imageId":  "istanbul_tr",
+                            "baggage":  {
+                                            "personalItem":  0,
+                                            "cabinBag":  1,
+                                            "checkedBag":  1
+                                        },
+                            "outbound":  {
+                                             "from":  "KUL",
+                                             "to":  "IST",
+                                             "departureTime":  "2026-12-08T23:45:00",
+                                             "arrivalTime":  "2026-12-09T06:10:00",
+                                             "durationSeconds":  41100,
+                                             "stops":  0,
+                                             "route":  [
+                                                           "KUL",
+                                                           "IST"
+                                                       ],
+                                             "cabinClass":  "Economy",
+                                             "segments":  [
+                                                              {
+                                                                  "from":  "KUL",
+                                                                  "to":  "IST",
+                                                                  "fromCity":  "Kuala Lumpur",
+                                                                  "toCity":  "Istanbul",
+                                                                  "fromName":  "Kuala Lumpur International",
+                                                                  "toName":  "Istanbul Airport",
+                                                                  "fromCountry":  "Malaysia",
+                                                                  "toCountry":  "Turkey",
+                                                                  "departureTime":  "2026-12-08T23:45:00",
+                                                                  "arrivalTime":  "2026-12-09T06:10:00",
+                                                                  "durationSeconds":  41100,
+                                                                  "carrier":  "TK",
+                                                                  "carrierName":  "Turkish Airlines",
+                                                                  "flightNumber":  "TK61",
+                                                                  "cabinClass":  "Economy"
+                                                              }
+                                                          ]
+                                         },
+                            "inbound":  {
+                                            "from":  "SAW",
+                                            "to":  "KUL",
+                                            "departureTime":  "2026-12-16T17:20:00",
+                                            "arrivalTime":  "2026-12-17T08:45:00",
+                                            "durationSeconds":  37500,
+                                            "stops":  0,
+                                            "route":  [
+                                                          "SAW",
+                                                          "KUL"
+                                                      ],
+                                            "cabinClass":  "Economy",
+                                            "segments":  [
+                                                             {
+                                                                 "from":  "SAW",
+                                                                 "to":  "KUL",
+                                                                 "fromCity":  "Istanbul",
+                                                                 "toCity":  "Kuala Lumpur",
+                                                                 "fromName":  "Sabiha GÃ¶kÃ§en International",
+                                                                 "toName":  "Kuala Lumpur International",
+                                                                 "fromCountry":  "Turkey",
+                                                                 "toCountry":  "Malaysia",
+                                                                 "departureTime":  "2026-12-16T17:20:00",
+                                                                 "arrivalTime":  "2026-12-17T08:45:00",
+                                                                 "durationSeconds":  37500,
+                                                                 "carrier":  "D7",
+                                                                 "carrierName":  "AirAsia X",
+                                                                 "flightNumber":  "D7605",
+                                                                 "cabinClass":  "Economy"
+                                                             }
+                                                         ]
+                                        }
+                        },
+                        {
+                            "id":  "10ff1db8513e0000e2de2624_0|1db810ff51450000de594a7f_0",
+                            "tripType":  "return",
+                            "price":  4065.899904,
+                            "priceFormatted":  "4066 MYR",
+                            "totalDurationSeconds":  79800,
+                            "bookingUrl":  "https://kiwi.com/u/mxsdxd",
+                            "imageId":  "istanbul_tr",
+                            "baggage":  {
+                                            "personalItem":  0,
+                                            "cabinBag":  1,
+                                            "checkedBag":  1
+                                        },
+                            "outbound":  {
+                                             "from":  "KUL",
+                                             "to":  "SAW",
+                                             "departureTime":  "2026-12-11T09:20:00",
+                                             "arrivalTime":  "2026-12-11T16:05:00",
+                                             "durationSeconds":  42300,
+                                             "stops":  0,
+                                             "route":  [
+                                                           "KUL",
+                                                           "SAW"
+                                                       ],
+                                             "cabinClass":  "Economy",
+                                             "segments":  [
+                                                              {
+                                                                  "from":  "KUL",
+                                                                  "to":  "SAW",
+                                                                  "fromCity":  "Kuala Lumpur",
+                                                                  "toCity":  "Istanbul",
+                                                                  "fromName":  "Kuala Lumpur International",
+                                                                  "toName":  "Sabiha GÃ¶kÃ§en International",
+                                                                  "fromCountry":  "Malaysia",
+                                                                  "toCountry":  "Turkey",
+                                                                  "departureTime":  "2026-12-11T09:20:00",
+                                                                  "arrivalTime":  "2026-12-11T16:05:00",
+                                                                  "durationSeconds":  42300,
+                                                                  "carrier":  "D7",
+                                                                  "carrierName":  "AirAsia X",
+                                                                  "flightNumber":  "D7604",
+                                                                  "cabinClass":  "Economy"
+                                                              }
+                                                          ]
+                                         },
+                            "inbound":  {
+                                            "from":  "SAW",
+                                            "to":  "KUL",
+                                            "departureTime":  "2026-12-18T17:20:00",
+                                            "arrivalTime":  "2026-12-19T08:45:00",
+                                            "durationSeconds":  37500,
+                                            "stops":  0,
+                                            "route":  [
+                                                          "SAW",
+                                                          "KUL"
+                                                      ],
+                                            "cabinClass":  "Economy",
+                                            "segments":  [
+                                                             {
+                                                                 "from":  "SAW",
+                                                                 "to":  "KUL",
+                                                                 "fromCity":  "Istanbul",
+                                                                 "toCity":  "Kuala Lumpur",
+                                                                 "fromName":  "Sabiha GÃ¶kÃ§en International",
+                                                                 "toName":  "Kuala Lumpur International",
+                                                                 "fromCountry":  "Turkey",
+                                                                 "toCountry":  "Malaysia",
+                                                                 "departureTime":  "2026-12-18T17:20:00",
+                                                                 "arrivalTime":  "2026-12-19T08:45:00",
+                                                                 "durationSeconds":  37500,
+                                                                 "carrier":  "PC",
+                                                                 "carrierName":  "Pegasus",
+                                                                 "flightNumber":  "PC7615",
+                                                                 "cabinClass":  "Economy"
+                                                             }
+                                                         ]
+                                        }
+                        },
+                        {
+                            "id":  "10ff1db851400000dec7d8aa_0|1db810ff51470000c4168af8_0",
+                            "tripType":  "return",
+                            "price":  4065.899904,
+                            "priceFormatted":  "4066 MYR",
+                            "totalDurationSeconds":  79800,
+                            "bookingUrl":  "https://kiwi.com/u/gww9uxb",
+                            "imageId":  "istanbul_tr",
+                            "baggage":  {
+                                            "personalItem":  0,
+                                            "cabinBag":  1,
+                                            "checkedBag":  1
+                                        },
+                            "outbound":  {
+                                             "from":  "KUL",
+                                             "to":  "SAW",
+                                             "departureTime":  "2026-12-13T09:20:00",
+                                             "arrivalTime":  "2026-12-13T16:05:00",
+                                             "durationSeconds":  42300,
+                                             "stops":  0,
+                                             "route":  [
+                                                           "KUL",
+                                                           "SAW"
+                                                       ],
+                                             "cabinClass":  "Economy",
+                                             "segments":  [
+                                                              {
+                                                                  "from":  "KUL",
+                                                                  "to":  "SAW",
+                                                                  "fromCity":  "Kuala Lumpur",
+                                                                  "toCity":  "Istanbul",
+                                                                  "fromName":  "Kuala Lumpur International",
+                                                                  "toName":  "Sabiha GÃ¶kÃ§en International",
+                                                                  "fromCountry":  "Malaysia",
+                                                                  "toCountry":  "Turkey",
+                                                                  "departureTime":  "2026-12-13T09:20:00",
+                                                                  "arrivalTime":  "2026-12-13T16:05:00",
+                                                                  "durationSeconds":  42300,
+                                                                  "carrier":  "D7",
+                                                                  "carrierName":  "AirAsia X",
+                                                                  "flightNumber":  "D7604",
+                                                                  "cabinClass":  "Economy"
+                                                              }
+                                                          ]
+                                         },
+                            "inbound":  {
+                                            "from":  "SAW",
+                                            "to":  "KUL",
+                                            "departureTime":  "2026-12-20T17:20:00",
+                                            "arrivalTime":  "2026-12-21T08:45:00",
+                                            "durationSeconds":  37500,
+                                            "stops":  0,
+                                            "route":  [
+                                                          "SAW",
+                                                          "KUL"
+                                                      ],
+                                            "cabinClass":  "Economy",
+                                            "segments":  [
+                                                             {
+                                                                 "from":  "SAW",
+                                                                 "to":  "KUL",
+                                                                 "fromCity":  "Istanbul",
+                                                                 "toCity":  "Kuala Lumpur",
+                                                                 "fromName":  "Sabiha GÃ¶kÃ§en International",
+                                                                 "toName":  "Kuala Lumpur International",
+                                                                 "fromCountry":  "Turkey",
+                                                                 "toCountry":  "Malaysia",
+                                                                 "departureTime":  "2026-12-20T17:20:00",
+                                                                 "arrivalTime":  "2026-12-21T08:45:00",
+                                                                 "durationSeconds":  37500,
+                                                                 "carrier":  "PC",
+                                                                 "carrierName":  "Pegasus",
+                                                                 "flightNumber":  "PC7615",
+                                                                 "cabinClass":  "Economy"
+                                                             }
+                                                         ]
+                                        }
+                        },
+                        {
+                            "id":  "10ff1db851410000292666bb_0|1db810ff5148000036840e7b_0",
+                            "tripType":  "return",
+                            "price":  4117.899904,
+                            "priceFormatted":  "4118 MYR",
+                            "totalDurationSeconds":  79800,
+                            "bookingUrl":  "https://kiwi.com/u/dtfmxs4",
+                            "imageId":  "istanbul_tr",
+                            "baggage":  {
+                                            "personalItem":  0,
+                                            "cabinBag":  1,
+                                            "checkedBag":  1
+                                        },
+                            "outbound":  {
+                                             "from":  "KUL",
+                                             "to":  "SAW",
+                                             "departureTime":  "2026-12-14T09:20:00",
+                                             "arrivalTime":  "2026-12-14T16:05:00",
+                                             "durationSeconds":  42300,
+                                             "stops":  0,
+                                             "route":  [
+                                                           "KUL",
+                                                           "SAW"
+                                                       ],
+                                             "cabinClass":  "Economy",
+                                             "segments":  [
+                                                              {
+                                                                  "from":  "KUL",
+                                                                  "to":  "SAW",
+                                                                  "fromCity":  "Kuala Lumpur",
+                                                                  "toCity":  "Istanbul",
+                                                                  "fromName":  "Kuala Lumpur International",
+                                                                  "toName":  "Sabiha GÃ¶kÃ§en International",
+                                                                  "fromCountry":  "Malaysia",
+                                                                  "toCountry":  "Turkey",
+                                                                  "departureTime":  "2026-12-14T09:20:00",
+                                                                  "arrivalTime":  "2026-12-14T16:05:00",
+                                                                  "durationSeconds":  42300,
+                                                                  "carrier":  "D7",
+                                                                  "carrierName":  "AirAsia X",
+                                                                  "flightNumber":  "D7604",
+                                                                  "cabinClass":  "Economy"
+                                                              }
+                                                          ]
+                                         },
+                            "inbound":  {
+                                            "from":  "SAW",
+                                            "to":  "KUL",
+                                            "departureTime":  "2026-12-21T17:20:00",
+                                            "arrivalTime":  "2026-12-22T08:45:00",
+                                            "durationSeconds":  37500,
+                                            "stops":  0,
+                                            "route":  [
+                                                          "SAW",
+                                                          "KUL"
+                                                      ],
+                                            "cabinClass":  "Economy",
+                                            "segments":  [
+                                                             {
+                                                                 "from":  "SAW",
+                                                                 "to":  "KUL",
+                                                                 "fromCity":  "Istanbul",
+                                                                 "toCity":  "Kuala Lumpur",
+                                                                 "fromName":  "Sabiha GÃ¶kÃ§en International",
+                                                                 "toName":  "Kuala Lumpur International",
+                                                                 "fromCountry":  "Turkey",
+                                                                 "toCountry":  "Malaysia",
+                                                                 "departureTime":  "2026-12-21T17:20:00",
+                                                                 "arrivalTime":  "2026-12-22T08:45:00",
+                                                                 "durationSeconds":  37500,
+                                                                 "carrier":  "D7",
+                                                                 "carrierName":  "AirAsia X",
+                                                                 "flightNumber":  "D7605",
+                                                                 "cabinClass":  "Economy"
+                                                             }
+                                                         ]
+                                        }
+                        },
+                        {
+                            "id":  "10ff1db851400000dec7d8aa_0|1db810ff5148000036840e7b_0",
+                            "tripType":  "return",
+                            "price":  4117.899904,
+                            "priceFormatted":  "4118 MYR",
+                            "totalDurationSeconds":  79800,
+                            "bookingUrl":  "https://kiwi.com/u/vukv38",
+                            "imageId":  "istanbul_tr",
+                            "baggage":  {
+                                            "personalItem":  0,
+                                            "cabinBag":  1,
+                                            "checkedBag":  1
+                                        },
+                            "outbound":  {
+                                             "from":  "KUL",
+                                             "to":  "SAW",
+                                             "departureTime":  "2026-12-13T09:20:00",
+                                             "arrivalTime":  "2026-12-13T16:05:00",
+                                             "durationSeconds":  42300,
+                                             "stops":  0,
+                                             "route":  [
+                                                           "KUL",
+                                                           "SAW"
+                                                       ],
+                                             "cabinClass":  "Economy",
+                                             "segments":  [
+                                                              {
+                                                                  "from":  "KUL",
+                                                                  "to":  "SAW",
+                                                                  "fromCity":  "Kuala Lumpur",
+                                                                  "toCity":  "Istanbul",
+                                                                  "fromName":  "Kuala Lumpur International",
+                                                                  "toName":  "Sabiha GÃ¶kÃ§en International",
+                                                                  "fromCountry":  "Malaysia",
+                                                                  "toCountry":  "Turkey",
+                                                                  "departureTime":  "2026-12-13T09:20:00",
+                                                                  "arrivalTime":  "2026-12-13T16:05:00",
+                                                                  "durationSeconds":  42300,
+                                                                  "carrier":  "D7",
+                                                                  "carrierName":  "AirAsia X",
+                                                                  "flightNumber":  "D7604",
+                                                                  "cabinClass":  "Economy"
+                                                              }
+                                                          ]
+                                         },
+                            "inbound":  {
+                                            "from":  "SAW",
+                                            "to":  "KUL",
+                                            "departureTime":  "2026-12-21T17:20:00",
+                                            "arrivalTime":  "2026-12-22T08:45:00",
+                                            "durationSeconds":  37500,
+                                            "stops":  0,
+                                            "route":  [
+                                                          "SAW",
+                                                          "KUL"
+                                                      ],
+                                            "cabinClass":  "Economy",
+                                            "segments":  [
+                                                             {
+                                                                 "from":  "SAW",
+                                                                 "to":  "KUL",
+                                                                 "fromCity":  "Istanbul",
+                                                                 "toCity":  "Kuala Lumpur",
+                                                                 "fromName":  "Sabiha GÃ¶kÃ§en International",
+                                                                 "toName":  "Kuala Lumpur International",
+                                                                 "fromCountry":  "Turkey",
+                                                                 "toCountry":  "Malaysia",
+                                                                 "departureTime":  "2026-12-21T17:20:00",
+                                                                 "arrivalTime":  "2026-12-22T08:45:00",
+                                                                 "durationSeconds":  37500,
+                                                                 "carrier":  "D7",
+                                                                 "carrierName":  "AirAsia X",
+                                                                 "flightNumber":  "D7605",
+                                                                 "cabinClass":  "Economy"
+                                                             }
+                                                         ]
+                                        }
+                        },
+                        {
+                            "id":  "10ff170f513c0000d0b9ee4f_0|1db810ff514300006e9b97b3_0",
+                            "tripType":  "return",
+                            "price":  4350.949952,
+                            "priceFormatted":  "4351 MYR",
+                            "totalDurationSeconds":  78600,
+                            "bookingUrl":  "https://kiwi.com/u/vnzj4sb",
+                            "imageId":  "istanbul_tr",
+                            "baggage":  {
+                                            "personalItem":  0,
+                                            "cabinBag":  1,
+                                            "checkedBag":  1
+                                        },
+                            "outbound":  {
+                                             "from":  "KUL",
+                                             "to":  "IST",
+                                             "departureTime":  "2026-12-09T08:15:00",
+                                             "arrivalTime":  "2026-12-09T14:40:00",
+                                             "durationSeconds":  41100,
+                                             "stops":  0,
+                                             "route":  [
+                                                           "KUL",
+                                                           "IST"
+                                                       ],
+                                             "cabinClass":  "Economy",
+                                             "segments":  [
+                                                              {
+                                                                  "from":  "KUL",
+                                                                  "to":  "IST",
+                                                                  "fromCity":  "Kuala Lumpur",
+                                                                  "toCity":  "Istanbul",
+                                                                  "fromName":  "Kuala Lumpur International",
+                                                                  "toName":  "Istanbul Airport",
+                                                                  "fromCountry":  "Malaysia",
+                                                                  "toCountry":  "Turkey",
+                                                                  "departureTime":  "2026-12-09T08:15:00",
+                                                                  "arrivalTime":  "2026-12-09T14:40:00",
+                                                                  "durationSeconds":  41100,
+                                                                  "carrier":  "TK",
+                                                                  "carrierName":  "Turkish Airlines",
+                                                                  "flightNumber":  "TK63",
+                                                                  "cabinClass":  "Economy"
+                                                              }
+                                                          ]
+                                         },
+                            "inbound":  {
+                                            "from":  "SAW",
+                                            "to":  "KUL",
+                                            "departureTime":  "2026-12-16T17:20:00",
+                                            "arrivalTime":  "2026-12-17T08:45:00",
+                                            "durationSeconds":  37500,
+                                            "stops":  0,
+                                            "route":  [
+                                                          "SAW",
+                                                          "KUL"
+                                                      ],
+                                            "cabinClass":  "Economy",
+                                            "segments":  [
+                                                             {
+                                                                 "from":  "SAW",
+                                                                 "to":  "KUL",
+                                                                 "fromCity":  "Istanbul",
+                                                                 "toCity":  "Kuala Lumpur",
+                                                                 "fromName":  "Sabiha GÃ¶kÃ§en International",
+                                                                 "toName":  "Kuala Lumpur International",
+                                                                 "fromCountry":  "Turkey",
+                                                                 "toCountry":  "Malaysia",
+                                                                 "departureTime":  "2026-12-16T17:20:00",
+                                                                 "arrivalTime":  "2026-12-17T08:45:00",
+                                                                 "durationSeconds":  37500,
+                                                                 "carrier":  "D7",
+                                                                 "carrierName":  "AirAsia X",
+                                                                 "flightNumber":  "D7605",
+                                                                 "cabinClass":  "Economy"
+                                                             }
+                                                         ]
+                                        }
+                        },
+                        {
+                            "id":  "10ff170f513d00004027c568_0|1db810ff51450000de594a7f_0",
+                            "tripType":  "return",
+                            "price":  4771.949952,
+                            "priceFormatted":  "4772 MYR",
+                            "totalDurationSeconds":  78600,
+                            "bookingUrl":  "https://kiwi.com/u/kcp66w",
+                            "imageId":  "istanbul_tr",
+                            "baggage":  {
+                                            "personalItem":  0,
+                                            "cabinBag":  1,
+                                            "checkedBag":  1
+                                        },
+                            "outbound":  {
+                                             "from":  "KUL",
+                                             "to":  "IST",
+                                             "departureTime":  "2026-12-10T08:15:00",
+                                             "arrivalTime":  "2026-12-10T14:40:00",
+                                             "durationSeconds":  41100,
+                                             "stops":  0,
+                                             "route":  [
+                                                           "KUL",
+                                                           "IST"
+                                                       ],
+                                             "cabinClass":  "Economy",
+                                             "segments":  [
+                                                              {
+                                                                  "from":  "KUL",
+                                                                  "to":  "IST",
+                                                                  "fromCity":  "Kuala Lumpur",
+                                                                  "toCity":  "Istanbul",
+                                                                  "fromName":  "Kuala Lumpur International",
+                                                                  "toName":  "Istanbul Airport",
+                                                                  "fromCountry":  "Malaysia",
+                                                                  "toCountry":  "Turkey",
+                                                                  "departureTime":  "2026-12-10T08:15:00",
+                                                                  "arrivalTime":  "2026-12-10T14:40:00",
+                                                                  "durationSeconds":  41100,
+                                                                  "carrier":  "TK",
+                                                                  "carrierName":  "Turkish Airlines",
+                                                                  "flightNumber":  "TK63",
+                                                                  "cabinClass":  "Economy"
+                                                              }
+                                                          ]
+                                         },
+                            "inbound":  {
+                                            "from":  "SAW",
+                                            "to":  "KUL",
+                                            "departureTime":  "2026-12-18T17:20:00",
+                                            "arrivalTime":  "2026-12-19T08:45:00",
+                                            "durationSeconds":  37500,
+                                            "stops":  0,
+                                            "route":  [
+                                                          "SAW",
+                                                          "KUL"
+                                                      ],
+                                            "cabinClass":  "Economy",
+                                            "segments":  [
+                                                             {
+                                                                 "from":  "SAW",
+                                                                 "to":  "KUL",
+                                                                 "fromCity":  "Istanbul",
+                                                                 "toCity":  "Kuala Lumpur",
+                                                                 "fromName":  "Sabiha GÃ¶kÃ§en International",
+                                                                 "toName":  "Kuala Lumpur International",
+                                                                 "fromCountry":  "Turkey",
+                                                                 "toCountry":  "Malaysia",
+                                                                 "departureTime":  "2026-12-18T17:20:00",
+                                                                 "arrivalTime":  "2026-12-19T08:45:00",
+                                                                 "durationSeconds":  37500,
+                                                                 "carrier":  "PC",
+                                                                 "carrierName":  "Pegasus",
+                                                                 "flightNumber":  "PC7615",
+                                                                 "cabinClass":  "Economy"
+                                                             }
+                                                         ]
+                                        }
+                        },
+                        {
+                            "id":  "10ff170f513d5144b6e9de18_0|10ff170f513d5144b6e9de18_1",
+                            "tripType":  "return",
+                            "price":  5050.0,
+                            "priceFormatted":  "5050 MYR",
+                            "totalDurationSeconds":  78900,
+                            "bookingUrl":  "https://kiwi.com/u/pg86xb",
+                            "imageId":  "istanbul_tr",
+                            "baggage":  {
+                                            "personalItem":  1,
+                                            "cabinBag":  1,
+                                            "checkedBag":  1
+                                        },
+                            "outbound":  {
+                                             "from":  "KUL",
+                                             "to":  "IST",
+                                             "departureTime":  "2026-12-10T08:15:00",
+                                             "arrivalTime":  "2026-12-10T14:40:00",
+                                             "durationSeconds":  41100,
+                                             "stops":  0,
+                                             "route":  [
+                                                           "KUL",
+                                                           "IST"
+                                                       ],
+                                             "cabinClass":  "Economy",
+                                             "segments":  [
+                                                              {
+                                                                  "from":  "KUL",
+                                                                  "to":  "IST",
+                                                                  "fromCity":  "Kuala Lumpur",
+                                                                  "toCity":  "Istanbul",
+                                                                  "fromName":  "Kuala Lumpur International",
+                                                                  "toName":  "Istanbul Airport",
+                                                                  "fromCountry":  "Malaysia",
+                                                                  "toCountry":  "Turkey",
+                                                                  "departureTime":  "2026-12-10T08:15:00",
+                                                                  "arrivalTime":  "2026-12-10T14:40:00",
+                                                                  "durationSeconds":  41100,
+                                                                  "carrier":  "TK",
+                                                                  "carrierName":  "Turkish Airlines",
+                                                                  "flightNumber":  "TK63",
+                                                                  "cabinClass":  "Economy"
+                                                              }
+                                                          ]
+                                         },
+                            "inbound":  {
+                                            "from":  "IST",
+                                            "to":  "KUL",
+                                            "departureTime":  "2026-12-17T01:50:00",
+                                            "arrivalTime":  "2026-12-17T17:20:00",
+                                            "durationSeconds":  37800,
+                                            "stops":  0,
+                                            "route":  [
+                                                          "IST",
+                                                          "KUL"
+                                                      ],
+                                            "cabinClass":  "Economy",
+                                            "segments":  [
+                                                             {
+                                                                 "from":  "IST",
+                                                                 "to":  "KUL",
+                                                                 "fromCity":  "Istanbul",
+                                                                 "toCity":  "Kuala Lumpur",
+                                                                 "fromName":  "Istanbul Airport",
+                                                                 "toName":  "Kuala Lumpur International",
+                                                                 "fromCountry":  "Turkey",
+                                                                 "toCountry":  "Malaysia",
+                                                                 "departureTime":  "2026-12-17T01:50:00",
+                                                                 "arrivalTime":  "2026-12-17T17:20:00",
+                                                                 "durationSeconds":  37800,
+                                                                 "carrier":  "TK",
+                                                                 "carrierName":  "Turkish Airlines",
+                                                                 "flightNumber":  "TK60",
+                                                                 "cabinClass":  "Economy"
+                                                             }
+                                                         ]
+                                        }
+                        },
+                        {
+                            "id":  "10ff170f513b514494c4d7c8_0|10ff170f513b514494c4d7c8_1",
+                            "tripType":  "return",
+                            "price":  5412.0,
+                            "priceFormatted":  "5412 MYR",
+                            "totalDurationSeconds":  78900,
+                            "bookingUrl":  "https://kiwi.com/u/x2tdbjx",
+                            "imageId":  "istanbul_tr",
+                            "baggage":  {
+                                            "personalItem":  1,
+                                            "cabinBag":  1,
+                                            "checkedBag":  1
+                                        },
+                            "outbound":  {
+                                             "from":  "KUL",
+                                             "to":  "IST",
+                                             "departureTime":  "2026-12-08T23:45:00",
+                                             "arrivalTime":  "2026-12-09T06:10:00",
+                                             "durationSeconds":  41100,
+                                             "stops":  0,
+                                             "route":  [
+                                                           "KUL",
+                                                           "IST"
+                                                       ],
+                                             "cabinClass":  "Economy",
+                                             "segments":  [
+                                                              {
+                                                                  "from":  "KUL",
+                                                                  "to":  "IST",
+                                                                  "fromCity":  "Kuala Lumpur",
+                                                                  "toCity":  "Istanbul",
+                                                                  "fromName":  "Kuala Lumpur International",
+                                                                  "toName":  "Istanbul Airport",
+                                                                  "fromCountry":  "Malaysia",
+                                                                  "toCountry":  "Turkey",
+                                                                  "departureTime":  "2026-12-08T23:45:00",
+                                                                  "arrivalTime":  "2026-12-09T06:10:00",
+                                                                  "durationSeconds":  41100,
+                                                                  "carrier":  "TK",
+                                                                  "carrierName":  "Turkish Airlines",
+                                                                  "flightNumber":  "TK61",
+                                                                  "cabinClass":  "Economy"
+                                                              }
+                                                          ]
+                                         },
+                            "inbound":  {
+                                            "from":  "IST",
+                                            "to":  "KUL",
+                                            "departureTime":  "2026-12-17T01:50:00",
+                                            "arrivalTime":  "2026-12-17T17:20:00",
+                                            "durationSeconds":  37800,
+                                            "stops":  0,
+                                            "route":  [
+                                                          "IST",
+                                                          "KUL"
+                                                      ],
+                                            "cabinClass":  "Economy",
+                                            "segments":  [
+                                                             {
+                                                                 "from":  "IST",
+                                                                 "to":  "KUL",
+                                                                 "fromCity":  "Istanbul",
+                                                                 "toCity":  "Kuala Lumpur",
+                                                                 "fromName":  "Istanbul Airport",
+                                                                 "toName":  "Kuala Lumpur International",
+                                                                 "fromCountry":  "Turkey",
+                                                                 "toCountry":  "Malaysia",
+                                                                 "departureTime":  "2026-12-17T01:50:00",
+                                                                 "arrivalTime":  "2026-12-17T17:20:00",
+                                                                 "durationSeconds":  37800,
+                                                                 "carrier":  "TK",
+                                                                 "carrierName":  "Turkish Airlines",
+                                                                 "flightNumber":  "TK60",
+                                                                 "cabinClass":  "Economy"
+                                                             }
+                                                         ]
+                                        }
+                        },
+                        {
+                            "id":  "10ff170f513e00009f4baa92_0|1db810ff51470000c4168af8_0",
+                            "tripType":  "return",
+                            "price":  5554.949952,
+                            "priceFormatted":  "5555 MYR",
+                            "totalDurationSeconds":  78600,
+                            "bookingUrl":  "https://kiwi.com/u/7cd725",
+                            "imageId":  "istanbul_tr",
+                            "baggage":  {
+                                            "personalItem":  0,
+                                            "cabinBag":  1,
+                                            "checkedBag":  1
+                                        },
+                            "outbound":  {
+                                             "from":  "KUL",
+                                             "to":  "IST",
+                                             "departureTime":  "2026-12-11T23:45:00",
+                                             "arrivalTime":  "2026-12-12T06:10:00",
+                                             "durationSeconds":  41100,
+                                             "stops":  0,
+                                             "route":  [
+                                                           "KUL",
+                                                           "IST"
+                                                       ],
+                                             "cabinClass":  "Economy",
+                                             "segments":  [
+                                                              {
+                                                                  "from":  "KUL",
+                                                                  "to":  "IST",
+                                                                  "fromCity":  "Kuala Lumpur",
+                                                                  "toCity":  "Istanbul",
+                                                                  "fromName":  "Kuala Lumpur International",
+                                                                  "toName":  "Istanbul Airport",
+                                                                  "fromCountry":  "Malaysia",
+                                                                  "toCountry":  "Turkey",
+                                                                  "departureTime":  "2026-12-11T23:45:00",
+                                                                  "arrivalTime":  "2026-12-12T06:10:00",
+                                                                  "durationSeconds":  41100,
+                                                                  "carrier":  "TK",
+                                                                  "carrierName":  "Turkish Airlines",
+                                                                  "flightNumber":  "TK61",
+                                                                  "cabinClass":  "Economy"
+                                                              }
+                                                          ]
+                                         },
+                            "inbound":  {
+                                            "from":  "SAW",
+                                            "to":  "KUL",
+                                            "departureTime":  "2026-12-20T17:20:00",
+                                            "arrivalTime":  "2026-12-21T08:45:00",
+                                            "durationSeconds":  37500,
+                                            "stops":  0,
+                                            "route":  [
+                                                          "SAW",
+                                                          "KUL"
+                                                      ],
+                                            "cabinClass":  "Economy",
+                                            "segments":  [
+                                                             {
+                                                                 "from":  "SAW",
+                                                                 "to":  "KUL",
+                                                                 "fromCity":  "Istanbul",
+                                                                 "toCity":  "Kuala Lumpur",
+                                                                 "fromName":  "Sabiha GÃ¶kÃ§en International",
+                                                                 "toName":  "Kuala Lumpur International",
+                                                                 "fromCountry":  "Turkey",
+                                                                 "toCountry":  "Malaysia",
+                                                                 "departureTime":  "2026-12-20T17:20:00",
+                                                                 "arrivalTime":  "2026-12-21T08:45:00",
+                                                                 "durationSeconds":  37500,
+                                                                 "carrier":  "PC",
+                                                                 "carrierName":  "Pegasus",
+                                                                 "flightNumber":  "PC7615",
+                                                                 "cabinClass":  "Economy"
+                                                             }
+                                                         ]
+                                        }
+                        },
+                        {
+                            "id":  "10ff170f513b000042d3c0c2_0|1db810ff514300006e9b97b3_0",
+                            "tripType":  "return",
+                            "price":  5557.949952,
+                            "priceFormatted":  "5558 MYR",
+                            "totalDurationSeconds":  78600,
+                            "bookingUrl":  "https://kiwi.com/u/7but7h9",
+                            "imageId":  "istanbul_tr",
+                            "baggage":  {
+                                            "personalItem":  0,
+                                            "cabinBag":  1,
+                                            "checkedBag":  1
+                                        },
+                            "outbound":  {
+                                             "from":  "KUL",
+                                             "to":  "IST",
+                                             "departureTime":  "2026-12-08T08:15:00",
+                                             "arrivalTime":  "2026-12-08T14:40:00",
+                                             "durationSeconds":  41100,
+                                             "stops":  0,
+                                             "route":  [
+                                                           "KUL",
+                                                           "IST"
+                                                       ],
+                                             "cabinClass":  "Economy",
+                                             "segments":  [
+                                                              {
+                                                                  "from":  "KUL",
+                                                                  "to":  "IST",
+                                                                  "fromCity":  "Kuala Lumpur",
+                                                                  "toCity":  "Istanbul",
+                                                                  "fromName":  "Kuala Lumpur International",
+                                                                  "toName":  "Istanbul Airport",
+                                                                  "fromCountry":  "Malaysia",
+                                                                  "toCountry":  "Turkey",
+                                                                  "departureTime":  "2026-12-08T08:15:00",
+                                                                  "arrivalTime":  "2026-12-08T14:40:00",
+                                                                  "durationSeconds":  41100,
+                                                                  "carrier":  "TK",
+                                                                  "carrierName":  "Turkish Airlines",
+                                                                  "flightNumber":  "TK63",
+                                                                  "cabinClass":  "Economy"
+                                                              }
+                                                          ]
+                                         },
+                            "inbound":  {
+                                            "from":  "SAW",
+                                            "to":  "KUL",
+                                            "departureTime":  "2026-12-16T17:20:00",
+                                            "arrivalTime":  "2026-12-17T08:45:00",
+                                            "durationSeconds":  37500,
+                                            "stops":  0,
+                                            "route":  [
+                                                          "SAW",
+                                                          "KUL"
+                                                      ],
+                                            "cabinClass":  "Economy",
+                                            "segments":  [
+                                                             {
+                                                                 "from":  "SAW",
+                                                                 "to":  "KUL",
+                                                                 "fromCity":  "Istanbul",
+                                                                 "toCity":  "Kuala Lumpur",
+                                                                 "fromName":  "Sabiha GÃ¶kÃ§en International",
+                                                                 "toName":  "Kuala Lumpur International",
+                                                                 "fromCountry":  "Turkey",
+                                                                 "toCountry":  "Malaysia",
+                                                                 "departureTime":  "2026-12-16T17:20:00",
+                                                                 "arrivalTime":  "2026-12-17T08:45:00",
+                                                                 "durationSeconds":  37500,
+                                                                 "carrier":  "D7",
+                                                                 "carrierName":  "AirAsia X",
+                                                                 "flightNumber":  "D7605",
+                                                                 "cabinClass":  "Economy"
+                                                             }
+                                                         ]
+                                        }
+                        },
+                        {
+                            "id":  "10ff170f513c5143da071392_0|10ff170f513c5143da071392_1",
+                            "tripType":  "return",
+                            "price":  5641.0,
+                            "priceFormatted":  "5641 MYR",
+                            "totalDurationSeconds":  78900,
+                            "bookingUrl":  "https://kiwi.com/u/h28h8pv",
+                            "imageId":  "istanbul_tr",
+                            "baggage":  {
+                                            "personalItem":  1,
+                                            "cabinBag":  1,
+                                            "checkedBag":  1
+                                        },
+                            "outbound":  {
+                                             "from":  "KUL",
+                                             "to":  "IST",
+                                             "departureTime":  "2026-12-09T08:15:00",
+                                             "arrivalTime":  "2026-12-09T14:40:00",
+                                             "durationSeconds":  41100,
+                                             "stops":  0,
+                                             "route":  [
+                                                           "KUL",
+                                                           "IST"
+                                                       ],
+                                             "cabinClass":  "Economy",
+                                             "segments":  [
+                                                              {
+                                                                  "from":  "KUL",
+                                                                  "to":  "IST",
+                                                                  "fromCity":  "Kuala Lumpur",
+                                                                  "toCity":  "Istanbul",
+                                                                  "fromName":  "Kuala Lumpur International",
+                                                                  "toName":  "Istanbul Airport",
+                                                                  "fromCountry":  "Malaysia",
+                                                                  "toCountry":  "Turkey",
+                                                                  "departureTime":  "2026-12-09T08:15:00",
+                                                                  "arrivalTime":  "2026-12-09T14:40:00",
+                                                                  "durationSeconds":  41100,
+                                                                  "carrier":  "TK",
+                                                                  "carrierName":  "Turkish Airlines",
+                                                                  "flightNumber":  "TK63",
+                                                                  "cabinClass":  "Economy"
+                                                              }
+                                                          ]
+                                         },
+                            "inbound":  {
+                                            "from":  "IST",
+                                            "to":  "KUL",
+                                            "departureTime":  "2026-12-16T01:50:00",
+                                            "arrivalTime":  "2026-12-16T17:20:00",
+                                            "durationSeconds":  37800,
+                                            "stops":  0,
+                                            "route":  [
+                                                          "IST",
+                                                          "KUL"
+                                                      ],
+                                            "cabinClass":  "Economy",
+                                            "segments":  [
+                                                             {
+                                                                 "from":  "IST",
+                                                                 "to":  "KUL",
+                                                                 "fromCity":  "Istanbul",
+                                                                 "toCity":  "Kuala Lumpur",
+                                                                 "fromName":  "Istanbul Airport",
+                                                                 "toName":  "Kuala Lumpur International",
+                                                                 "fromCountry":  "Turkey",
+                                                                 "toCountry":  "Malaysia",
+                                                                 "departureTime":  "2026-12-16T01:50:00",
+                                                                 "arrivalTime":  "2026-12-16T17:20:00",
+                                                                 "durationSeconds":  37800,
+                                                                 "carrier":  "TK",
+                                                                 "carrierName":  "Turkish Airlines",
+                                                                 "flightNumber":  "TK60",
+                                                                 "cabinClass":  "Economy"
+                                                             }
+                                                         ]
+                                        }
+                        },
+                        {
+                            "id":  "10ff170f514000008551f5b6_0|1db810ff5148000036840e7b_0",
+                            "tripType":  "return",
+                            "price":  5691.949952,
+                            "priceFormatted":  "5692 MYR",
+                            "totalDurationSeconds":  78600,
+                            "bookingUrl":  "https://kiwi.com/u/ykfmjg7",
+                            "imageId":  "istanbul_tr",
+                            "baggage":  {
+                                            "personalItem":  0,
+                                            "cabinBag":  1,
+                                            "checkedBag":  1
+                                        },
+                            "outbound":  {
+                                             "from":  "KUL",
+                                             "to":  "IST",
+                                             "departureTime":  "2026-12-13T23:45:00",
+                                             "arrivalTime":  "2026-12-14T06:10:00",
+                                             "durationSeconds":  41100,
+                                             "stops":  0,
+                                             "route":  [
+                                                           "KUL",
+                                                           "IST"
+                                                       ],
+                                             "cabinClass":  "Economy",
+                                             "segments":  [
+                                                              {
+                                                                  "from":  "KUL",
+                                                                  "to":  "IST",
+                                                                  "fromCity":  "Kuala Lumpur",
+                                                                  "toCity":  "Istanbul",
+                                                                  "fromName":  "Kuala Lumpur International",
+                                                                  "toName":  "Istanbul Airport",
+                                                                  "fromCountry":  "Malaysia",
+                                                                  "toCountry":  "Turkey",
+                                                                  "departureTime":  "2026-12-13T23:45:00",
+                                                                  "arrivalTime":  "2026-12-14T06:10:00",
+                                                                  "durationSeconds":  41100,
+                                                                  "carrier":  "TK",
+                                                                  "carrierName":  "Turkish Airlines",
+                                                                  "flightNumber":  "TK61",
+                                                                  "cabinClass":  "Economy"
+                                                              }
+                                                          ]
+                                         },
+                            "inbound":  {
+                                            "from":  "SAW",
+                                            "to":  "KUL",
+                                            "departureTime":  "2026-12-21T17:20:00",
+                                            "arrivalTime":  "2026-12-22T08:45:00",
+                                            "durationSeconds":  37500,
+                                            "stops":  0,
+                                            "route":  [
+                                                          "SAW",
+                                                          "KUL"
+                                                      ],
+                                            "cabinClass":  "Economy",
+                                            "segments":  [
+                                                             {
+                                                                 "from":  "SAW",
+                                                                 "to":  "KUL",
+                                                                 "fromCity":  "Istanbul",
+                                                                 "toCity":  "Kuala Lumpur",
+                                                                 "fromName":  "Sabiha GÃ¶kÃ§en International",
+                                                                 "toName":  "Kuala Lumpur International",
+                                                                 "fromCountry":  "Turkey",
+                                                                 "toCountry":  "Malaysia",
+                                                                 "departureTime":  "2026-12-21T17:20:00",
+                                                                 "arrivalTime":  "2026-12-22T08:45:00",
+                                                                 "durationSeconds":  37500,
+                                                                 "carrier":  "D7",
+                                                                 "carrierName":  "AirAsia X",
+                                                                 "flightNumber":  "D7605",
+                                                                 "cabinClass":  "Economy"
+                                                             }
+                                                         ]
+                                        }
+                        }
+                    ],
+    "searchTimeMs":  716,
+    "error":  null
+}

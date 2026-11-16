@@ -1,0 +1,1184 @@
+﻿{
+    "query":  "KUL â Istanbul on 26/01/2027â01/02/2027, 1 adult, 7â8 nights [â¤0 stops/sector]",
+    "currency":  "MYR",
+    "passengers":  {
+                       "adults":  1,
+                       "children":  0,
+                       "infants":  0
+                   },
+    "resultsCount":  15,
+    "itineraries":  [
+                        {
+                            "id":  "10ff170f516c5173acadd0e9_0|10ff170f516c5173acadd0e9_1",
+                            "tripType":  "return",
+                            "price":  1925.0,
+                            "priceFormatted":  "1925 MYR",
+                            "totalDurationSeconds":  78000,
+                            "bookingUrl":  "https://kiwi.com/u/kgv9326",
+                            "imageId":  "istanbul_tr",
+                            "baggage":  {
+                                            "personalItem":  1,
+                                            "cabinBag":  1,
+                                            "checkedBag":  1
+                                        },
+                            "outbound":  {
+                                             "from":  "KUL",
+                                             "to":  "IST",
+                                             "departureTime":  "2027-01-26T08:15:00",
+                                             "arrivalTime":  "2027-01-26T14:40:00",
+                                             "durationSeconds":  41100,
+                                             "stops":  0,
+                                             "route":  [
+                                                           "KUL",
+                                                           "IST"
+                                                       ],
+                                             "cabinClass":  "Economy",
+                                             "segments":  [
+                                                              {
+                                                                  "from":  "KUL",
+                                                                  "to":  "IST",
+                                                                  "fromCity":  "Kuala Lumpur",
+                                                                  "toCity":  "Istanbul",
+                                                                  "fromName":  "Kuala Lumpur International",
+                                                                  "toName":  "Istanbul Airport",
+                                                                  "fromCountry":  "Malaysia",
+                                                                  "toCountry":  "Turkey",
+                                                                  "departureTime":  "2027-01-26T08:15:00",
+                                                                  "arrivalTime":  "2027-01-26T14:40:00",
+                                                                  "durationSeconds":  41100,
+                                                                  "carrier":  "TK",
+                                                                  "carrierName":  "Turkish Airlines",
+                                                                  "flightNumber":  "TK63",
+                                                                  "cabinClass":  "Economy"
+                                                              }
+                                                          ]
+                                         },
+                            "inbound":  {
+                                            "from":  "IST",
+                                            "to":  "KUL",
+                                            "departureTime":  "2027-02-02T15:20:00",
+                                            "arrivalTime":  "2027-02-03T06:35:00",
+                                            "durationSeconds":  36900,
+                                            "stops":  0,
+                                            "route":  [
+                                                          "IST",
+                                                          "KUL"
+                                                      ],
+                                            "cabinClass":  "Economy",
+                                            "segments":  [
+                                                             {
+                                                                 "from":  "IST",
+                                                                 "to":  "KUL",
+                                                                 "fromCity":  "Istanbul",
+                                                                 "toCity":  "Kuala Lumpur",
+                                                                 "fromName":  "Istanbul Airport",
+                                                                 "toName":  "Kuala Lumpur International",
+                                                                 "fromCountry":  "Turkey",
+                                                                 "toCountry":  "Malaysia",
+                                                                 "departureTime":  "2027-02-02T15:20:00",
+                                                                 "arrivalTime":  "2027-02-03T06:35:00",
+                                                                 "durationSeconds":  36900,
+                                                                 "carrier":  "TK",
+                                                                 "carrierName":  "Turkish Airlines",
+                                                                 "flightNumber":  "TK62",
+                                                                 "cabinClass":  "Economy"
+                                                             }
+                                                         ]
+                                        }
+                        },
+                        {
+                            "id":  "10ff170f516d517466bab736_0|10ff170f516d517466bab736_1",
+                            "tripType":  "return",
+                            "price":  1925.0,
+                            "priceFormatted":  "1925 MYR",
+                            "totalDurationSeconds":  78000,
+                            "bookingUrl":  "https://kiwi.com/u/hw743j",
+                            "imageId":  "istanbul_tr",
+                            "baggage":  {
+                                            "personalItem":  1,
+                                            "cabinBag":  1,
+                                            "checkedBag":  1
+                                        },
+                            "outbound":  {
+                                             "from":  "KUL",
+                                             "to":  "IST",
+                                             "departureTime":  "2027-01-27T08:15:00",
+                                             "arrivalTime":  "2027-01-27T14:40:00",
+                                             "durationSeconds":  41100,
+                                             "stops":  0,
+                                             "route":  [
+                                                           "KUL",
+                                                           "IST"
+                                                       ],
+                                             "cabinClass":  "Economy",
+                                             "segments":  [
+                                                              {
+                                                                  "from":  "KUL",
+                                                                  "to":  "IST",
+                                                                  "fromCity":  "Kuala Lumpur",
+                                                                  "toCity":  "Istanbul",
+                                                                  "fromName":  "Kuala Lumpur International",
+                                                                  "toName":  "Istanbul Airport",
+                                                                  "fromCountry":  "Malaysia",
+                                                                  "toCountry":  "Turkey",
+                                                                  "departureTime":  "2027-01-27T08:15:00",
+                                                                  "arrivalTime":  "2027-01-27T14:40:00",
+                                                                  "durationSeconds":  41100,
+                                                                  "carrier":  "TK",
+                                                                  "carrierName":  "Turkish Airlines",
+                                                                  "flightNumber":  "TK63",
+                                                                  "cabinClass":  "Economy"
+                                                              }
+                                                          ]
+                                         },
+                            "inbound":  {
+                                            "from":  "IST",
+                                            "to":  "KUL",
+                                            "departureTime":  "2027-02-03T15:20:00",
+                                            "arrivalTime":  "2027-02-04T06:35:00",
+                                            "durationSeconds":  36900,
+                                            "stops":  0,
+                                            "route":  [
+                                                          "IST",
+                                                          "KUL"
+                                                      ],
+                                            "cabinClass":  "Economy",
+                                            "segments":  [
+                                                             {
+                                                                 "from":  "IST",
+                                                                 "to":  "KUL",
+                                                                 "fromCity":  "Istanbul",
+                                                                 "toCity":  "Kuala Lumpur",
+                                                                 "fromName":  "Istanbul Airport",
+                                                                 "toName":  "Kuala Lumpur International",
+                                                                 "fromCountry":  "Turkey",
+                                                                 "toCountry":  "Malaysia",
+                                                                 "departureTime":  "2027-02-03T15:20:00",
+                                                                 "arrivalTime":  "2027-02-04T06:35:00",
+                                                                 "durationSeconds":  36900,
+                                                                 "carrier":  "TK",
+                                                                 "carrierName":  "Turkish Airlines",
+                                                                 "flightNumber":  "TK62",
+                                                                 "cabinClass":  "Economy"
+                                                             }
+                                                         ]
+                                        }
+                        },
+                        {
+                            "id":  "10ff170f516c517498220fa7_0|10ff170f516c517498220fa7_1",
+                            "tripType":  "return",
+                            "price":  1927.0,
+                            "priceFormatted":  "1927 MYR",
+                            "totalDurationSeconds":  78000,
+                            "bookingUrl":  "https://kiwi.com/u/d2r32p",
+                            "imageId":  "istanbul_tr",
+                            "baggage":  {
+                                            "personalItem":  1,
+                                            "cabinBag":  1,
+                                            "checkedBag":  1
+                                        },
+                            "outbound":  {
+                                             "from":  "KUL",
+                                             "to":  "IST",
+                                             "departureTime":  "2027-01-26T08:15:00",
+                                             "arrivalTime":  "2027-01-26T14:40:00",
+                                             "durationSeconds":  41100,
+                                             "stops":  0,
+                                             "route":  [
+                                                           "KUL",
+                                                           "IST"
+                                                       ],
+                                             "cabinClass":  "Economy",
+                                             "segments":  [
+                                                              {
+                                                                  "from":  "KUL",
+                                                                  "to":  "IST",
+                                                                  "fromCity":  "Kuala Lumpur",
+                                                                  "toCity":  "Istanbul",
+                                                                  "fromName":  "Kuala Lumpur International",
+                                                                  "toName":  "Istanbul Airport",
+                                                                  "fromCountry":  "Malaysia",
+                                                                  "toCountry":  "Turkey",
+                                                                  "departureTime":  "2027-01-26T08:15:00",
+                                                                  "arrivalTime":  "2027-01-26T14:40:00",
+                                                                  "durationSeconds":  41100,
+                                                                  "carrier":  "TK",
+                                                                  "carrierName":  "Turkish Airlines",
+                                                                  "flightNumber":  "TK63",
+                                                                  "cabinClass":  "Economy"
+                                                              }
+                                                          ]
+                                         },
+                            "inbound":  {
+                                            "from":  "IST",
+                                            "to":  "KUL",
+                                            "departureTime":  "2027-02-03T15:20:00",
+                                            "arrivalTime":  "2027-02-04T06:35:00",
+                                            "durationSeconds":  36900,
+                                            "stops":  0,
+                                            "route":  [
+                                                          "IST",
+                                                          "KUL"
+                                                      ],
+                                            "cabinClass":  "Economy",
+                                            "segments":  [
+                                                             {
+                                                                 "from":  "IST",
+                                                                 "to":  "KUL",
+                                                                 "fromCity":  "Istanbul",
+                                                                 "toCity":  "Kuala Lumpur",
+                                                                 "fromName":  "Istanbul Airport",
+                                                                 "toName":  "Kuala Lumpur International",
+                                                                 "fromCountry":  "Turkey",
+                                                                 "toCountry":  "Malaysia",
+                                                                 "departureTime":  "2027-02-03T15:20:00",
+                                                                 "arrivalTime":  "2027-02-04T06:35:00",
+                                                                 "durationSeconds":  36900,
+                                                                 "carrier":  "TK",
+                                                                 "carrierName":  "Turkish Airlines",
+                                                                 "flightNumber":  "TK62",
+                                                                 "cabinClass":  "Economy"
+                                                             }
+                                                         ]
+                                        }
+                        },
+                        {
+                            "id":  "10ff170f5172517949e1e1cc_0|10ff170f5172517949e1e1cc_1",
+                            "tripType":  "return",
+                            "price":  2006.0,
+                            "priceFormatted":  "2006 MYR",
+                            "totalDurationSeconds":  78000,
+                            "bookingUrl":  "https://kiwi.com/u/4m979w",
+                            "imageId":  "istanbul_tr",
+                            "baggage":  {
+                                            "personalItem":  1,
+                                            "cabinBag":  1,
+                                            "checkedBag":  1
+                                        },
+                            "outbound":  {
+                                             "from":  "KUL",
+                                             "to":  "IST",
+                                             "departureTime":  "2027-02-01T08:15:00",
+                                             "arrivalTime":  "2027-02-01T14:40:00",
+                                             "durationSeconds":  41100,
+                                             "stops":  0,
+                                             "route":  [
+                                                           "KUL",
+                                                           "IST"
+                                                       ],
+                                             "cabinClass":  "Economy",
+                                             "segments":  [
+                                                              {
+                                                                  "from":  "KUL",
+                                                                  "to":  "IST",
+                                                                  "fromCity":  "Kuala Lumpur",
+                                                                  "toCity":  "Istanbul",
+                                                                  "fromName":  "Kuala Lumpur International",
+                                                                  "toName":  "Istanbul Airport",
+                                                                  "fromCountry":  "Malaysia",
+                                                                  "toCountry":  "Turkey",
+                                                                  "departureTime":  "2027-02-01T08:15:00",
+                                                                  "arrivalTime":  "2027-02-01T14:40:00",
+                                                                  "durationSeconds":  41100,
+                                                                  "carrier":  "TK",
+                                                                  "carrierName":  "Turkish Airlines",
+                                                                  "flightNumber":  "TK63",
+                                                                  "cabinClass":  "Economy"
+                                                              }
+                                                          ]
+                                         },
+                            "inbound":  {
+                                            "from":  "IST",
+                                            "to":  "KUL",
+                                            "departureTime":  "2027-02-08T15:20:00",
+                                            "arrivalTime":  "2027-02-09T06:35:00",
+                                            "durationSeconds":  36900,
+                                            "stops":  0,
+                                            "route":  [
+                                                          "IST",
+                                                          "KUL"
+                                                      ],
+                                            "cabinClass":  "Economy",
+                                            "segments":  [
+                                                             {
+                                                                 "from":  "IST",
+                                                                 "to":  "KUL",
+                                                                 "fromCity":  "Istanbul",
+                                                                 "toCity":  "Kuala Lumpur",
+                                                                 "fromName":  "Istanbul Airport",
+                                                                 "toName":  "Kuala Lumpur International",
+                                                                 "fromCountry":  "Turkey",
+                                                                 "toCountry":  "Malaysia",
+                                                                 "departureTime":  "2027-02-08T15:20:00",
+                                                                 "arrivalTime":  "2027-02-09T06:35:00",
+                                                                 "durationSeconds":  36900,
+                                                                 "carrier":  "TK",
+                                                                 "carrierName":  "Turkish Airlines",
+                                                                 "flightNumber":  "TK62",
+                                                                 "cabinClass":  "Economy"
+                                                             }
+                                                         ]
+                                        }
+                        },
+                        {
+                            "id":  "10ff170f516c5174762c6e8b_0|10ff170f516c5174762c6e8b_1",
+                            "tripType":  "return",
+                            "price":  2015.0,
+                            "priceFormatted":  "2015 MYR",
+                            "totalDurationSeconds":  78900,
+                            "bookingUrl":  "https://kiwi.com/u/vkymfs",
+                            "imageId":  "istanbul_tr",
+                            "baggage":  {
+                                            "personalItem":  1,
+                                            "cabinBag":  1,
+                                            "checkedBag":  1
+                                        },
+                            "outbound":  {
+                                             "from":  "KUL",
+                                             "to":  "IST",
+                                             "departureTime":  "2027-01-26T08:15:00",
+                                             "arrivalTime":  "2027-01-26T14:40:00",
+                                             "durationSeconds":  41100,
+                                             "stops":  0,
+                                             "route":  [
+                                                           "KUL",
+                                                           "IST"
+                                                       ],
+                                             "cabinClass":  "Economy",
+                                             "segments":  [
+                                                              {
+                                                                  "from":  "KUL",
+                                                                  "to":  "IST",
+                                                                  "fromCity":  "Kuala Lumpur",
+                                                                  "toCity":  "Istanbul",
+                                                                  "fromName":  "Kuala Lumpur International",
+                                                                  "toName":  "Istanbul Airport",
+                                                                  "fromCountry":  "Malaysia",
+                                                                  "toCountry":  "Turkey",
+                                                                  "departureTime":  "2027-01-26T08:15:00",
+                                                                  "arrivalTime":  "2027-01-26T14:40:00",
+                                                                  "durationSeconds":  41100,
+                                                                  "carrier":  "TK",
+                                                                  "carrierName":  "Turkish Airlines",
+                                                                  "flightNumber":  "TK63",
+                                                                  "cabinClass":  "Economy"
+                                                              }
+                                                          ]
+                                         },
+                            "inbound":  {
+                                            "from":  "IST",
+                                            "to":  "KUL",
+                                            "departureTime":  "2027-02-03T01:50:00",
+                                            "arrivalTime":  "2027-02-03T17:20:00",
+                                            "durationSeconds":  37800,
+                                            "stops":  0,
+                                            "route":  [
+                                                          "IST",
+                                                          "KUL"
+                                                      ],
+                                            "cabinClass":  "Economy",
+                                            "segments":  [
+                                                             {
+                                                                 "from":  "IST",
+                                                                 "to":  "KUL",
+                                                                 "fromCity":  "Istanbul",
+                                                                 "toCity":  "Kuala Lumpur",
+                                                                 "fromName":  "Istanbul Airport",
+                                                                 "toName":  "Kuala Lumpur International",
+                                                                 "fromCountry":  "Turkey",
+                                                                 "toCountry":  "Malaysia",
+                                                                 "departureTime":  "2027-02-03T01:50:00",
+                                                                 "arrivalTime":  "2027-02-03T17:20:00",
+                                                                 "durationSeconds":  37800,
+                                                                 "carrier":  "TK",
+                                                                 "carrierName":  "Turkish Airlines",
+                                                                 "flightNumber":  "TK60",
+                                                                 "cabinClass":  "Economy"
+                                                             }
+                                                         ]
+                                        }
+                        },
+                        {
+                            "id":  "10ff170f516d517516c3db1f_0|10ff170f516d517516c3db1f_1",
+                            "tripType":  "return",
+                            "price":  2019.0,
+                            "priceFormatted":  "2019 MYR",
+                            "totalDurationSeconds":  78000,
+                            "bookingUrl":  "https://kiwi.com/u/kx9d66",
+                            "imageId":  "istanbul_tr",
+                            "baggage":  {
+                                            "personalItem":  1,
+                                            "cabinBag":  1,
+                                            "checkedBag":  1
+                                        },
+                            "outbound":  {
+                                             "from":  "KUL",
+                                             "to":  "IST",
+                                             "departureTime":  "2027-01-27T08:15:00",
+                                             "arrivalTime":  "2027-01-27T14:40:00",
+                                             "durationSeconds":  41100,
+                                             "stops":  0,
+                                             "route":  [
+                                                           "KUL",
+                                                           "IST"
+                                                       ],
+                                             "cabinClass":  "Economy",
+                                             "segments":  [
+                                                              {
+                                                                  "from":  "KUL",
+                                                                  "to":  "IST",
+                                                                  "fromCity":  "Kuala Lumpur",
+                                                                  "toCity":  "Istanbul",
+                                                                  "fromName":  "Kuala Lumpur International",
+                                                                  "toName":  "Istanbul Airport",
+                                                                  "fromCountry":  "Malaysia",
+                                                                  "toCountry":  "Turkey",
+                                                                  "departureTime":  "2027-01-27T08:15:00",
+                                                                  "arrivalTime":  "2027-01-27T14:40:00",
+                                                                  "durationSeconds":  41100,
+                                                                  "carrier":  "TK",
+                                                                  "carrierName":  "Turkish Airlines",
+                                                                  "flightNumber":  "TK63",
+                                                                  "cabinClass":  "Economy"
+                                                              }
+                                                          ]
+                                         },
+                            "inbound":  {
+                                            "from":  "IST",
+                                            "to":  "KUL",
+                                            "departureTime":  "2027-02-04T15:20:00",
+                                            "arrivalTime":  "2027-02-05T06:35:00",
+                                            "durationSeconds":  36900,
+                                            "stops":  0,
+                                            "route":  [
+                                                          "IST",
+                                                          "KUL"
+                                                      ],
+                                            "cabinClass":  "Economy",
+                                            "segments":  [
+                                                             {
+                                                                 "from":  "IST",
+                                                                 "to":  "KUL",
+                                                                 "fromCity":  "Istanbul",
+                                                                 "toCity":  "Kuala Lumpur",
+                                                                 "fromName":  "Istanbul Airport",
+                                                                 "toName":  "Kuala Lumpur International",
+                                                                 "fromCountry":  "Turkey",
+                                                                 "toCountry":  "Malaysia",
+                                                                 "departureTime":  "2027-02-04T15:20:00",
+                                                                 "arrivalTime":  "2027-02-05T06:35:00",
+                                                                 "durationSeconds":  36900,
+                                                                 "carrier":  "TK",
+                                                                 "carrierName":  "Turkish Airlines",
+                                                                 "flightNumber":  "TK62",
+                                                                 "cabinClass":  "Economy"
+                                                             }
+                                                         ]
+                                        }
+                        },
+                        {
+                            "id":  "10ff170f516d5175f8cdba33_0|10ff170f516d5175f8cdba33_1",
+                            "tripType":  "return",
+                            "price":  2019.0,
+                            "priceFormatted":  "2019 MYR",
+                            "totalDurationSeconds":  78900,
+                            "bookingUrl":  "https://kiwi.com/u/5j46cs",
+                            "imageId":  "istanbul_tr",
+                            "baggage":  {
+                                            "personalItem":  1,
+                                            "cabinBag":  1,
+                                            "checkedBag":  1
+                                        },
+                            "outbound":  {
+                                             "from":  "KUL",
+                                             "to":  "IST",
+                                             "departureTime":  "2027-01-27T08:15:00",
+                                             "arrivalTime":  "2027-01-27T14:40:00",
+                                             "durationSeconds":  41100,
+                                             "stops":  0,
+                                             "route":  [
+                                                           "KUL",
+                                                           "IST"
+                                                       ],
+                                             "cabinClass":  "Economy",
+                                             "segments":  [
+                                                              {
+                                                                  "from":  "KUL",
+                                                                  "to":  "IST",
+                                                                  "fromCity":  "Kuala Lumpur",
+                                                                  "toCity":  "Istanbul",
+                                                                  "fromName":  "Kuala Lumpur International",
+                                                                  "toName":  "Istanbul Airport",
+                                                                  "fromCountry":  "Malaysia",
+                                                                  "toCountry":  "Turkey",
+                                                                  "departureTime":  "2027-01-27T08:15:00",
+                                                                  "arrivalTime":  "2027-01-27T14:40:00",
+                                                                  "durationSeconds":  41100,
+                                                                  "carrier":  "TK",
+                                                                  "carrierName":  "Turkish Airlines",
+                                                                  "flightNumber":  "TK63",
+                                                                  "cabinClass":  "Economy"
+                                                              }
+                                                          ]
+                                         },
+                            "inbound":  {
+                                            "from":  "IST",
+                                            "to":  "KUL",
+                                            "departureTime":  "2027-02-04T01:50:00",
+                                            "arrivalTime":  "2027-02-04T17:20:00",
+                                            "durationSeconds":  37800,
+                                            "stops":  0,
+                                            "route":  [
+                                                          "IST",
+                                                          "KUL"
+                                                      ],
+                                            "cabinClass":  "Economy",
+                                            "segments":  [
+                                                             {
+                                                                 "from":  "IST",
+                                                                 "to":  "KUL",
+                                                                 "fromCity":  "Istanbul",
+                                                                 "toCity":  "Kuala Lumpur",
+                                                                 "fromName":  "Istanbul Airport",
+                                                                 "toName":  "Kuala Lumpur International",
+                                                                 "fromCountry":  "Turkey",
+                                                                 "toCountry":  "Malaysia",
+                                                                 "departureTime":  "2027-02-04T01:50:00",
+                                                                 "arrivalTime":  "2027-02-04T17:20:00",
+                                                                 "durationSeconds":  37800,
+                                                                 "carrier":  "TK",
+                                                                 "carrierName":  "Turkish Airlines",
+                                                                 "flightNumber":  "TK60",
+                                                                 "cabinClass":  "Economy"
+                                                             }
+                                                         ]
+                                        }
+                        },
+                        {
+                            "id":  "10ff170f516c517342a3b1c5_0|10ff170f516c517342a3b1c5_1",
+                            "tripType":  "return",
+                            "price":  2123.0,
+                            "priceFormatted":  "2123 MYR",
+                            "totalDurationSeconds":  78900,
+                            "bookingUrl":  "https://kiwi.com/u/9v2pgwm",
+                            "imageId":  "istanbul_tr",
+                            "baggage":  {
+                                            "personalItem":  1,
+                                            "cabinBag":  1,
+                                            "checkedBag":  1
+                                        },
+                            "outbound":  {
+                                             "from":  "KUL",
+                                             "to":  "IST",
+                                             "departureTime":  "2027-01-26T08:15:00",
+                                             "arrivalTime":  "2027-01-26T14:40:00",
+                                             "durationSeconds":  41100,
+                                             "stops":  0,
+                                             "route":  [
+                                                           "KUL",
+                                                           "IST"
+                                                       ],
+                                             "cabinClass":  "Economy",
+                                             "segments":  [
+                                                              {
+                                                                  "from":  "KUL",
+                                                                  "to":  "IST",
+                                                                  "fromCity":  "Kuala Lumpur",
+                                                                  "toCity":  "Istanbul",
+                                                                  "fromName":  "Kuala Lumpur International",
+                                                                  "toName":  "Istanbul Airport",
+                                                                  "fromCountry":  "Malaysia",
+                                                                  "toCountry":  "Turkey",
+                                                                  "departureTime":  "2027-01-26T08:15:00",
+                                                                  "arrivalTime":  "2027-01-26T14:40:00",
+                                                                  "durationSeconds":  41100,
+                                                                  "carrier":  "TK",
+                                                                  "carrierName":  "Turkish Airlines",
+                                                                  "flightNumber":  "TK63",
+                                                                  "cabinClass":  "Economy"
+                                                              }
+                                                          ]
+                                         },
+                            "inbound":  {
+                                            "from":  "IST",
+                                            "to":  "KUL",
+                                            "departureTime":  "2027-02-02T01:50:00",
+                                            "arrivalTime":  "2027-02-02T17:20:00",
+                                            "durationSeconds":  37800,
+                                            "stops":  0,
+                                            "route":  [
+                                                          "IST",
+                                                          "KUL"
+                                                      ],
+                                            "cabinClass":  "Economy",
+                                            "segments":  [
+                                                             {
+                                                                 "from":  "IST",
+                                                                 "to":  "KUL",
+                                                                 "fromCity":  "Istanbul",
+                                                                 "toCity":  "Kuala Lumpur",
+                                                                 "fromName":  "Istanbul Airport",
+                                                                 "toName":  "Kuala Lumpur International",
+                                                                 "fromCountry":  "Turkey",
+                                                                 "toCountry":  "Malaysia",
+                                                                 "departureTime":  "2027-02-02T01:50:00",
+                                                                 "arrivalTime":  "2027-02-02T17:20:00",
+                                                                 "durationSeconds":  37800,
+                                                                 "carrier":  "TK",
+                                                                 "carrierName":  "Turkish Airlines",
+                                                                 "flightNumber":  "TK60",
+                                                                 "cabinClass":  "Economy"
+                                                             }
+                                                         ]
+                                        }
+                        },
+                        {
+                            "id":  "10ff170f516d5175d0cc6957_0|10ff170f516d5175d0cc6957_1",
+                            "tripType":  "return",
+                            "price":  2216.0,
+                            "priceFormatted":  "2216 MYR",
+                            "totalDurationSeconds":  78000,
+                            "bookingUrl":  "https://kiwi.com/u/jwqbv8",
+                            "imageId":  "istanbul_tr",
+                            "baggage":  {
+                                            "personalItem":  1,
+                                            "cabinBag":  1,
+                                            "checkedBag":  1
+                                        },
+                            "outbound":  {
+                                             "from":  "KUL",
+                                             "to":  "IST",
+                                             "departureTime":  "2027-01-27T23:45:00",
+                                             "arrivalTime":  "2027-01-28T06:10:00",
+                                             "durationSeconds":  41100,
+                                             "stops":  0,
+                                             "route":  [
+                                                           "KUL",
+                                                           "IST"
+                                                       ],
+                                             "cabinClass":  "Economy",
+                                             "segments":  [
+                                                              {
+                                                                  "from":  "KUL",
+                                                                  "to":  "IST",
+                                                                  "fromCity":  "Kuala Lumpur",
+                                                                  "toCity":  "Istanbul",
+                                                                  "fromName":  "Kuala Lumpur International",
+                                                                  "toName":  "Istanbul Airport",
+                                                                  "fromCountry":  "Malaysia",
+                                                                  "toCountry":  "Turkey",
+                                                                  "departureTime":  "2027-01-27T23:45:00",
+                                                                  "arrivalTime":  "2027-01-28T06:10:00",
+                                                                  "durationSeconds":  41100,
+                                                                  "carrier":  "TK",
+                                                                  "carrierName":  "Turkish Airlines",
+                                                                  "flightNumber":  "TK61",
+                                                                  "cabinClass":  "Economy"
+                                                              }
+                                                          ]
+                                         },
+                            "inbound":  {
+                                            "from":  "IST",
+                                            "to":  "KUL",
+                                            "departureTime":  "2027-02-04T15:20:00",
+                                            "arrivalTime":  "2027-02-05T06:35:00",
+                                            "durationSeconds":  36900,
+                                            "stops":  0,
+                                            "route":  [
+                                                          "IST",
+                                                          "KUL"
+                                                      ],
+                                            "cabinClass":  "Economy",
+                                            "segments":  [
+                                                             {
+                                                                 "from":  "IST",
+                                                                 "to":  "KUL",
+                                                                 "fromCity":  "Istanbul",
+                                                                 "toCity":  "Kuala Lumpur",
+                                                                 "fromName":  "Istanbul Airport",
+                                                                 "toName":  "Kuala Lumpur International",
+                                                                 "fromCountry":  "Turkey",
+                                                                 "toCountry":  "Malaysia",
+                                                                 "departureTime":  "2027-02-04T15:20:00",
+                                                                 "arrivalTime":  "2027-02-05T06:35:00",
+                                                                 "durationSeconds":  36900,
+                                                                 "carrier":  "TK",
+                                                                 "carrierName":  "Turkish Airlines",
+                                                                 "flightNumber":  "TK62",
+                                                                 "cabinClass":  "Economy"
+                                                             }
+                                                         ]
+                                        }
+                        },
+                        {
+                            "id":  "10ff170f516d51753ec2087b_0|10ff170f516d51753ec2087b_1",
+                            "tripType":  "return",
+                            "price":  2216.0,
+                            "priceFormatted":  "2216 MYR",
+                            "totalDurationSeconds":  78900,
+                            "bookingUrl":  "https://kiwi.com/u/nhu6cr",
+                            "imageId":  "istanbul_tr",
+                            "baggage":  {
+                                            "personalItem":  1,
+                                            "cabinBag":  1,
+                                            "checkedBag":  1
+                                        },
+                            "outbound":  {
+                                             "from":  "KUL",
+                                             "to":  "IST",
+                                             "departureTime":  "2027-01-27T23:45:00",
+                                             "arrivalTime":  "2027-01-28T06:10:00",
+                                             "durationSeconds":  41100,
+                                             "stops":  0,
+                                             "route":  [
+                                                           "KUL",
+                                                           "IST"
+                                                       ],
+                                             "cabinClass":  "Economy",
+                                             "segments":  [
+                                                              {
+                                                                  "from":  "KUL",
+                                                                  "to":  "IST",
+                                                                  "fromCity":  "Kuala Lumpur",
+                                                                  "toCity":  "Istanbul",
+                                                                  "fromName":  "Kuala Lumpur International",
+                                                                  "toName":  "Istanbul Airport",
+                                                                  "fromCountry":  "Malaysia",
+                                                                  "toCountry":  "Turkey",
+                                                                  "departureTime":  "2027-01-27T23:45:00",
+                                                                  "arrivalTime":  "2027-01-28T06:10:00",
+                                                                  "durationSeconds":  41100,
+                                                                  "carrier":  "TK",
+                                                                  "carrierName":  "Turkish Airlines",
+                                                                  "flightNumber":  "TK61",
+                                                                  "cabinClass":  "Economy"
+                                                              }
+                                                          ]
+                                         },
+                            "inbound":  {
+                                            "from":  "IST",
+                                            "to":  "KUL",
+                                            "departureTime":  "2027-02-04T01:50:00",
+                                            "arrivalTime":  "2027-02-04T17:20:00",
+                                            "durationSeconds":  37800,
+                                            "stops":  0,
+                                            "route":  [
+                                                          "IST",
+                                                          "KUL"
+                                                      ],
+                                            "cabinClass":  "Economy",
+                                            "segments":  [
+                                                             {
+                                                                 "from":  "IST",
+                                                                 "to":  "KUL",
+                                                                 "fromCity":  "Istanbul",
+                                                                 "toCity":  "Kuala Lumpur",
+                                                                 "fromName":  "Istanbul Airport",
+                                                                 "toName":  "Kuala Lumpur International",
+                                                                 "fromCountry":  "Turkey",
+                                                                 "toCountry":  "Malaysia",
+                                                                 "departureTime":  "2027-02-04T01:50:00",
+                                                                 "arrivalTime":  "2027-02-04T17:20:00",
+                                                                 "durationSeconds":  37800,
+                                                                 "carrier":  "TK",
+                                                                 "carrierName":  "Turkish Airlines",
+                                                                 "flightNumber":  "TK60",
+                                                                 "cabinClass":  "Economy"
+                                                             }
+                                                         ]
+                                        }
+                        },
+                        {
+                            "id":  "10ff170f516c51745e2dbdef_0|10ff170f516c51745e2dbdef_1",
+                            "tripType":  "return",
+                            "price":  2295.0,
+                            "priceFormatted":  "2295 MYR",
+                            "totalDurationSeconds":  78000,
+                            "bookingUrl":  "https://kiwi.com/u/3sc8nr",
+                            "imageId":  "istanbul_tr",
+                            "baggage":  {
+                                            "personalItem":  1,
+                                            "cabinBag":  1,
+                                            "checkedBag":  1
+                                        },
+                            "outbound":  {
+                                             "from":  "KUL",
+                                             "to":  "IST",
+                                             "departureTime":  "2027-01-26T23:45:00",
+                                             "arrivalTime":  "2027-01-27T06:10:00",
+                                             "durationSeconds":  41100,
+                                             "stops":  0,
+                                             "route":  [
+                                                           "KUL",
+                                                           "IST"
+                                                       ],
+                                             "cabinClass":  "Economy",
+                                             "segments":  [
+                                                              {
+                                                                  "from":  "KUL",
+                                                                  "to":  "IST",
+                                                                  "fromCity":  "Kuala Lumpur",
+                                                                  "toCity":  "Istanbul",
+                                                                  "fromName":  "Kuala Lumpur International",
+                                                                  "toName":  "Istanbul Airport",
+                                                                  "fromCountry":  "Malaysia",
+                                                                  "toCountry":  "Turkey",
+                                                                  "departureTime":  "2027-01-26T23:45:00",
+                                                                  "arrivalTime":  "2027-01-27T06:10:00",
+                                                                  "durationSeconds":  41100,
+                                                                  "carrier":  "TK",
+                                                                  "carrierName":  "Turkish Airlines",
+                                                                  "flightNumber":  "TK61",
+                                                                  "cabinClass":  "Economy"
+                                                              }
+                                                          ]
+                                         },
+                            "inbound":  {
+                                            "from":  "IST",
+                                            "to":  "KUL",
+                                            "departureTime":  "2027-02-03T15:20:00",
+                                            "arrivalTime":  "2027-02-04T06:35:00",
+                                            "durationSeconds":  36900,
+                                            "stops":  0,
+                                            "route":  [
+                                                          "IST",
+                                                          "KUL"
+                                                      ],
+                                            "cabinClass":  "Economy",
+                                            "segments":  [
+                                                             {
+                                                                 "from":  "IST",
+                                                                 "to":  "KUL",
+                                                                 "fromCity":  "Istanbul",
+                                                                 "toCity":  "Kuala Lumpur",
+                                                                 "fromName":  "Istanbul Airport",
+                                                                 "toName":  "Kuala Lumpur International",
+                                                                 "fromCountry":  "Turkey",
+                                                                 "toCountry":  "Malaysia",
+                                                                 "departureTime":  "2027-02-03T15:20:00",
+                                                                 "arrivalTime":  "2027-02-04T06:35:00",
+                                                                 "durationSeconds":  36900,
+                                                                 "carrier":  "TK",
+                                                                 "carrierName":  "Turkish Airlines",
+                                                                 "flightNumber":  "TK62",
+                                                                 "cabinClass":  "Economy"
+                                                             }
+                                                         ]
+                                        }
+                        },
+                        {
+                            "id":  "10ff170f516c5174b023dcc3_0|10ff170f516c5174b023dcc3_1",
+                            "tripType":  "return",
+                            "price":  2386.0,
+                            "priceFormatted":  "2386 MYR",
+                            "totalDurationSeconds":  78900,
+                            "bookingUrl":  "https://kiwi.com/u/3jpfpmy",
+                            "imageId":  "istanbul_tr",
+                            "baggage":  {
+                                            "personalItem":  1,
+                                            "cabinBag":  1,
+                                            "checkedBag":  1
+                                        },
+                            "outbound":  {
+                                             "from":  "KUL",
+                                             "to":  "IST",
+                                             "departureTime":  "2027-01-26T23:45:00",
+                                             "arrivalTime":  "2027-01-27T06:10:00",
+                                             "durationSeconds":  41100,
+                                             "stops":  0,
+                                             "route":  [
+                                                           "KUL",
+                                                           "IST"
+                                                       ],
+                                             "cabinClass":  "Economy",
+                                             "segments":  [
+                                                              {
+                                                                  "from":  "KUL",
+                                                                  "to":  "IST",
+                                                                  "fromCity":  "Kuala Lumpur",
+                                                                  "toCity":  "Istanbul",
+                                                                  "fromName":  "Kuala Lumpur International",
+                                                                  "toName":  "Istanbul Airport",
+                                                                  "fromCountry":  "Malaysia",
+                                                                  "toCountry":  "Turkey",
+                                                                  "departureTime":  "2027-01-26T23:45:00",
+                                                                  "arrivalTime":  "2027-01-27T06:10:00",
+                                                                  "durationSeconds":  41100,
+                                                                  "carrier":  "TK",
+                                                                  "carrierName":  "Turkish Airlines",
+                                                                  "flightNumber":  "TK61",
+                                                                  "cabinClass":  "Economy"
+                                                              }
+                                                          ]
+                                         },
+                            "inbound":  {
+                                            "from":  "IST",
+                                            "to":  "KUL",
+                                            "departureTime":  "2027-02-03T01:50:00",
+                                            "arrivalTime":  "2027-02-03T17:20:00",
+                                            "durationSeconds":  37800,
+                                            "stops":  0,
+                                            "route":  [
+                                                          "IST",
+                                                          "KUL"
+                                                      ],
+                                            "cabinClass":  "Economy",
+                                            "segments":  [
+                                                             {
+                                                                 "from":  "IST",
+                                                                 "to":  "KUL",
+                                                                 "fromCity":  "Istanbul",
+                                                                 "toCity":  "Kuala Lumpur",
+                                                                 "fromName":  "Istanbul Airport",
+                                                                 "toName":  "Kuala Lumpur International",
+                                                                 "fromCountry":  "Turkey",
+                                                                 "toCountry":  "Malaysia",
+                                                                 "departureTime":  "2027-02-03T01:50:00",
+                                                                 "arrivalTime":  "2027-02-03T17:20:00",
+                                                                 "durationSeconds":  37800,
+                                                                 "carrier":  "TK",
+                                                                 "carrierName":  "Turkish Airlines",
+                                                                 "flightNumber":  "TK60",
+                                                                 "cabinClass":  "Economy"
+                                                             }
+                                                         ]
+                                        }
+                        },
+                        {
+                            "id":  "10ff170f516c00004bac64a6_0|1db810ff5174000050de4382_0",
+                            "tripType":  "return",
+                            "price":  2452.949952,
+                            "priceFormatted":  "2453 MYR",
+                            "totalDurationSeconds":  78600,
+                            "bookingUrl":  "https://kiwi.com/u/dwhxt4",
+                            "imageId":  "istanbul_tr",
+                            "baggage":  {
+                                            "personalItem":  0,
+                                            "cabinBag":  1,
+                                            "checkedBag":  1
+                                        },
+                            "outbound":  {
+                                             "from":  "KUL",
+                                             "to":  "IST",
+                                             "departureTime":  "2027-01-26T08:15:00",
+                                             "arrivalTime":  "2027-01-26T14:40:00",
+                                             "durationSeconds":  41100,
+                                             "stops":  0,
+                                             "route":  [
+                                                           "KUL",
+                                                           "IST"
+                                                       ],
+                                             "cabinClass":  "Economy",
+                                             "segments":  [
+                                                              {
+                                                                  "from":  "KUL",
+                                                                  "to":  "IST",
+                                                                  "fromCity":  "Kuala Lumpur",
+                                                                  "toCity":  "Istanbul",
+                                                                  "fromName":  "Kuala Lumpur International",
+                                                                  "toName":  "Istanbul Airport",
+                                                                  "fromCountry":  "Malaysia",
+                                                                  "toCountry":  "Turkey",
+                                                                  "departureTime":  "2027-01-26T08:15:00",
+                                                                  "arrivalTime":  "2027-01-26T14:40:00",
+                                                                  "durationSeconds":  41100,
+                                                                  "carrier":  "TK",
+                                                                  "carrierName":  "Turkish Airlines",
+                                                                  "flightNumber":  "TK63",
+                                                                  "cabinClass":  "Economy"
+                                                              }
+                                                          ]
+                                         },
+                            "inbound":  {
+                                            "from":  "SAW",
+                                            "to":  "KUL",
+                                            "departureTime":  "2027-02-03T17:20:00",
+                                            "arrivalTime":  "2027-02-04T08:45:00",
+                                            "durationSeconds":  37500,
+                                            "stops":  0,
+                                            "route":  [
+                                                          "SAW",
+                                                          "KUL"
+                                                      ],
+                                            "cabinClass":  "Economy",
+                                            "segments":  [
+                                                             {
+                                                                 "from":  "SAW",
+                                                                 "to":  "KUL",
+                                                                 "fromCity":  "Istanbul",
+                                                                 "toCity":  "Kuala Lumpur",
+                                                                 "fromName":  "Sabiha GÃ¶kÃ§en International",
+                                                                 "toName":  "Kuala Lumpur International",
+                                                                 "fromCountry":  "Turkey",
+                                                                 "toCountry":  "Malaysia",
+                                                                 "departureTime":  "2027-02-03T17:20:00",
+                                                                 "arrivalTime":  "2027-02-04T08:45:00",
+                                                                 "durationSeconds":  37500,
+                                                                 "carrier":  "D7",
+                                                                 "carrierName":  "AirAsia X",
+                                                                 "flightNumber":  "D7605",
+                                                                 "cabinClass":  "Economy"
+                                                             }
+                                                         ]
+                                        }
+                        },
+                        {
+                            "id":  "10ff170f516d000009291870_0|1db810ff5174000050de4382_0",
+                            "tripType":  "return",
+                            "price":  2452.949952,
+                            "priceFormatted":  "2453 MYR",
+                            "totalDurationSeconds":  78600,
+                            "bookingUrl":  "https://kiwi.com/u/hxssqn",
+                            "imageId":  "istanbul_tr",
+                            "baggage":  {
+                                            "personalItem":  0,
+                                            "cabinBag":  1,
+                                            "checkedBag":  1
+                                        },
+                            "outbound":  {
+                                             "from":  "KUL",
+                                             "to":  "IST",
+                                             "departureTime":  "2027-01-27T08:15:00",
+                                             "arrivalTime":  "2027-01-27T14:40:00",
+                                             "durationSeconds":  41100,
+                                             "stops":  0,
+                                             "route":  [
+                                                           "KUL",
+                                                           "IST"
+                                                       ],
+                                             "cabinClass":  "Economy",
+                                             "segments":  [
+                                                              {
+                                                                  "from":  "KUL",
+                                                                  "to":  "IST",
+                                                                  "fromCity":  "Kuala Lumpur",
+                                                                  "toCity":  "Istanbul",
+                                                                  "fromName":  "Kuala Lumpur International",
+                                                                  "toName":  "Istanbul Airport",
+                                                                  "fromCountry":  "Malaysia",
+                                                                  "toCountry":  "Turkey",
+                                                                  "departureTime":  "2027-01-27T08:15:00",
+                                                                  "arrivalTime":  "2027-01-27T14:40:00",
+                                                                  "durationSeconds":  41100,
+                                                                  "carrier":  "TK",
+                                                                  "carrierName":  "Turkish Airlines",
+                                                                  "flightNumber":  "TK63",
+                                                                  "cabinClass":  "Economy"
+                                                              }
+                                                          ]
+                                         },
+                            "inbound":  {
+                                            "from":  "SAW",
+                                            "to":  "KUL",
+                                            "departureTime":  "2027-02-03T17:20:00",
+                                            "arrivalTime":  "2027-02-04T08:45:00",
+                                            "durationSeconds":  37500,
+                                            "stops":  0,
+                                            "route":  [
+                                                          "SAW",
+                                                          "KUL"
+                                                      ],
+                                            "cabinClass":  "Economy",
+                                            "segments":  [
+                                                             {
+                                                                 "from":  "SAW",
+                                                                 "to":  "KUL",
+                                                                 "fromCity":  "Istanbul",
+                                                                 "toCity":  "Kuala Lumpur",
+                                                                 "fromName":  "Sabiha GÃ¶kÃ§en International",
+                                                                 "toName":  "Kuala Lumpur International",
+                                                                 "fromCountry":  "Turkey",
+                                                                 "toCountry":  "Malaysia",
+                                                                 "departureTime":  "2027-02-03T17:20:00",
+                                                                 "arrivalTime":  "2027-02-04T08:45:00",
+                                                                 "durationSeconds":  37500,
+                                                                 "carrier":  "D7",
+                                                                 "carrierName":  "AirAsia X",
+                                                                 "flightNumber":  "D7605",
+                                                                 "cabinClass":  "Economy"
+                                                             }
+                                                         ]
+                                        }
+                        },
+                        {
+                            "id":  "10ff170f5172517aa7fcf057_0|10ff170f5172517aa7fcf057_1",
+                            "tripType":  "return",
+                            "price":  2533.0,
+                            "priceFormatted":  "2533 MYR",
+                            "totalDurationSeconds":  78000,
+                            "bookingUrl":  "https://kiwi.com/u/wgtt66",
+                            "imageId":  "istanbul_tr",
+                            "baggage":  {
+                                            "personalItem":  1,
+                                            "cabinBag":  1,
+                                            "checkedBag":  1
+                                        },
+                            "outbound":  {
+                                             "from":  "KUL",
+                                             "to":  "IST",
+                                             "departureTime":  "2027-02-01T08:15:00",
+                                             "arrivalTime":  "2027-02-01T14:40:00",
+                                             "durationSeconds":  41100,
+                                             "stops":  0,
+                                             "route":  [
+                                                           "KUL",
+                                                           "IST"
+                                                       ],
+                                             "cabinClass":  "Economy",
+                                             "segments":  [
+                                                              {
+                                                                  "from":  "KUL",
+                                                                  "to":  "IST",
+                                                                  "fromCity":  "Kuala Lumpur",
+                                                                  "toCity":  "Istanbul",
+                                                                  "fromName":  "Kuala Lumpur International",
+                                                                  "toName":  "Istanbul Airport",
+                                                                  "fromCountry":  "Malaysia",
+                                                                  "toCountry":  "Turkey",
+                                                                  "departureTime":  "2027-02-01T08:15:00",
+                                                                  "arrivalTime":  "2027-02-01T14:40:00",
+                                                                  "durationSeconds":  41100,
+                                                                  "carrier":  "TK",
+                                                                  "carrierName":  "Turkish Airlines",
+                                                                  "flightNumber":  "TK63",
+                                                                  "cabinClass":  "Economy"
+                                                              }
+                                                          ]
+                                         },
+                            "inbound":  {
+                                            "from":  "IST",
+                                            "to":  "KUL",
+                                            "departureTime":  "2027-02-09T15:20:00",
+                                            "arrivalTime":  "2027-02-10T06:35:00",
+                                            "durationSeconds":  36900,
+                                            "stops":  0,
+                                            "route":  [
+                                                          "IST",
+                                                          "KUL"
+                                                      ],
+                                            "cabinClass":  "Economy",
+                                            "segments":  [
+                                                             {
+                                                                 "from":  "IST",
+                                                                 "to":  "KUL",
+                                                                 "fromCity":  "Istanbul",
+                                                                 "toCity":  "Kuala Lumpur",
+                                                                 "fromName":  "Istanbul Airport",
+                                                                 "toName":  "Kuala Lumpur International",
+                                                                 "fromCountry":  "Turkey",
+                                                                 "toCountry":  "Malaysia",
+                                                                 "departureTime":  "2027-02-09T15:20:00",
+                                                                 "arrivalTime":  "2027-02-10T06:35:00",
+                                                                 "durationSeconds":  36900,
+                                                                 "carrier":  "TK",
+                                                                 "carrierName":  "Turkish Airlines",
+                                                                 "flightNumber":  "TK62",
+                                                                 "cabinClass":  "Economy"
+                                                             }
+                                                         ]
+                                        }
+                        }
+                    ],
+    "searchTimeMs":  734,
+    "error":  null
+}

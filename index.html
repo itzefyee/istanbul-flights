@@ -123,7 +123,63 @@ footer p{max-width:60ch}
   @keyframes settle{from{opacity:0;transform:translateY(14px);filter:blur(6px)}to{opacity:1;transform:none;filter:none}}
 }
 @media print{header{border-bottom-width:2px}.btn{border:2px solid var(--ink)}a{text-decoration:none}}
-</style>
+
+/* date picker */
+.picker{padding-top:clamp(2rem,5vw,3.5rem)}
+.picker-head{display:flex;flex-wrap:wrap;gap:1rem 2rem;align-items:flex-end;justify-content:space-between;margin-bottom:1.25rem}
+.picker-head h2{margin:0}
+.picker-head p{margin:.5rem 0 0}
+.ghost{font:700 1rem/1 var(--display);letter-spacing:.1em;text-transform:uppercase;background:transparent;color:var(--ink);border:2px solid var(--ink);padding:.8rem 1.1rem;cursor:pointer;transition:background .2s var(--ease),color .2s var(--ease)}
+.ghost:hover{background:var(--ink);color:var(--yellow)}
+.pk{display:grid;gap:0;border:2px solid var(--ink);background:var(--white)}
+@media(min-width:62rem){.pk{grid-template-columns:minmax(0,1fr) 21rem}}
+.pk-cal{padding:clamp(1rem,2.5vw,1.75rem);min-width:0}
+.pk-nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-bottom:1rem}
+.pk-nav .range{font:600 .85rem/1 var(--display);letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2)}
+.nav-btn{width:2.75rem;height:2.75rem;display:grid;place-items:center;background:var(--white);border:2px solid var(--ink);cursor:pointer;color:var(--ink);transition:background .2s var(--ease),color .2s var(--ease)}
+.nav-btn:hover:not(:disabled){background:var(--ink);color:var(--yellow)}
+.nav-btn:disabled{opacity:.28;cursor:not-allowed}
+.months{display:grid;gap:1.75rem;grid-template-columns:minmax(0,1fr)}
+@media(min-width:44rem){.months.two{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.month h3{display:flex;justify-content:space-between;align-items:baseline;gap:.5rem;margin:0 0 .6rem;font:700 1.45rem/1 var(--display);text-transform:uppercase;letter-spacing:.03em}
+.month h3 small{font:600 .85rem/1 var(--display);letter-spacing:.1em;color:var(--ink-2)}
+.grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:3px}
+.dow{font:600 .75rem/1 var(--display);letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);text-align:center;padding:.35rem 0}
+.day{position:relative;display:flex;flex-direction:column;justify-content:space-between;align-items:center;gap:.15rem;min-height:3.35rem;padding:.4rem .1rem .35rem;border:2px solid transparent;background:var(--white);color:var(--ink);font:500 .9rem/1 var(--body);cursor:pointer;transition:background .15s var(--ease),border-color .15s var(--ease),transform .15s var(--ease)}
+.day .n{font-weight:600}
+.day .pr{font:600 .72rem/1 var(--body);letter-spacing:0;font-variant-numeric:tabular-nums}
+.day.low{background:var(--yellow)}
+.day.mid{background:var(--white);border-color:var(--rule)}
+.day.high{background:#ecebe3;color:var(--ink-2)}
+.day.low .pr{font-weight:700}
+.day:hover:not(:disabled){border-color:var(--ink)}
+.day:active:not(:disabled){transform:scale(.97)}
+.day.na,.day.out{background:transparent;border-color:transparent;color:#a9a79a;cursor:default}
+.day.na .pr{font-weight:400}
+.day.best::after{content:"";position:absolute;top:3px;right:3px;width:0;height:0;border-left:7px solid transparent;border-top:7px solid var(--ink)}
+.day[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--yellow)}
+.day[aria-pressed="true"].best::after{border-top-color:var(--yellow)}
+.day.blank{visibility:hidden}
+.legend{display:flex;flex-wrap:wrap;gap:.6rem 1.25rem;margin-top:1.25rem;padding-top:1rem;border-top:1px solid var(--rule);font-size:.85rem;color:var(--ink-2)}
+.legend span{display:inline-flex;align-items:center;gap:.45rem}
+.sw{width:1rem;height:1rem;border:2px solid transparent;display:inline-block}
+.sw.low{background:var(--yellow)}.sw.mid{background:var(--white);border-color:var(--rule)}.sw.high{background:#ecebe3}
+.sw.best{background:var(--white);border-color:var(--rule);position:relative}
+.sw.best::after{content:"";position:absolute;top:0;right:0;border-left:7px solid transparent;border-top:7px solid var(--ink)}
+.pk-fare{background:var(--ink);color:var(--white);padding:clamp(1.25rem,3vw,1.75rem);display:flex;flex-direction:column;gap:1rem}
+.pk-fare h3{color:var(--yellow);margin:0;font-size:1.1rem;letter-spacing:.14em}
+.pk-fare .big{font:700 4rem/.85 var(--display);color:var(--yellow);letter-spacing:-.01em}
+.pk-fare .big small{font-size:.32em;letter-spacing:.08em;color:var(--white);margin-right:.35em}
+.pk-fare .verdict-line{font:600 .85rem/1.2 var(--display);letter-spacing:.12em;text-transform:uppercase;color:#d9d8cf}
+.pk-fare dl{margin:0;display:grid;gap:.1rem;border-top:1px solid #55534a}
+.pk-fare dl div{display:grid;grid-template-columns:5.2rem 1fr;gap:.75rem;padding:.65rem 0;border-bottom:1px solid #55534a;align-items:baseline}
+.pk-fare dt{font:600 .78rem/1 var(--display);letter-spacing:.14em;text-transform:uppercase;color:#d9d8cf}
+.pk-fare dd{margin:0;font-weight:500}
+.pk-fare dd span{display:block;font-size:.88rem;color:#d9d8cf;font-weight:400}
+.pk-fare .btn{justify-content:center;margin-top:auto}
+.pk-fare .note{font-size:.82rem;color:#d9d8cf;margin:0}
+.pk-fare .empty{color:#d9d8cf;margin:0}
+@media(prefers-reduced-motion:reduce){.day,.nav-btn,.ghost{transition:none}}</style>
 </head>
 <body>
 
@@ -131,7 +187,7 @@ footer p{max-width:60ch}
   <div class="wrap">
     <div class="top"><span>Fare report</span><span>Searched 16 Nov 2026 &middot; all prices MYR, 1 adult, economy</span></div>
     <h1>KUL <span class="arrow" aria-hidden="true">&rarr;</span><span style="position:absolute;left:-9999px">to</span> Istanbul</h1>
-    <p class="lede">Non-stop flights exist. Turkish Airlines flies Kuala Lumpur to Istanbul direct, and the cheapest return is <strong>MYR 1,925</strong> with a checked bag included.</p>
+    <p class="lede">Non-stop flights exist. Turkish Airlines flies Kuala Lumpur to Istanbul direct, and the cheapest return is <strong>MYR 1,925</strong> with a checked bag included. Pick a date below to see the price and flights.</p>
     <dl class="params">
       <div><dt>Route</dt><dd>KUL &harr; IST / SAW</dd></div>
       <div><dt>Depart between</dt><dd>17 Nov 2026 &ndash; 30 Apr 2027</dd></div>
@@ -144,6 +200,34 @@ footer p{max-width:60ch}
 
 <main class="wrap">
 
+    <section class="picker" aria-labelledby="pick-date">
+    <div class="picker-head">
+      <div>
+        <h2 id="pick-date">Pick a departure date</h2>
+        <p class="small">Cheapest non-stop return fare for each day, 7-8 nights, with one checked bag included. Select a date to see the flights.</p>
+      </div>
+      <button type="button" class="ghost" id="jump-cheapest">Jump to cheapest</button>
+    </div>
+    <div class="pk">
+      <div class="pk-cal">
+        <div class="pk-nav">
+          <button type="button" class="nav-btn" id="prev" aria-label="Previous months"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square"><path d="M11.5 3.5 6 9l5.5 5.5"/></svg></button>
+          <span class="range" id="range"></span>
+          <button type="button" class="nav-btn" id="next" aria-label="Next months"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square"><path d="M6.5 3.5 12 9l-5.5 5.5"/></svg></button>
+        </div>
+        <div class="months" id="months"></div>
+        <div class="legend" aria-hidden="true">
+          <span><i class="sw low"></i>Cheaper</span>
+          <span><i class="sw mid"></i>Typical</span>
+          <span><i class="sw high"></i>Higher</span>
+          <span><i class="sw best"></i>Lowest of the window</span>
+          <span>&ndash; No fare found</span>
+          <span>Prices in MYR</span>
+        </div>
+      </div>
+      <aside class="pk-fare" id="fare" aria-live="polite"></aside>
+    </div>
+  </section>
   <section aria-labelledby="pick">
     <h2 id="pick">Best fare: Turkish Airlines direct, MYR 1,925</h2>
     <div class="pick">
@@ -175,21 +259,21 @@ footer p{max-width:60ch}
         <caption>Non-stop return fares KUL-IST, Turkish Airlines. Bag price in brackets.</caption>
         <thead><tr><th>Airline and flights</th><th>Depart / return</th><th>Bags (checked)</th><th class="num">MYR</th><th>Book</th></tr></thead>
         <tbody>
-<tr><td><span class="route">Turkish Airlines</span><span class="sub">TKTK63 08:15-14:40 / TKTK62 15:20-06:35 (+1)</span></td><td>Tue 26 Jan 2027<span class="sub">return Tue 2 Feb 2027 (7 nights)</span></td><td><span class="bag-in">Included</span> (MYR 0)</td><td class="num price">1925</td><td><a class="link" href="https://kiwi.com/u/t8uurwt" target="_blank" rel="noopener noreferrer">Kiwi link</a></td></tr>
-<tr><td><span class="route">Turkish Airlines</span><span class="sub">TKTK63 08:15-14:40 / TKTK62 15:20-06:35 (+1)</span></td><td>Tue 9 Feb 2027<span class="sub">return Tue 16 Feb 2027 (7 nights)</span></td><td><span class="bag-in">Included</span> (MYR 0)</td><td class="num price">1925</td><td><a class="link" href="https://kiwi.com/u/d5x8jk" target="_blank" rel="noopener noreferrer">Kiwi link</a></td></tr>
-<tr><td><span class="route">Turkish Airlines</span><span class="sub">TKTK63 08:15-14:40 / TKTK62 15:20-06:35 (+1)</span></td><td>Thu 11 Feb 2027<span class="sub">return Thu 18 Feb 2027 (7 nights)</span></td><td><span class="bag-in">Included</span> (MYR 0)</td><td class="num price">1925</td><td><a class="link" href="https://kiwi.com/u/9k8nhtr" target="_blank" rel="noopener noreferrer">Kiwi link</a></td></tr>
-<tr><td><span class="route">Turkish Airlines</span><span class="sub">TKTK63 08:15-14:40 / TKTK62 15:20-06:35 (+1)</span></td><td>Wed 17 Feb 2027<span class="sub">return Wed 24 Feb 2027 (7 nights)</span></td><td><span class="bag-in">Included</span> (MYR 0)</td><td class="num price">1925</td><td><a class="link" href="https://kiwi.com/u/2r97tu" target="_blank" rel="noopener noreferrer">Kiwi link</a></td></tr>
-<tr><td><span class="route">Turkish Airlines</span><span class="sub">TKTK63 08:15-14:40 / TKTK62 15:20-06:35 (+1)</span></td><td>Thu 11 Mar 2027<span class="sub">return Thu 18 Mar 2027 (7 nights)</span></td><td><span class="bag-in">Included</span> (MYR 0)</td><td class="num price">1925</td><td><a class="link" href="https://kiwi.com/u/2fwyjv" target="_blank" rel="noopener noreferrer">Kiwi link</a></td></tr>
-<tr><td><span class="route">Turkish Airlines</span><span class="sub">TKTK63 08:15-14:40 / TKTK62 15:20-06:35 (+1)</span></td><td>Thu 11 Mar 2027<span class="sub">return Fri 19 Mar 2027 (8 nights)</span></td><td><span class="bag-in">Included</span> (MYR 0)</td><td class="num price">1925</td><td><a class="link" href="https://kiwi.com/u/muz3bmp" target="_blank" rel="noopener noreferrer">Kiwi link</a></td></tr>
-<tr><td><span class="route">Turkish Airlines</span><span class="sub">TKTK63 08:15-14:40 / TKTK62 16:00-07:15 (+1)</span></td><td>Sun 21 Mar 2027<span class="sub">return Mon 29 Mar 2027 (8 nights)</span></td><td><span class="bag-in">Included</span> (MYR 0)</td><td class="num price">1925</td><td><a class="link" href="https://kiwi.com/u/pvk733q" target="_blank" rel="noopener noreferrer">Kiwi link</a></td></tr>
-<tr><td><span class="route">Turkish Airlines</span><span class="sub">TKTK63 08:15-14:40 / TKTK62 16:00-07:15 (+1)</span></td><td>Tue 23 Mar 2027<span class="sub">return Tue 30 Mar 2027 (7 nights)</span></td><td><span class="bag-in">Included</span> (MYR 0)</td><td class="num price">1925</td><td><a class="link" href="https://kiwi.com/u/6k85xy" target="_blank" rel="noopener noreferrer">Kiwi link</a></td></tr>
-<tr><td><span class="route">Turkish Airlines</span><span class="sub">TKTK63 08:15-14:40 / TKTK62 16:00-07:15 (+1)</span></td><td>Wed 24 Mar 2027<span class="sub">return Wed 31 Mar 2027 (7 nights)</span></td><td><span class="bag-in">Included</span> (MYR 0)</td><td class="num price">1925</td><td><a class="link" href="https://kiwi.com/u/6w2fzs" target="_blank" rel="noopener noreferrer">Kiwi link</a></td></tr>
-<tr><td><span class="route">Turkish Airlines</span><span class="sub">TKTK63 08:55-14:50 / TKTK62 16:00-07:15 (+1)</span></td><td>Wed 7 Apr 2027<span class="sub">return Thu 15 Apr 2027 (8 nights)</span></td><td><span class="bag-in">Included</span> (MYR 0)</td><td class="num price">1936</td><td><a class="link" href="https://kiwi.com/u/tggc86" target="_blank" rel="noopener noreferrer">Kiwi link</a></td></tr>
-<tr><td><span class="route">Turkish Airlines</span><span class="sub">TKTK63 08:55-14:50 / TKTK62 16:00-07:15 (+1)</span></td><td>Thu 15 Apr 2027<span class="sub">return Fri 23 Apr 2027 (8 nights)</span></td><td><span class="bag-in">Included</span> (MYR 0)</td><td class="num price">1927</td><td><a class="link" href="https://kiwi.com/u/ng4tk4" target="_blank" rel="noopener noreferrer">Kiwi link</a></td></tr>
-<tr><td><span class="route">Turkish Airlines</span><span class="sub">TKTK63 08:55-14:50 / TKTK62 16:00-07:15 (+1)</span></td><td>Wed 21 Apr 2027<span class="sub">return Thu 29 Apr 2027 (8 nights)</span></td><td><span class="bag-in">Included</span> (MYR 0)</td><td class="num price">1925</td><td><a class="link" href="https://kiwi.com/u/v736mb" target="_blank" rel="noopener noreferrer">Kiwi link</a></td></tr>
-<tr><td><span class="route">Turkish Airlines</span><span class="sub">TKTK63 08:55-14:50 / TKTK62 16:00-07:15 (+1)</span></td><td>Thu 22 Apr 2027<span class="sub">return Fri 30 Apr 2027 (8 nights)</span></td><td><span class="bag-in">Included</span> (MYR 0)</td><td class="num price">1925</td><td><a class="link" href="https://kiwi.com/u/hrzp3c3" target="_blank" rel="noopener noreferrer">Kiwi link</a></td></tr>
-<tr><td><span class="route">Turkish Airlines</span><span class="sub">TKTK63 08:55-14:50 / TKTK62 16:00-07:15 (+1)</span></td><td>Wed 28 Apr 2027<span class="sub">return Wed 5 May 2027 (7 nights)</span></td><td><span class="bag-in">Included</span> (MYR 0)</td><td class="num price">1936</td><td><a class="link" href="https://kiwi.com/u/3zuyx6nj" target="_blank" rel="noopener noreferrer">Kiwi link</a></td></tr>
-<tr><td><span class="route">Turkish Airlines</span><span class="sub">TKTK63 08:55-14:50 / TKTK62 16:00-07:15 (+1)</span></td><td>Thu 29 Apr 2027<span class="sub">return Thu 6 May 2027 (7 nights)</span></td><td><span class="bag-in">Included</span> (MYR 0)</td><td class="num price">1936</td><td><a class="link" href="https://kiwi.com/u/hgrgtr" target="_blank" rel="noopener noreferrer">Kiwi link</a></td></tr>
+<tr><td><span class="route">Turkish Airlines</span><span class="sub">TK63 08:15-14:40 / TK62 15:20-06:35 (+1)</span></td><td>Tue 26 Jan 2027<span class="sub">return Tue 2 Feb 2027 (7 nights)</span></td><td><span class="bag-in">Included</span> (MYR 0)</td><td class="num price">1925</td><td><a class="link" href="https://kiwi.com/u/t8uurwt" target="_blank" rel="noopener noreferrer">Kiwi link</a></td></tr>
+<tr><td><span class="route">Turkish Airlines</span><span class="sub">TK63 08:15-14:40 / TK62 15:20-06:35 (+1)</span></td><td>Tue 9 Feb 2027<span class="sub">return Tue 16 Feb 2027 (7 nights)</span></td><td><span class="bag-in">Included</span> (MYR 0)</td><td class="num price">1925</td><td><a class="link" href="https://kiwi.com/u/d5x8jk" target="_blank" rel="noopener noreferrer">Kiwi link</a></td></tr>
+<tr><td><span class="route">Turkish Airlines</span><span class="sub">TK63 08:15-14:40 / TK62 15:20-06:35 (+1)</span></td><td>Thu 11 Feb 2027<span class="sub">return Thu 18 Feb 2027 (7 nights)</span></td><td><span class="bag-in">Included</span> (MYR 0)</td><td class="num price">1925</td><td><a class="link" href="https://kiwi.com/u/9k8nhtr" target="_blank" rel="noopener noreferrer">Kiwi link</a></td></tr>
+<tr><td><span class="route">Turkish Airlines</span><span class="sub">TK63 08:15-14:40 / TK62 15:20-06:35 (+1)</span></td><td>Wed 17 Feb 2027<span class="sub">return Wed 24 Feb 2027 (7 nights)</span></td><td><span class="bag-in">Included</span> (MYR 0)</td><td class="num price">1925</td><td><a class="link" href="https://kiwi.com/u/2r97tu" target="_blank" rel="noopener noreferrer">Kiwi link</a></td></tr>
+<tr><td><span class="route">Turkish Airlines</span><span class="sub">TK63 08:15-14:40 / TK62 15:20-06:35 (+1)</span></td><td>Thu 11 Mar 2027<span class="sub">return Thu 18 Mar 2027 (7 nights)</span></td><td><span class="bag-in">Included</span> (MYR 0)</td><td class="num price">1925</td><td><a class="link" href="https://kiwi.com/u/2fwyjv" target="_blank" rel="noopener noreferrer">Kiwi link</a></td></tr>
+<tr><td><span class="route">Turkish Airlines</span><span class="sub">TK63 08:15-14:40 / TK62 15:20-06:35 (+1)</span></td><td>Thu 11 Mar 2027<span class="sub">return Fri 19 Mar 2027 (8 nights)</span></td><td><span class="bag-in">Included</span> (MYR 0)</td><td class="num price">1925</td><td><a class="link" href="https://kiwi.com/u/muz3bmp" target="_blank" rel="noopener noreferrer">Kiwi link</a></td></tr>
+<tr><td><span class="route">Turkish Airlines</span><span class="sub">TK63 08:15-14:40 / TK62 16:00-07:15 (+1)</span></td><td>Sun 21 Mar 2027<span class="sub">return Mon 29 Mar 2027 (8 nights)</span></td><td><span class="bag-in">Included</span> (MYR 0)</td><td class="num price">1925</td><td><a class="link" href="https://kiwi.com/u/pvk733q" target="_blank" rel="noopener noreferrer">Kiwi link</a></td></tr>
+<tr><td><span class="route">Turkish Airlines</span><span class="sub">TK63 08:15-14:40 / TK62 16:00-07:15 (+1)</span></td><td>Tue 23 Mar 2027<span class="sub">return Tue 30 Mar 2027 (7 nights)</span></td><td><span class="bag-in">Included</span> (MYR 0)</td><td class="num price">1925</td><td><a class="link" href="https://kiwi.com/u/6k85xy" target="_blank" rel="noopener noreferrer">Kiwi link</a></td></tr>
+<tr><td><span class="route">Turkish Airlines</span><span class="sub">TK63 08:15-14:40 / TK62 16:00-07:15 (+1)</span></td><td>Wed 24 Mar 2027<span class="sub">return Wed 31 Mar 2027 (7 nights)</span></td><td><span class="bag-in">Included</span> (MYR 0)</td><td class="num price">1925</td><td><a class="link" href="https://kiwi.com/u/6w2fzs" target="_blank" rel="noopener noreferrer">Kiwi link</a></td></tr>
+<tr><td><span class="route">Turkish Airlines</span><span class="sub">TK63 08:55-14:50 / TK62 16:00-07:15 (+1)</span></td><td>Wed 7 Apr 2027<span class="sub">return Thu 15 Apr 2027 (8 nights)</span></td><td><span class="bag-in">Included</span> (MYR 0)</td><td class="num price">1936</td><td><a class="link" href="https://kiwi.com/u/tggc86" target="_blank" rel="noopener noreferrer">Kiwi link</a></td></tr>
+<tr><td><span class="route">Turkish Airlines</span><span class="sub">TK63 08:55-14:50 / TK62 16:00-07:15 (+1)</span></td><td>Thu 15 Apr 2027<span class="sub">return Fri 23 Apr 2027 (8 nights)</span></td><td><span class="bag-in">Included</span> (MYR 0)</td><td class="num price">1927</td><td><a class="link" href="https://kiwi.com/u/ng4tk4" target="_blank" rel="noopener noreferrer">Kiwi link</a></td></tr>
+<tr><td><span class="route">Turkish Airlines</span><span class="sub">TK63 08:55-14:50 / TK62 16:00-07:15 (+1)</span></td><td>Wed 21 Apr 2027<span class="sub">return Thu 29 Apr 2027 (8 nights)</span></td><td><span class="bag-in">Included</span> (MYR 0)</td><td class="num price">1925</td><td><a class="link" href="https://kiwi.com/u/v736mb" target="_blank" rel="noopener noreferrer">Kiwi link</a></td></tr>
+<tr><td><span class="route">Turkish Airlines</span><span class="sub">TK63 08:55-14:50 / TK62 16:00-07:15 (+1)</span></td><td>Thu 22 Apr 2027<span class="sub">return Fri 30 Apr 2027 (8 nights)</span></td><td><span class="bag-in">Included</span> (MYR 0)</td><td class="num price">1925</td><td><a class="link" href="https://kiwi.com/u/hrzp3c3" target="_blank" rel="noopener noreferrer">Kiwi link</a></td></tr>
+<tr><td><span class="route">Turkish Airlines</span><span class="sub">TK63 08:55-14:50 / TK62 16:00-07:15 (+1)</span></td><td>Wed 28 Apr 2027<span class="sub">return Wed 5 May 2027 (7 nights)</span></td><td><span class="bag-in">Included</span> (MYR 0)</td><td class="num price">1936</td><td><a class="link" href="https://kiwi.com/u/3zuyx6nj" target="_blank" rel="noopener noreferrer">Kiwi link</a></td></tr>
+<tr><td><span class="route">Turkish Airlines</span><span class="sub">TK63 08:55-14:50 / TK62 16:00-07:15 (+1)</span></td><td>Thu 29 Apr 2027<span class="sub">return Thu 6 May 2027 (7 nights)</span></td><td><span class="bag-in">Included</span> (MYR 0)</td><td class="num price">1936</td><td><a class="link" href="https://kiwi.com/u/hgrgtr" target="_blank" rel="noopener noreferrer">Kiwi link</a></td></tr>
 
         </tbody>
       </table>
@@ -225,10 +309,10 @@ footer p{max-width:60ch}
         <caption>Turkish Airlines direct, departures 17 Nov to 31 Dec 2026.</caption>
         <thead><tr><th>Airline and flights</th><th>Depart / return</th><th>Bags (checked)</th><th class="num">MYR</th><th>Book</th></tr></thead>
         <tbody>
-<tr><td><span class="route">Turkish Airlines</span><span class="sub">TKTK61 / TKTK60</span></td><td>Mon 30 Nov 2026<span class="sub">return Tue 8 Dec 2026 (8 nights)</span></td><td><span class="bag-in">Included</span> (MYR 0)</td><td class="num price">3192</td><td><a class="link" href="https://kiwi.com/u/g4x5q93" target="_blank" rel="noopener noreferrer">Kiwi link</a></td></tr>
-<tr><td><span class="route">Turkish Airlines</span><span class="sub">TKTK61 / TKTK62</span></td><td>Wed 30 Dec 2026<span class="sub">return Fri 8 Jan 2027 (9 nights)</span></td><td><span class="bag-in">Included</span> (MYR 0)</td><td class="num price">3330</td><td><a class="link" href="https://kiwi.com/u/p2hcx34" target="_blank" rel="noopener noreferrer">Kiwi link</a></td></tr>
-<tr><td><span class="route">Turkish Airlines</span><span class="sub">TKTK61 / TKTK60</span></td><td>Wed 30 Dec 2026<span class="sub">return Fri 8 Jan 2027 (9 nights)</span></td><td><span class="bag-in">Included</span> (MYR 0)</td><td class="num price">3330</td><td><a class="link" href="https://kiwi.com/u/vyycfhc" target="_blank" rel="noopener noreferrer">Kiwi link</a></td></tr>
-<tr><td><span class="route">Turkish Airlines</span><span class="sub">TKTK63 / TKTK60</span></td><td>Tue 29 Dec 2026<span class="sub">return Wed 6 Jan 2027 (8 nights)</span></td><td><span class="bag-in">Included</span> (MYR 0)</td><td class="num price">3383</td><td><a class="link" href="https://kiwi.com/u/czk9ubc" target="_blank" rel="noopener noreferrer">Kiwi link</a></td></tr>
+<tr><td><span class="route">Turkish Airlines</span><span class="sub">TK61 / TK60</span></td><td>Mon 30 Nov 2026<span class="sub">return Tue 8 Dec 2026 (8 nights)</span></td><td><span class="bag-in">Included</span> (MYR 0)</td><td class="num price">3192</td><td><a class="link" href="https://kiwi.com/u/g4x5q93" target="_blank" rel="noopener noreferrer">Kiwi link</a></td></tr>
+<tr><td><span class="route">Turkish Airlines</span><span class="sub">TK61 / TK62</span></td><td>Wed 30 Dec 2026<span class="sub">return Fri 8 Jan 2027 (9 nights)</span></td><td><span class="bag-in">Included</span> (MYR 0)</td><td class="num price">3330</td><td><a class="link" href="https://kiwi.com/u/p2hcx34" target="_blank" rel="noopener noreferrer">Kiwi link</a></td></tr>
+<tr><td><span class="route">Turkish Airlines</span><span class="sub">TK61 / TK60</span></td><td>Wed 30 Dec 2026<span class="sub">return Fri 8 Jan 2027 (9 nights)</span></td><td><span class="bag-in">Included</span> (MYR 0)</td><td class="num price">3330</td><td><a class="link" href="https://kiwi.com/u/vyycfhc" target="_blank" rel="noopener noreferrer">Kiwi link</a></td></tr>
+<tr><td><span class="route">Turkish Airlines</span><span class="sub">TK63 / TK60</span></td><td>Tue 29 Dec 2026<span class="sub">return Wed 6 Jan 2027 (8 nights)</span></td><td><span class="bag-in">Included</span> (MYR 0)</td><td class="num price">3383</td><td><a class="link" href="https://kiwi.com/u/czk9ubc" target="_blank" rel="noopener noreferrer">Kiwi link</a></td></tr>
 
         </tbody>
       </table>
@@ -242,6 +326,7 @@ footer p{max-width:60ch}
       <li>Destination was set to the city "Istanbul", which covers both IST and SAW. Departures 17 Nov 2026 to 30 Apr 2027, 7-8 nights, <code>max_sector_stopovers=0</code>, MYR.</li>
       <li>Searches: all airlines with 0 and 1 checked bags, all airlines excluding Turkish Airlines, AirAsia X only with 0 and 1 bags, and Turkish Airlines only for Nov to Dec.</li>
       <li>Kiwi does not price bags separately. Bag costs are the difference between the same itinerary searched with 0 and 1 checked bags.</li>
+      <li>The date picker comes from 24 weekly searches (non-stop only, 1 checked bag, 7-8 nights), keeping the cheapest return for each departure day. Kiwi returns 15 results per search, so days without a fare in the cheapest 15 of their week show a dash.</li>
       <li>Only 15 results come back per search, so some dates may be missing. Prices were not cross-checked against Google Flights.</li>
       <li>Fares change often. Reconfirm the price and bag allowance on the booking page before paying.</li>
     </ul>
@@ -269,6 +354,100 @@ footer p{max-width:60ch}
   </div>
 </footer>
 
-</body>
+
+<script>
+(function(){
+var DATA=[{"d":"2026-11-17","p":3550,"c":"TK","o":["TK63","10:10","16:40","IST"],"r":["TK62","2026-11-25","17:15","08:30","2026-11-26","IST"],"l":"https://kiwi.com/u/9mtg9q3"},{"d":"2026-11-18","p":3113,"c":"D7","o":["D7604","09:20","16:05","SAW"],"r":["D7605","2026-11-25","17:20","08:45","2026-11-26","SAW"],"l":"https://kiwi.com/u/vqkkq4"},{"d":"2026-11-20","p":3109,"c":"D7","o":["D7604","09:20","16:05","SAW"],"r":["D7605","2026-11-27","17:20","08:45","2026-11-28","SAW"],"l":"https://kiwi.com/u/cspw8h"},{"d":"2026-11-22","p":2599,"c":"D7","o":["D7604","09:20","16:05","SAW"],"r":["TK62","2026-11-29","17:15","08:30","2026-11-30","IST"],"l":"https://kiwi.com/u/5r5z4s3"},{"d":"2026-11-23","p":2556,"c":"D7","o":["D7604","09:20","16:05","SAW"],"r":["TK62","2026-12-01","17:15","08:30","2026-12-02","IST"],"l":"https://kiwi.com/u/x9rfcf"},{"d":"2026-11-25","p":2549,"c":"D7","o":["D7604","09:20","16:05","SAW"],"r":["TK62","2026-12-03","17:15","08:30","2026-12-04","IST"],"l":"https://kiwi.com/u/mcgsyu"},{"d":"2026-11-27","p":2740,"c":"D7","o":["D7604","09:20","16:05","SAW"],"r":["TK60","2026-12-04","01:50","17:20","2026-12-04","IST"],"l":"https://kiwi.com/u/9yfybhg"},{"d":"2026-11-29","p":2661,"c":"D7","o":["D7604","09:20","16:05","SAW"],"r":["TK462","2026-12-06","17:15","08:30","2026-12-07","IST"],"l":"https://kiwi.com/u/6ytfd3"},{"d":"2026-11-30","p":2654,"c":"D7","o":["D7604","09:20","16:05","SAW"],"r":["TK62","2026-12-07","15:20","06:35","2026-12-08","IST"],"l":"https://kiwi.com/u/h595tr"},{"d":"2026-12-01","p":4014,"c":"TK","o":["TK63","10:10","16:40","IST"],"r":["TK60","2026-12-08","01:50","17:20","2026-12-08","IST"],"l":"https://kiwi.com/u/5fdthv"},{"d":"2026-12-02","p":2850,"c":"D7","o":["D7604","09:20","16:05","SAW"],"r":["D7605","2026-12-09","17:20","08:45","2026-12-10","SAW"],"l":"https://kiwi.com/u/bk6j6k"},{"d":"2026-12-03","p":4867,"c":"TK","o":["TK63","10:10","16:40","IST"],"r":["TK60","2026-12-10","01:50","17:20","2026-12-10","IST"],"l":"https://kiwi.com/u/w86uyc"},{"d":"2026-12-04","p":3345,"c":"D7","o":["D7604","09:20","16:05","SAW"],"r":["D7605","2026-12-11","17:20","08:45","2026-12-12","SAW"],"l":"https://kiwi.com/u/kpsgjz"},{"d":"2026-12-06","p":2898,"c":"D7","o":["D7604","09:20","16:05","SAW"],"r":["D7605","2026-12-14","17:20","08:45","2026-12-15","SAW"],"l":"https://kiwi.com/u/fupztzr"},{"d":"2026-12-07","p":2747,"c":"D7","o":["D7604","09:20","16:05","SAW"],"r":["D7605","2026-12-14","17:20","08:45","2026-12-15","SAW"],"l":"https://kiwi.com/u/bk87yrw"},{"d":"2026-12-08","p":3683,"c":"TK","o":["TK61","23:45","06:10","IST"],"r":["D7605","2026-12-16","17:20","08:45","2026-12-17","SAW"],"l":"https://kiwi.com/u/365f8jn"},{"d":"2026-12-09","p":3006,"c":"D7","o":["D7604","09:20","16:05","SAW"],"r":["D7605","2026-12-16","17:20","08:45","2026-12-17","SAW"],"l":"https://kiwi.com/u/vh95uz"},{"d":"2026-12-10","p":4772,"c":"TK","o":["TK63","08:15","14:40","IST"],"r":["PCPC7615","2026-12-18","17:20","08:45","2026-12-19","SAW"],"l":"https://kiwi.com/u/kcp66w"},{"d":"2026-12-11","p":3464,"c":"D7","o":["D7604","09:20","16:05","SAW"],"r":["D7605","2026-12-18","17:20","08:45","2026-12-19","SAW"],"l":"https://kiwi.com/u/6kvtrg"},{"d":"2026-12-13","p":4066,"c":"D7","o":["D7604","09:20","16:05","SAW"],"r":["PCPC7615","2026-12-20","17:20","08:45","2026-12-21","SAW"],"l":"https://kiwi.com/u/gww9uxb"},{"d":"2026-12-14","p":4118,"c":"D7","o":["D7604","09:20","16:05","SAW"],"r":["D7605","2026-12-21","17:20","08:45","2026-12-22","SAW"],"l":"https://kiwi.com/u/dtfmxs4"},{"d":"2026-12-16","p":3824,"c":"D7","o":["D7604","09:20","16:05","SAW"],"r":["PCPC7615","2026-12-23","17:20","08:45","2026-12-24","SAW"],"l":"https://kiwi.com/u/qnmd2v"},{"d":"2026-12-18","p":3378,"c":"D7","o":["D7604","09:20","16:05","SAW"],"r":["D7605","2026-12-25","17:20","08:45","2026-12-26","SAW"],"l":"https://kiwi.com/u/srqb2j"},{"d":"2026-12-20","p":4227,"c":"D7","o":["D7604","09:20","16:05","SAW"],"r":["PCPC7615","2026-12-27","17:20","08:45","2026-12-28","SAW"],"l":"https://kiwi.com/u/582mvh2"},{"d":"2026-12-21","p":3949,"c":"D7","o":["D7604","09:20","16:05","SAW"],"r":["D7605","2026-12-28","17:20","08:45","2026-12-29","SAW"],"l":"https://kiwi.com/u/z73wn7"},{"d":"2026-12-25","p":3222,"c":"D7","o":["D7604","09:20","16:05","SAW"],"r":["D7605","2027-01-01","17:20","08:45","2027-01-02","SAW"],"l":"https://kiwi.com/u/xprdq7m"},{"d":"2026-12-26","p":3169,"c":"TK","o":["TK63","08:15","14:40","IST"],"r":["D7605","2027-01-03","17:20","08:45","2027-01-04","SAW"],"l":"https://kiwi.com/u/5vnndm2"},{"d":"2026-12-27","p":2746,"c":"D7","o":["D7604","09:20","16:05","SAW"],"r":["D7605","2027-01-04","17:20","08:45","2027-01-05","SAW"],"l":"https://kiwi.com/u/x8n4udt"},{"d":"2026-12-28","p":2811,"c":"TK","o":["TK61","23:45","06:10","IST"],"r":["D7605","2027-01-06","17:20","08:45","2027-01-07","SAW"],"l":"https://kiwi.com/u/ktqb7xh"},{"d":"2026-12-29","p":2605,"c":"TK","o":["TK63","08:15","14:40","IST"],"r":["D7605","2027-01-06","17:20","08:45","2027-01-07","SAW"],"l":"https://kiwi.com/u/2j6xv7"},{"d":"2026-12-30","p":2605,"c":"TK","o":["TK63","08:15","14:40","IST"],"r":["D7605","2027-01-06","17:20","08:45","2027-01-07","SAW"],"l":"https://kiwi.com/u/kwur38m"},{"d":"2026-12-31","p":3139,"c":"TK","o":["TK63","08:15","14:40","IST"],"r":["D7605","2027-01-08","17:20","08:45","2027-01-09","SAW"],"l":"https://kiwi.com/u/fw9nx9q"},{"d":"2027-01-01","p":2783,"c":"D7","o":["D7604","09:20","16:05","SAW"],"r":["D7605","2027-01-08","17:20","08:45","2027-01-09","SAW"],"l":"https://kiwi.com/u/2b6frv"},{"d":"2027-01-03","p":2861,"c":"D7","o":["D7604","09:20","16:05","SAW"],"r":["TK62","2027-01-11","15:20","06:35","2027-01-12","IST"],"l":"https://kiwi.com/u/kcf57j"},{"d":"2027-01-04","p":2817,"c":"D7","o":["D7604","09:20","16:05","SAW"],"r":["TK62","2027-01-12","15:20","06:35","2027-01-13","IST"],"l":"https://kiwi.com/u/xvmj5fb"},{"d":"2027-01-06","p":2816,"c":"D7","o":["D7604","09:20","16:05","SAW"],"r":["TK62","2027-01-13","15:20","06:35","2027-01-14","IST"],"l":"https://kiwi.com/u/769mrz"},{"d":"2027-01-08","p":3167,"c":"D7","o":["D7604","09:20","16:05","SAW"],"r":["TK62","2027-01-15","15:20","06:35","2027-01-16","IST"],"l":"https://kiwi.com/u/bbqjrv"},{"d":"2027-01-10","p":3082,"c":"D7","o":["D7604","09:20","16:05","SAW"],"r":["TK62","2027-01-17","15:20","06:35","2027-01-18","IST"],"l":"https://kiwi.com/u/t3xk4wz"},{"d":"2027-01-11","p":2824,"c":"D7","o":["D7604","09:20","16:05","SAW"],"r":["TK62","2027-01-19","15:20","06:35","2027-01-20","IST"],"l":"https://kiwi.com/u/p3f8235"},{"d":"2027-01-13","p":2661,"c":"D7","o":["D7604","09:20","16:05","SAW"],"r":["TK62","2027-01-21","15:20","06:35","2027-01-22","IST"],"l":"https://kiwi.com/u/u994vk"},{"d":"2027-01-14","p":2293,"c":"TK","o":["TK63","08:15","14:40","IST"],"r":["TK62","2027-01-21","15:20","06:35","2027-01-22","IST"],"l":"https://kiwi.com/u/ybwvwj"},{"d":"2027-01-15","p":2376,"c":"TK","o":["TK63","08:15","14:40","IST"],"r":["TK62","2027-01-22","15:20","06:35","2027-01-23","IST"],"l":"https://kiwi.com/u/xu8j2sy"},{"d":"2027-01-17","p":2541,"c":"D7","o":["D7604","09:20","16:05","SAW"],"r":["TK62","2027-01-25","15:20","06:35","2027-01-26","IST"],"l":"https://kiwi.com/u/6bgdm7f"},{"d":"2027-01-18","p":2544,"c":"D7","o":["D7604","09:20","16:05","SAW"],"r":["TK62","2027-01-25","15:20","06:35","2027-01-26","IST"],"l":"https://kiwi.com/u/8nn9bhm"},{"d":"2027-01-20","p":2458,"c":"TK","o":["TK61","23:45","06:10","IST"],"r":["D7605","2027-01-29","17:20","08:45","2027-01-30","SAW"],"l":"https://kiwi.com/u/k9rnt7"},{"d":"2027-01-25","p":2006,"c":"TK","o":["TK63","08:15","14:40","IST"],"r":["TK62","2027-02-02","15:20","06:35","2027-02-03","IST"],"l":"https://kiwi.com/u/f8u33g"},{"d":"2027-01-26","p":1925,"c":"TK","o":["TK63","08:15","14:40","IST"],"r":["TK62","2027-02-02","15:20","06:35","2027-02-03","IST"],"l":"https://kiwi.com/u/kgv9326"},{"d":"2027-01-27","p":1925,"c":"TK","o":["TK63","08:15","14:40","IST"],"r":["TK62","2027-02-03","15:20","06:35","2027-02-04","IST"],"l":"https://kiwi.com/u/hw743j"},{"d":"2027-02-01","p":2006,"c":"TK","o":["TK63","08:15","14:40","IST"],"r":["TK62","2027-02-08","15:20","06:35","2027-02-09","IST"],"l":"https://kiwi.com/u/4m979w"},{"d":"2027-02-02","p":2562,"c":"TK","o":["TK61","23:45","06:10","IST"],"r":["TK62","2027-02-11","15:20","06:35","2027-02-12","IST"],"l":"https://kiwi.com/u/hfrgtf"},{"d":"2027-02-03","p":2612,"c":"D7","o":["D7604","09:20","16:05","SAW"],"r":["TK62","2027-02-11","15:20","06:35","2027-02-12","IST"],"l":"https://kiwi.com/u/vt2bj6"},{"d":"2027-02-04","p":2544,"c":"TK","o":["TK63","08:15","14:40","IST"],"r":["TK62","2027-02-11","15:20","06:35","2027-02-12","IST"],"l":"https://kiwi.com/u/2cumjzt"},{"d":"2027-02-07","p":2562,"c":"TK","o":["TK61","23:45","06:10","IST"],"r":["TK62","2027-02-15","15:20","06:35","2027-02-16","IST"],"l":"https://kiwi.com/u/4sdustz"},{"d":"2027-02-08","p":2539,"c":"TK","o":["TK63","08:15","14:40","IST"],"r":["TK62","2027-02-15","15:20","06:35","2027-02-16","IST"],"l":"https://kiwi.com/u/zx6br7"},{"d":"2027-02-09","p":1925,"c":"TK","o":["TK63","08:15","14:40","IST"],"r":["TK62","2027-02-16","15:20","06:35","2027-02-17","IST"],"l":"https://kiwi.com/u/j5c2qjy"},{"d":"2027-02-10","p":1927,"c":"TK","o":["TK63","08:15","14:40","IST"],"r":["TK62","2027-02-17","15:20","06:35","2027-02-18","IST"],"l":"https://kiwi.com/u/n24mbvm"},{"d":"2027-02-11","p":1925,"c":"TK","o":["TK63","08:15","14:40","IST"],"r":["TK62","2027-02-18","15:20","06:35","2027-02-19","IST"],"l":"https://kiwi.com/u/puwc3d"},{"d":"2027-02-12","p":2533,"c":"TK","o":["TK63","08:15","14:40","IST"],"r":["TK62","2027-02-19","15:20","06:35","2027-02-20","IST"],"l":"https://kiwi.com/u/vygh3w8"},{"d":"2027-02-15","p":2535,"c":"TK","o":["TK63","08:15","14:40","IST"],"r":["TK62","2027-02-23","15:20","06:35","2027-02-24","IST"],"l":"https://kiwi.com/u/mu6ws5"},{"d":"2027-02-16","p":2015,"c":"TK","o":["TK61","23:45","06:10","IST"],"r":["TK62","2027-02-24","15:20","06:35","2027-02-25","IST"],"l":"https://kiwi.com/u/jm5m3x3"},{"d":"2027-02-17","p":1925,"c":"TK","o":["TK63","08:15","14:40","IST"],"r":["TK62","2027-02-24","15:20","06:35","2027-02-25","IST"],"l":"https://kiwi.com/u/uvp96pf"},{"d":"2027-02-18","p":1928,"c":"TK","o":["TK63","08:15","14:40","IST"],"r":["TK62","2027-02-25","15:20","06:35","2027-02-26","IST"],"l":"https://kiwi.com/u/ur9db3h"},{"d":"2027-02-22","p":2521,"c":"D7","o":["D7604","09:20","16:05","SAW"],"r":["TK62","2027-03-02","15:20","06:35","2027-03-03","IST"],"l":"https://kiwi.com/u/n96uj5r"},{"d":"2027-02-23","p":2451,"c":"TK","o":["TK63","08:15","14:40","IST"],"r":["TK62","2027-03-03","15:20","06:35","2027-03-04","IST"],"l":"https://kiwi.com/u/rcshgu4"},{"d":"2027-02-24","p":2451,"c":"TK","o":["TK63","08:15","14:40","IST"],"r":["TK62","2027-03-03","15:20","06:35","2027-03-04","IST"],"l":"https://kiwi.com/u/r5ynr6"},{"d":"2027-02-25","p":2480,"c":"TK","o":["TK63","08:15","14:40","IST"],"r":["TK62","2027-03-04","15:20","06:35","2027-03-05","IST"],"l":"https://kiwi.com/u/2qkp6t"},{"d":"2027-02-26","p":2603,"c":"D7","o":["D7604","09:20","16:05","SAW"],"r":["TK62","2027-03-05","15:20","06:35","2027-03-06","IST"],"l":"https://kiwi.com/u/sh3rq5u"},{"d":"2027-03-01","p":2602,"c":"D7","o":["D7604","09:20","16:05","SAW"],"r":["TK62","2027-03-09","15:20","06:35","2027-03-10","IST"],"l":"https://kiwi.com/u/p8h3jxs"},{"d":"2027-03-02","p":2731,"c":"TK","o":["TK63","08:15","14:40","IST"],"r":["TK62","2027-03-10","15:20","06:35","2027-03-11","IST"],"l":"https://kiwi.com/u/gyznysb"},{"d":"2027-03-03","p":2615,"c":"D7","o":["D7604","09:20","16:05","SAW"],"r":["TK62","2027-03-10","15:20","06:35","2027-03-11","IST"],"l":"https://kiwi.com/u/gvb3g6"},{"d":"2027-03-07","p":2123,"c":"TK","o":["TK61","23:45","06:10","IST"],"r":["TK62","2027-03-16","15:20","06:35","2027-03-17","IST"],"l":"https://kiwi.com/u/fgcttfh"},{"d":"2027-03-08","p":2376,"c":"TK","o":["TK63","08:15","14:40","IST"],"r":["TK62","2027-03-15","15:20","06:35","2027-03-16","IST"],"l":"https://kiwi.com/u/mtxr4jv"},{"d":"2027-03-10","p":2544,"c":"TK","o":["TK61","23:45","06:10","IST"],"r":["TK62","2027-03-19","15:20","06:35","2027-03-20","IST"],"l":"https://kiwi.com/u/drmxm2"},{"d":"2027-03-11","p":1925,"c":"TK","o":["TK63","08:15","14:40","IST"],"r":["TK62","2027-03-19","15:20","06:35","2027-03-20","IST"],"l":"https://kiwi.com/u/nbjj3b2"},{"d":"2027-03-12","p":2378,"c":"TK","o":["TK63","08:15","14:40","IST"],"r":["TK62","2027-03-19","15:20","06:35","2027-03-20","IST"],"l":"https://kiwi.com/u/b9srt3"},{"d":"2027-03-14","p":2293,"c":"TK","o":["TK61","23:45","06:10","IST"],"r":["TK62","2027-03-22","15:20","06:35","2027-03-23","IST"],"l":"https://kiwi.com/u/6y4rg5t"},{"d":"2027-03-15","p":2096,"c":"TK","o":["TK61","23:45","06:10","IST"],"r":["TK62","2027-03-23","15:20","06:35","2027-03-24","IST"],"l":"https://kiwi.com/u/u86jmp"},{"d":"2027-03-17","p":2295,"c":"TK","o":["TK61","23:45","06:10","IST"],"r":["TK62","2027-03-25","15:20","06:35","2027-03-26","IST"],"l":"https://kiwi.com/u/mgjwpmw"},{"d":"2027-03-19","p":2006,"c":"TK","o":["TK63","08:15","14:40","IST"],"r":["TK62","2027-03-26","15:20","06:35","2027-03-27","IST"],"l":"https://kiwi.com/u/uztj6w"},{"d":"2027-03-21","p":1925,"c":"TK","o":["TK63","08:15","14:40","IST"],"r":["TK62","2027-03-29","16:00","07:15","2027-03-30","IST"],"l":"https://kiwi.com/u/5kbdycv"},{"d":"2027-03-22","p":2094,"c":"TK","o":["TK61","23:45","06:10","IST"],"r":["TK62","2027-03-31","16:00","07:15","2027-04-01","IST"],"l":"https://kiwi.com/u/v73z2mt"},{"d":"2027-03-23","p":1925,"c":"TK","o":["TK63","08:15","14:40","IST"],"r":["TK62","2027-03-30","16:00","07:15","2027-03-31","IST"],"l":"https://kiwi.com/u/vfzgq46"},{"d":"2027-03-24","p":1925,"c":"TK","o":["TK63","08:15","14:40","IST"],"r":["TK62","2027-03-31","16:00","07:15","2027-04-01","IST"],"l":"https://kiwi.com/u/vufuk6"},{"d":"2027-03-25","p":2451,"c":"TK","o":["TK63","08:15","14:40","IST"],"r":["TK62","2027-04-01","16:00","07:15","2027-04-02","IST"],"l":"https://kiwi.com/u/u59gppg"},{"d":"2027-03-28","p":2451,"c":"TK","o":["TK63","10:10","16:00","IST"],"r":["TK62","2027-04-05","16:00","07:15","2027-04-06","IST"],"l":"https://kiwi.com/u/b2m6jd2"},{"d":"2027-03-29","p":2560,"c":"TK","o":["TK63","08:55","14:50","IST"],"r":["TK62","2027-04-06","16:00","07:15","2027-04-07","IST"],"l":"https://kiwi.com/u/vwhvn7"},{"d":"2027-03-30","p":2562,"c":"TK","o":["TK61","23:10","05:00","IST"],"r":["TK62","2027-04-07","16:00","07:15","2027-04-08","IST"],"l":"https://kiwi.com/u/bstf3x2"},{"d":"2027-04-01","p":2559,"c":"TK","o":["TK63","08:55","14:50","IST"],"r":["TK62","2027-04-09","16:00","07:15","2027-04-10","IST"],"l":"https://kiwi.com/u/6kskrkr"},{"d":"2027-04-02","p":2389,"c":"TK","o":["TK63","08:55","14:50","IST"],"r":["TK62","2027-04-09","16:00","07:15","2027-04-10","IST"],"l":"https://kiwi.com/u/jjbbn3"},{"d":"2027-04-05","p":2017,"c":"TK","o":["TK63","08:55","14:50","IST"],"r":["TK62","2027-04-12","16:00","07:15","2027-04-13","IST"],"l":"https://kiwi.com/u/chb9kmv"},{"d":"2027-04-06","p":2137,"c":"TK","o":["TK61","23:10","05:00","IST"],"r":["TK62","2027-04-14","16:00","07:15","2027-04-15","IST"],"l":"https://kiwi.com/u/us2kx6b"},{"d":"2027-04-07","p":1936,"c":"TK","o":["TK63","08:55","14:50","IST"],"r":["TK62","2027-04-15","16:00","07:15","2027-04-16","IST"],"l":"https://kiwi.com/u/x5xqr3"},{"d":"2027-04-08","p":2025,"c":"TK","o":["TK61","23:10","05:00","IST"],"r":["TK62","2027-04-16","16:00","07:15","2027-04-17","IST"],"l":"https://kiwi.com/u/z5p65v"},{"d":"2027-04-09","p":2376,"c":"TK","o":["TK63","08:55","14:50","IST"],"r":["TK62","2027-04-16","16:00","07:15","2027-04-17","IST"],"l":"https://kiwi.com/u/kkngtg4"},{"d":"2027-04-10","p":2442,"c":"TK","o":["TK61","23:10","05:00","IST"],"r":["TK62","2027-04-18","16:00","07:15","2027-04-19","IST"],"l":"https://kiwi.com/u/gwqs5w9"},{"d":"2027-04-11","p":2015,"c":"TK","o":["TK61","23:10","05:00","IST"],"r":["TK62","2027-04-20","16:00","07:15","2027-04-21","IST"],"l":"https://kiwi.com/u/swxhkw"},{"d":"2027-04-14","p":2397,"c":"TK","o":["TK63","08:55","14:50","IST"],"r":["TK60","2027-04-21","01:45","17:15","2027-04-21","IST"],"l":"https://kiwi.com/u/3h52dh"},{"d":"2027-04-15","p":1927,"c":"TK","o":["TK63","08:55","14:50","IST"],"r":["TK62","2027-04-23","16:00","07:15","2027-04-24","IST"],"l":"https://kiwi.com/u/hhg489"},{"d":"2027-04-18","p":2652,"c":"D7","o":["D7604","10:00","16:05","SAW"],"r":["TK62","2027-04-26","16:00","07:15","2027-04-27","IST"],"l":"https://kiwi.com/u/hw8fh4"},{"d":"2027-04-19","p":2604,"c":"TK","o":["TK63","08:55","14:50","IST"],"r":["TK62","2027-04-26","16:00","07:15","2027-04-27","IST"],"l":"https://kiwi.com/u/p4yxpz"},{"d":"2027-04-20","p":2293,"c":"TK","o":["TK63","08:55","14:50","IST"],"r":["TK62","2027-04-27","16:00","07:15","2027-04-28","IST"],"l":"https://kiwi.com/u/xv77g3j"},{"d":"2027-04-21","p":1925,"c":"TK","o":["TK63","08:55","14:50","IST"],"r":["TK62","2027-04-29","16:00","07:15","2027-04-30","IST"],"l":"https://kiwi.com/u/fcr87r"},{"d":"2027-04-22","p":1925,"c":"TK","o":["TK63","08:55","14:50","IST"],"r":["TK62","2027-04-30","16:00","07:15","2027-05-01","IST"],"l":"https://kiwi.com/u/5sq5d3m"},{"d":"2027-04-23","p":2376,"c":"TK","o":["TK63","08:55","14:50","IST"],"r":["TK62","2027-04-30","16:00","07:15","2027-05-01","IST"],"l":"https://kiwi.com/u/3s2qh3"},{"d":"2027-04-27","p":2482,"c":"TK","o":["TK63","08:55","14:50","IST"],"r":["TK62","2027-05-04","16:00","07:15","2027-05-05","IST"],"l":"https://kiwi.com/u/jg2dzyd"},{"d":"2027-04-28","p":1936,"c":"TK","o":["TK63","08:55","14:50","IST"],"r":["TK62","2027-05-05","16:00","07:15","2027-05-06","IST"],"l":"https://kiwi.com/u/r4guvp"},{"d":"2027-04-29","p":1936,"c":"TK","o":["TK63","08:55","14:50","IST"],"r":["TK62","2027-05-06","16:00","07:15","2027-05-07","IST"],"l":"https://kiwi.com/u/wu7cfz"},{"d":"2027-04-30","p":2262,"c":"TK","o":["TK61","23:10","05:00","IST"],"r":["TK60","2027-05-08","01:45","17:15","2027-05-08","IST"],"l":"https://kiwi.com/u/zxh2fft"}];
+var MONTHS=[[2026,10],[2026,11],[2027,0],[2027,1],[2027,2],[2027,3]];
+var MN=['January','February','March','April','May','June','July','August','September','October','November','December'];
+var AIR={TK:'Turkish Airlines',D7:'AirAsia X'};
+var APT={IST:'Istanbul Airport (IST)',SAW:'Sabiha Gokcen (SAW)',KUL:'Kuala Lumpur (KUL)'};
+var by={},prices=[];
+DATA.forEach(function(x){by[x.d]=x;prices.push(x.p)});
+prices.sort(function(a,b){return a-b});
+var lo=prices[Math.floor(prices.length/3)],hi=prices[Math.floor(prices.length*2/3)],min=prices[0];
+var START='2026-11-17',END='2027-04-30';
+var el=function(i){return document.getElementById(i)};
+var monthsEl=el('months'),fareEl=el('fare'),prev=el('prev'),next=el('next'),rangeEl=el('range');
+var mq=window.matchMedia('(min-width:44rem)');
+var idx=0,sel=null,per=2;
+function pad(n){return n<10?'0'+n:''+n}
+function key(y,m,d){return y+'-'+pad(m+1)+'-'+pad(d)}
+function fmt(n){return n.toLocaleString('en-US')}
+function longDate(s){var p=s.split('-');var dt=new Date(Date.UTC(+p[0],+p[1]-1,+p[2]));return dt.toLocaleDateString('en-GB',{weekday:'short',day:'numeric',month:'short',year:'numeric',timeZone:'UTC'})}
+function shortDate(s){var p=s.split('-');var dt=new Date(Date.UTC(+p[0],+p[1]-1,+p[2]));return dt.toLocaleDateString('en-GB',{weekday:'short',day:'numeric',month:'short',timeZone:'UTC'})}
+function tier(p){return p<=lo?'low':(p>=hi?'high':'mid')}
+function nights(x){var a=Date.parse(x.d),b=Date.parse(x.r[1]);return Math.round((b-a)/864e5)}
+function monthMin(y,m){var v=null;DATA.forEach(function(x){var p=x.d.split('-');if(+p[0]===y&&+p[1]-1===m&&(v===null||x.p<v))v=x.p});return v}
+function render(){
+  per=mq.matches?2:1;
+  if(idx>MONTHS.length-per)idx=MONTHS.length-per;
+  monthsEl.className='months'+(per===2?' two':'');
+  monthsEl.innerHTML='';
+  for(var k=0;k<per;k++){
+    var ym=MONTHS[idx+k],y=ym[0],m=ym[1];
+    var wrap=document.createElement('div');wrap.className='month';
+    var mm=monthMin(y,m);
+    var h=document.createElement('h3');h.innerHTML=MN[m]+' '+y+(mm?'<small>from '+fmt(mm)+'</small>':'');
+    wrap.appendChild(h);
+    var g=document.createElement('div');g.className='grid';
+    ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'].forEach(function(w){var s=document.createElement('div');s.className='dow';s.textContent=w;g.appendChild(s)});
+    var first=(new Date(Date.UTC(y,m,1)).getUTCDay()+6)%7;
+    var dim=new Date(Date.UTC(y,m+1,0)).getUTCDate();
+    for(var b=0;b<first;b++){var bl=document.createElement('div');bl.className='blank';g.appendChild(bl)}
+    for(var d=1;d<=dim;d++){
+      var ks=key(y,m,d),x=by[ks];
+      var btn=document.createElement('button');btn.type='button';
+      var inRange=ks>=START&&ks<=END;
+      var label=shortDate(ks)+' '+y;
+      if(!inRange){btn.className='day out';btn.disabled=true;btn.innerHTML='<span class="n">'+d+'</span><span class="pr">&nbsp;</span>';btn.setAttribute('aria-label',label+', outside search window')}
+      else if(!x){btn.className='day na';btn.disabled=true;btn.innerHTML='<span class="n">'+d+'</span><span class="pr">&ndash;</span>';btn.setAttribute('aria-label',label+', no fare found')}
+      else{
+        btn.className='day '+tier(x.p)+(x.p===min?' best':'');
+        btn.innerHTML='<span class="n">'+d+'</span><span class="pr">'+fmt(x.p)+'</span>';
+        btn.setAttribute('aria-label',label+', MYR '+fmt(x.p)+', '+AIR[x.c]+', return '+shortDate(x.r[1]));
+        btn.setAttribute('aria-pressed',sel===ks?'true':'false');
+        btn.dataset.d=ks;
+        btn.addEventListener('click',function(){select(this.dataset.d,false)});
+      }
+      g.appendChild(btn);
+    }
+    wrap.appendChild(g);monthsEl.appendChild(wrap);
+  }
+  var a=MONTHS[idx],z=MONTHS[idx+per-1];
+  rangeEl.textContent=MN[a[1]].slice(0,3)+' '+a[0]+(per>1?' \u2013 '+MN[z[1]].slice(0,3)+' '+z[0]:'');
+  prev.disabled=idx===0;next.disabled=idx>=MONTHS.length-per;
+}
+function select(ks,scroll){
+  sel=ks;var x=by[ks];
+  var p=ks.split('-'),mi=MONTHS.findIndex(function(a){return a[0]===+p[0]&&a[1]===+p[1]-1});
+  if(mi<idx||mi>idx+per-1)idx=Math.min(mi,MONTHS.length-per);
+  render();showFare(x);
+  if(scroll){var b=monthsEl.querySelector('[data-d="'+ks+'"]');if(b)b.focus({preventScroll:true})}
+}
+function showFare(x){
+  var sub=x.p===min?'Lowest fare in the window':(x.p<=lo?'Cheaper than most dates':(x.p>=hi?'Higher than most dates':'Typical for this window'));
+  var bag=x.c==='TK'?'1 checked bag + cabin bag included':'1 checked bag added in this price (about MYR 430 extra over the base fare)';
+  fareEl.innerHTML='<h3>Your fare</h3>'+
+   '<div><div class="big"><small>MYR</small>'+fmt(x.p)+'</div><div class="verdict-line">'+sub+'</div></div>'+
+   '<dl>'+
+   '<div><dt>Out</dt><dd>'+longDate(x.d)+'<span>'+x.o[0]+' &middot; KUL '+x.o[1]+' &rarr; '+x.o[3]+' '+x.o[2]+'</span></dd></div>'+
+   '<div><dt>Back</dt><dd>'+longDate(x.r[1])+'<span>'+x.r[0]+' &middot; '+x.r[5]+' '+x.r[2]+' &rarr; KUL '+x.r[3]+(x.r[4]!==x.r[1]?' (+1)':'')+'</span></dd></div>'+
+   '<div><dt>Stay</dt><dd>'+nights(x)+' nights<span>'+AIR[x.c]+' &middot; non-stop &middot; '+APT[x.o[3]]+'</span></dd></div>'+
+   '<div><dt>Bags</dt><dd>'+bag+'</dd></div>'+
+   '</dl>'+
+   '<a class="btn" href="'+x.l+'" target="_blank" rel="noopener noreferrer">Book on Kiwi.com <span aria-hidden="true">&rarr;</span></a>'+
+   '<p class="note">Price as returned by Kiwi.com on 16 Nov 2026. Reconfirm before paying.</p>';
+}
+prev.addEventListener('click',function(){idx=Math.max(0,idx-per);render()});
+next.addEventListener('click',function(){idx=Math.min(MONTHS.length-per,idx+per);render()});
+mq.addEventListener('change',render);
+el('jump-cheapest').addEventListener('click',function(){
+  var c=DATA.filter(function(x){return x.p===min}).sort(function(a,b){return a.d<b.d?-1:1})[0];select(c.d,true)});
+var c0=DATA.filter(function(x){return x.p===min}).sort(function(a,b){return a.d<b.d?-1:1})[0];
+fareEl.innerHTML='<p class="empty">Select a date to see the flights.</p>';
+idx=2;render();select(c0.d,false);
+})();
+</script></body>
 </html>
 
