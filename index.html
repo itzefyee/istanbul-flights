@@ -179,7 +179,35 @@ footer p{max-width:60ch}
 .pk-fare .btn{justify-content:center;margin-top:auto}
 .pk-fare .note{font-size:.82rem;color:#d9d8cf;margin:0}
 .pk-fare .empty{color:#d9d8cf;margin:0}
-@media(prefers-reduced-motion:reduce){.day,.nav-btn,.ghost{transition:none}}</style>
+@media(prefers-reduced-motion:reduce){.day,.nav-btn,.ghost{transition:none}}
+/* quiet lists */
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.block{padding:clamp(2rem,5vw,3.25rem) 0;border-top:1px solid var(--rule)}
+.block h2{font-size:clamp(1.6rem,3.4vw,2rem);margin-bottom:.5rem}
+.block .sub-p{color:var(--ink-2);margin-bottom:1.25rem}
+.flist{list-style:none;margin:0;padding:0}
+.fr{display:grid;grid-template-columns:minmax(0,1fr) auto 4.5rem;gap:1rem;align-items:center;padding:.9rem 0;border-bottom:1px solid var(--rule)}
+.fr:first-child{border-top:1px solid var(--rule)}
+.fr-d strong{display:block;font-weight:600}
+.fr-d span{display:block;font-size:.9rem;color:var(--ink-2)}
+.fr-p{font:700 1.5rem/1 var(--display);letter-spacing:.01em}
+.fr-l{font:700 .95rem/1 var(--display);letter-spacing:.1em;text-transform:uppercase;text-align:right}
+@media(max-width:30rem){.fr{grid-template-columns:minmax(0,1fr) auto;row-gap:.35rem}.fr-l{grid-column:2;text-align:right}.fr-p{grid-row:1;grid-column:2}}
+details.more{margin-top:.25rem}
+details.more summary{cursor:pointer;padding:.9rem 0;font-weight:600;list-style:none}
+details.more summary::-webkit-details-marker{display:none}
+details.more summary::after{content:" +"}
+details.more[open] summary::after{content:" \2212"}
+.two{display:grid;gap:2rem}
+@media(min-width:48rem){.two{grid-template-columns:1fr 1fr;gap:3rem}}
+.two h3{font-size:1.2rem;margin-bottom:.35rem}
+.two p{margin-bottom:.5rem}
+.fine{font-size:.92rem;color:var(--ink-2)}
+.fine li{margin-bottom:.5rem}
+.fine ul{padding-left:1.1rem;margin:.5rem 0 0}
+.refs-q{columns:1;list-style:none;padding:0;margin:.75rem 0 0}
+@media(min-width:56rem){.refs-q{columns:2;column-gap:3rem}}
+.refs-q li{break-inside:avoid;padding:.35rem 0;font-size:.95rem}.flist.x .fr{grid-template-columns:minmax(0,1fr) auto}.flist.x .fr>span:last-child{display:none}.flist.x a{text-underline-offset:.2em}</style>
 </head>
 <body>
 
@@ -228,124 +256,87 @@ footer p{max-width:60ch}
       <aside class="pk-fare" id="fare" aria-live="polite"></aside>
     </div>
   </section>
-  <section aria-labelledby="pick">
-    <h2 id="pick">Best fare: Turkish Airlines direct, MYR 1,925</h2>
-    <div class="pick">
+    <section class="block" aria-labelledby="cheap">
+    <h2 id="cheap">Cheapest dates</h2>
+    <p class="sub-p">Turkish Airlines non-stop, one checked bag included. MYR 1,925 is the lowest price in the whole window.</p>
+    <ul class="flist">
+<li class="fr"><div class="fr-d"><strong>Tue 26 Jan &rarr; Tue 2 Feb</strong><span>7 nights &middot; TK63 08:15, back TK62 15:20</span></div><div class="fr-p">1,925</div><a class="fr-l" href="https://kiwi.com/u/kgv9326" target="_blank" rel="noopener noreferrer">Book<span class="sr-only"> Tue 26 Jan</span></a></li>
+<li class="fr"><div class="fr-d"><strong>Wed 27 Jan &rarr; Wed 3 Feb</strong><span>7 nights &middot; TK63 08:15, back TK62 15:20</span></div><div class="fr-p">1,925</div><a class="fr-l" href="https://kiwi.com/u/hw743j" target="_blank" rel="noopener noreferrer">Book<span class="sr-only"> Wed 27 Jan</span></a></li>
+<li class="fr"><div class="fr-d"><strong>Tue 9 Feb &rarr; Tue 16 Feb</strong><span>7 nights &middot; TK63 08:15, back TK62 15:20</span></div><div class="fr-p">1,925</div><a class="fr-l" href="https://kiwi.com/u/j5c2qjy" target="_blank" rel="noopener noreferrer">Book<span class="sr-only"> Tue 9 Feb</span></a></li>
+<li class="fr"><div class="fr-d"><strong>Thu 11 Feb &rarr; Thu 18 Feb</strong><span>7 nights &middot; TK63 08:15, back TK62 15:20</span></div><div class="fr-p">1,925</div><a class="fr-l" href="https://kiwi.com/u/puwc3d" target="_blank" rel="noopener noreferrer">Book<span class="sr-only"> Thu 11 Feb</span></a></li>
+<li class="fr"><div class="fr-d"><strong>Wed 17 Feb &rarr; Wed 24 Feb</strong><span>7 nights &middot; TK63 08:15, back TK62 15:20</span></div><div class="fr-p">1,925</div><a class="fr-l" href="https://kiwi.com/u/uvp96pf" target="_blank" rel="noopener noreferrer">Book<span class="sr-only"> Wed 17 Feb</span></a></li>
+    </ul>
+    <details class="more">
+      <summary>Show more dates</summary>
+      <ul class="flist">
+<li class="fr"><div class="fr-d"><strong>Thu 11 Mar &rarr; Fri 19 Mar</strong><span>8 nights &middot; TK63 08:15, back TK62 15:20</span></div><div class="fr-p">1,925</div><a class="fr-l" href="https://kiwi.com/u/nbjj3b2" target="_blank" rel="noopener noreferrer">Book<span class="sr-only"> Thu 11 Mar</span></a></li>
+<li class="fr"><div class="fr-d"><strong>Sun 21 Mar &rarr; Mon 29 Mar</strong><span>8 nights &middot; TK63 08:15, back TK62 16:00</span></div><div class="fr-p">1,925</div><a class="fr-l" href="https://kiwi.com/u/5kbdycv" target="_blank" rel="noopener noreferrer">Book<span class="sr-only"> Sun 21 Mar</span></a></li>
+<li class="fr"><div class="fr-d"><strong>Tue 23 Mar &rarr; Tue 30 Mar</strong><span>7 nights &middot; TK63 08:15, back TK62 16:00</span></div><div class="fr-p">1,925</div><a class="fr-l" href="https://kiwi.com/u/vfzgq46" target="_blank" rel="noopener noreferrer">Book<span class="sr-only"> Tue 23 Mar</span></a></li>
+<li class="fr"><div class="fr-d"><strong>Wed 24 Mar &rarr; Wed 31 Mar</strong><span>7 nights &middot; TK63 08:15, back TK62 16:00</span></div><div class="fr-p">1,925</div><a class="fr-l" href="https://kiwi.com/u/vufuk6" target="_blank" rel="noopener noreferrer">Book<span class="sr-only"> Wed 24 Mar</span></a></li>
+<li class="fr"><div class="fr-d"><strong>Wed 21 Apr &rarr; Thu 29 Apr</strong><span>8 nights &middot; TK63 08:55, back TK62 16:00</span></div><div class="fr-p">1,925</div><a class="fr-l" href="https://kiwi.com/u/fcr87r" target="_blank" rel="noopener noreferrer">Book<span class="sr-only"> Wed 21 Apr</span></a></li>
+<li class="fr"><div class="fr-d"><strong>Thu 22 Apr &rarr; Fri 30 Apr</strong><span>8 nights &middot; TK63 08:55, back TK62 16:00</span></div><div class="fr-p">1,925</div><a class="fr-l" href="https://kiwi.com/u/5sq5d3m" target="_blank" rel="noopener noreferrer">Book<span class="sr-only"> Thu 22 Apr</span></a></li>
+<li class="fr"><div class="fr-d"><strong>Wed 10 Feb &rarr; Wed 17 Feb</strong><span>7 nights &middot; TK63 08:15, back TK62 15:20</span></div><div class="fr-p">1,927</div><a class="fr-l" href="https://kiwi.com/u/n24mbvm" target="_blank" rel="noopener noreferrer">Book<span class="sr-only"> Wed 10 Feb</span></a></li>
+<li class="fr"><div class="fr-d"><strong>Thu 15 Apr &rarr; Fri 23 Apr</strong><span>8 nights &middot; TK63 08:55, back TK62 16:00</span></div><div class="fr-p">1,927</div><a class="fr-l" href="https://kiwi.com/u/hhg489" target="_blank" rel="noopener noreferrer">Book<span class="sr-only"> Thu 15 Apr</span></a></li>
+<li class="fr"><div class="fr-d"><strong>Thu 18 Feb &rarr; Thu 25 Feb</strong><span>7 nights &middot; TK63 08:15, back TK62 15:20</span></div><div class="fr-p">1,928</div><a class="fr-l" href="https://kiwi.com/u/ur9db3h" target="_blank" rel="noopener noreferrer">Book<span class="sr-only"> Thu 18 Feb</span></a></li>
+<li class="fr"><div class="fr-d"><strong>Wed 7 Apr &rarr; Thu 15 Apr</strong><span>8 nights &middot; TK63 08:55, back TK62 16:00</span></div><div class="fr-p">1,936</div><a class="fr-l" href="https://kiwi.com/u/x5xqr3" target="_blank" rel="noopener noreferrer">Book<span class="sr-only"> Wed 7 Apr</span></a></li>
+<li class="fr"><div class="fr-d"><strong>Wed 28 Apr &rarr; Wed 5 May</strong><span>7 nights &middot; TK63 08:55, back TK62 16:00</span></div><div class="fr-p">1,936</div><a class="fr-l" href="https://kiwi.com/u/r4guvp" target="_blank" rel="noopener noreferrer">Book<span class="sr-only"> Wed 28 Apr</span></a></li>
+<li class="fr"><div class="fr-d"><strong>Thu 29 Apr &rarr; Thu 6 May</strong><span>7 nights &middot; TK63 08:55, back TK62 16:00</span></div><div class="fr-p">1,936</div><a class="fr-l" href="https://kiwi.com/u/wu7cfz" target="_blank" rel="noopener noreferrer">Book<span class="sr-only"> Thu 29 Apr</span></a></li>
+      </ul>
+    </details>
+  </section>
+
+  <section class="block" aria-labelledby="other">
+    <div class="two">
       <div>
-        <div class="price"><small>MYR</small>1,925</div>
-        <p class="meta">Return, 1 adult, non-stop both ways. The same price appears on 11 date combinations, listed below.</p>
-        <p class="meta"><strong style="color:#fff">Bags:</strong> 1 cabin bag and 1 checked bag included (MYR 0 extra).</p>
+        <h3 id="other">AirAsia X</h3>
+        <p>Also non-stop, but to Sabiha Gokcen (SAW), Istanbul's second airport. The bag is extra.</p>
+        <p class="fine">Cheapest: MYR 2,117 without a bag, MYR 2,555 with one, 20 to 27 Jan 2027. <a href="https://kiwi.com/u/s36dzz" target="_blank" rel="noopener noreferrer">No bag</a> &middot; <a href="https://kiwi.com/u/6fm4ft" target="_blank" rel="noopener noreferrer">With bag</a></p>
       </div>
       <div>
-        <h3>Example: outbound Tue 26 Jan 2027</h3>
-        <ul class="legs">
-          <li><span class="fn">TK63</span><span class="rt">KUL &rarr; IST</span><span class="tm">08:15 &rarr; 14:40</span></li>
-        </ul>
-        <h3>Return Tue 2 Feb 2027</h3>
-        <ul class="legs">
-          <li><span class="fn">TK62</span><span class="rt">IST &rarr; KUL</span><span class="tm">15:20 &rarr; 06:35 (3 Feb)</span></li>
-        </ul>
-        <a class="btn" href="https://kiwi.com/u/t8uurwt" target="_blank" rel="noopener noreferrer">Book on Kiwi.com <span aria-hidden="true">&rarr;</span></a>
-        <p class="meta" style="margin-top:1rem">Pick any other MYR 1,925 date from the table below. Flight times differ slightly by season.</p>
+        <h3>Avoid Nov to Dec</h3>
+        <p>Turkish Airlines non-stop costs MYR 3,192 or more before 1 January. Prices drop from late January.</p>
+        <p class="fine">Cheapest in that period: <a href="https://kiwi.com/u/g4x5q93" target="_blank" rel="noopener noreferrer">30 Nov to 8 Dec, MYR 3,192</a></p>
       </div>
     </div>
   </section>
 
-  <section aria-labelledby="tk">
-    <h2 id="tk">Turkish Airlines direct, cheapest dates</h2>
-    <p>Kiwi returns at most 15 results per search. These are the cheapest 15 non-stop fares across the whole window, ordered by date.</p>
-    <div class="tablewrap">
-      <table>
-        <caption>Non-stop return fares KUL-IST, Turkish Airlines. Bag price in brackets.</caption>
-        <thead><tr><th>Airline and flights</th><th>Depart / return</th><th>Bags (checked)</th><th class="num">MYR</th><th>Book</th></tr></thead>
-        <tbody>
-<tr><td><span class="route">Turkish Airlines</span><span class="sub">TK63 08:15-14:40 / TK62 15:20-06:35 (+1)</span></td><td>Tue 26 Jan 2027<span class="sub">return Tue 2 Feb 2027 (7 nights)</span></td><td><span class="bag-in">Included</span> (MYR 0)</td><td class="num price">1925</td><td><a class="link" href="https://kiwi.com/u/t8uurwt" target="_blank" rel="noopener noreferrer">Kiwi link</a></td></tr>
-<tr><td><span class="route">Turkish Airlines</span><span class="sub">TK63 08:15-14:40 / TK62 15:20-06:35 (+1)</span></td><td>Tue 9 Feb 2027<span class="sub">return Tue 16 Feb 2027 (7 nights)</span></td><td><span class="bag-in">Included</span> (MYR 0)</td><td class="num price">1925</td><td><a class="link" href="https://kiwi.com/u/d5x8jk" target="_blank" rel="noopener noreferrer">Kiwi link</a></td></tr>
-<tr><td><span class="route">Turkish Airlines</span><span class="sub">TK63 08:15-14:40 / TK62 15:20-06:35 (+1)</span></td><td>Thu 11 Feb 2027<span class="sub">return Thu 18 Feb 2027 (7 nights)</span></td><td><span class="bag-in">Included</span> (MYR 0)</td><td class="num price">1925</td><td><a class="link" href="https://kiwi.com/u/9k8nhtr" target="_blank" rel="noopener noreferrer">Kiwi link</a></td></tr>
-<tr><td><span class="route">Turkish Airlines</span><span class="sub">TK63 08:15-14:40 / TK62 15:20-06:35 (+1)</span></td><td>Wed 17 Feb 2027<span class="sub">return Wed 24 Feb 2027 (7 nights)</span></td><td><span class="bag-in">Included</span> (MYR 0)</td><td class="num price">1925</td><td><a class="link" href="https://kiwi.com/u/2r97tu" target="_blank" rel="noopener noreferrer">Kiwi link</a></td></tr>
-<tr><td><span class="route">Turkish Airlines</span><span class="sub">TK63 08:15-14:40 / TK62 15:20-06:35 (+1)</span></td><td>Thu 11 Mar 2027<span class="sub">return Thu 18 Mar 2027 (7 nights)</span></td><td><span class="bag-in">Included</span> (MYR 0)</td><td class="num price">1925</td><td><a class="link" href="https://kiwi.com/u/2fwyjv" target="_blank" rel="noopener noreferrer">Kiwi link</a></td></tr>
-<tr><td><span class="route">Turkish Airlines</span><span class="sub">TK63 08:15-14:40 / TK62 15:20-06:35 (+1)</span></td><td>Thu 11 Mar 2027<span class="sub">return Fri 19 Mar 2027 (8 nights)</span></td><td><span class="bag-in">Included</span> (MYR 0)</td><td class="num price">1925</td><td><a class="link" href="https://kiwi.com/u/muz3bmp" target="_blank" rel="noopener noreferrer">Kiwi link</a></td></tr>
-<tr><td><span class="route">Turkish Airlines</span><span class="sub">TK63 08:15-14:40 / TK62 16:00-07:15 (+1)</span></td><td>Sun 21 Mar 2027<span class="sub">return Mon 29 Mar 2027 (8 nights)</span></td><td><span class="bag-in">Included</span> (MYR 0)</td><td class="num price">1925</td><td><a class="link" href="https://kiwi.com/u/pvk733q" target="_blank" rel="noopener noreferrer">Kiwi link</a></td></tr>
-<tr><td><span class="route">Turkish Airlines</span><span class="sub">TK63 08:15-14:40 / TK62 16:00-07:15 (+1)</span></td><td>Tue 23 Mar 2027<span class="sub">return Tue 30 Mar 2027 (7 nights)</span></td><td><span class="bag-in">Included</span> (MYR 0)</td><td class="num price">1925</td><td><a class="link" href="https://kiwi.com/u/6k85xy" target="_blank" rel="noopener noreferrer">Kiwi link</a></td></tr>
-<tr><td><span class="route">Turkish Airlines</span><span class="sub">TK63 08:15-14:40 / TK62 16:00-07:15 (+1)</span></td><td>Wed 24 Mar 2027<span class="sub">return Wed 31 Mar 2027 (7 nights)</span></td><td><span class="bag-in">Included</span> (MYR 0)</td><td class="num price">1925</td><td><a class="link" href="https://kiwi.com/u/6w2fzs" target="_blank" rel="noopener noreferrer">Kiwi link</a></td></tr>
-<tr><td><span class="route">Turkish Airlines</span><span class="sub">TK63 08:55-14:50 / TK62 16:00-07:15 (+1)</span></td><td>Wed 7 Apr 2027<span class="sub">return Thu 15 Apr 2027 (8 nights)</span></td><td><span class="bag-in">Included</span> (MYR 0)</td><td class="num price">1936</td><td><a class="link" href="https://kiwi.com/u/tggc86" target="_blank" rel="noopener noreferrer">Kiwi link</a></td></tr>
-<tr><td><span class="route">Turkish Airlines</span><span class="sub">TK63 08:55-14:50 / TK62 16:00-07:15 (+1)</span></td><td>Thu 15 Apr 2027<span class="sub">return Fri 23 Apr 2027 (8 nights)</span></td><td><span class="bag-in">Included</span> (MYR 0)</td><td class="num price">1927</td><td><a class="link" href="https://kiwi.com/u/ng4tk4" target="_blank" rel="noopener noreferrer">Kiwi link</a></td></tr>
-<tr><td><span class="route">Turkish Airlines</span><span class="sub">TK63 08:55-14:50 / TK62 16:00-07:15 (+1)</span></td><td>Wed 21 Apr 2027<span class="sub">return Thu 29 Apr 2027 (8 nights)</span></td><td><span class="bag-in">Included</span> (MYR 0)</td><td class="num price">1925</td><td><a class="link" href="https://kiwi.com/u/v736mb" target="_blank" rel="noopener noreferrer">Kiwi link</a></td></tr>
-<tr><td><span class="route">Turkish Airlines</span><span class="sub">TK63 08:55-14:50 / TK62 16:00-07:15 (+1)</span></td><td>Thu 22 Apr 2027<span class="sub">return Fri 30 Apr 2027 (8 nights)</span></td><td><span class="bag-in">Included</span> (MYR 0)</td><td class="num price">1925</td><td><a class="link" href="https://kiwi.com/u/hrzp3c3" target="_blank" rel="noopener noreferrer">Kiwi link</a></td></tr>
-<tr><td><span class="route">Turkish Airlines</span><span class="sub">TK63 08:55-14:50 / TK62 16:00-07:15 (+1)</span></td><td>Wed 28 Apr 2027<span class="sub">return Wed 5 May 2027 (7 nights)</span></td><td><span class="bag-in">Included</span> (MYR 0)</td><td class="num price">1936</td><td><a class="link" href="https://kiwi.com/u/3zuyx6nj" target="_blank" rel="noopener noreferrer">Kiwi link</a></td></tr>
-<tr><td><span class="route">Turkish Airlines</span><span class="sub">TK63 08:55-14:50 / TK62 16:00-07:15 (+1)</span></td><td>Thu 29 Apr 2027<span class="sub">return Thu 6 May 2027 (7 nights)</span></td><td><span class="bag-in">Included</span> (MYR 0)</td><td class="num price">1936</td><td><a class="link" href="https://kiwi.com/u/hgrgtr" target="_blank" rel="noopener noreferrer">Kiwi link</a></td></tr>
-
-        </tbody>
-      </table>
-    </div>
-  </section>
-
-  <section aria-labelledby="d7">
-    <h2 id="d7">AirAsia X direct to Sabiha Gokcen (SAW)</h2>
-    <p>AirAsia X also flies non-stop, to Istanbul's second airport, which is farther from the old town than IST. Fares are higher once a checked bag is added, and the bag is the catch. Flights depart Wednesdays, Sundays and Mondays in this sample.</p>
-    <div class="tablewrap">
-      <table>
-        <caption>Non-stop return fares KUL-SAW, AirAsia X. Bag price in brackets.</caption>
-        <thead><tr><th>Airline and flights</th><th>Depart / return</th><th>Bags (checked)</th><th class="num">MYR</th><th>Book</th></tr></thead>
-        <tbody>
-<tr><td><span class="route">AirAsia X</span><span class="sub">D7604 KUL-SAW 09:20-16:05 / D7605 SAW-KUL 17:20-08:45 (+1)</span></td><td>Wed 20 Jan 2027<span class="sub">return Wed 27 Jan 2027 (7 nights)</span></td><td><span class="bag-add">Not included</span> (+MYR 438)</td><td class="num price">2117</td><td><a class="link" href="https://kiwi.com/u/s36dzz" target="_blank" rel="noopener noreferrer">No bag</a><br><a class="link" href="https://kiwi.com/u/6fm4ft" target="_blank" rel="noopener noreferrer">With bag (2555)</a></td></tr>
-<tr><td><span class="route">AirAsia X</span><span class="sub">D7604 KUL-SAW 09:20-16:05 / D7605 SAW-KUL 17:20-08:45 (+1)</span></td><td>Wed 27 Jan 2027<span class="sub">return Wed 3 Feb 2027 (7 nights)</span></td><td><span class="bag-add">Not included</span> (+MYR 438)</td><td class="num price">2228</td><td><a class="link" href="https://kiwi.com/u/c23vf8" target="_blank" rel="noopener noreferrer">No bag</a><br><a class="link" href="https://kiwi.com/u/munr2f" target="_blank" rel="noopener noreferrer">With bag (2666)</a></td></tr>
-<tr><td><span class="route">AirAsia X</span><span class="sub">D7604 KUL-SAW 09:20-16:05 / D7605 SAW-KUL 17:20-08:45 (+1)</span></td><td>Mon 23 Nov 2026<span class="sub">return Mon 30 Nov 2026 (7 nights)</span></td><td><span class="bag-add">Not included</span> (+MYR 424)</td><td class="num price">2234</td><td><a class="link" href="https://kiwi.com/u/2yqyndz" target="_blank" rel="noopener noreferrer">No bag</a><br><a class="link" href="https://kiwi.com/u/p7dcu8x" target="_blank" rel="noopener noreferrer">With bag (2658)</a></td></tr>
-<tr><td><span class="route">AirAsia X</span><span class="sub">D7604 KUL-SAW 09:20-16:05 / D7605 SAW-KUL 17:20-08:45 (+1)</span></td><td>Sun 22 Nov 2026<span class="sub">return Sun 29 Nov 2026 (7 nights)</span></td><td><span class="bag-add">Not included</span> (+MYR 424)</td><td class="num price">2258</td><td><a class="link" href="https://kiwi.com/u/v5pnqj" target="_blank" rel="noopener noreferrer">No bag</a><br><a class="link" href="https://kiwi.com/u/uguc25" target="_blank" rel="noopener noreferrer">With bag (2682)</a></td></tr>
-<tr><td><span class="route">AirAsia X</span><span class="sub">D7604 KUL-SAW 09:20-16:05 / D7605 SAW-KUL 17:20-08:45 (+1)</span></td><td>Sun 22 Nov 2026<span class="sub">return Mon 30 Nov 2026 (8 nights)</span></td><td><span class="bag-add">Not included</span> (+MYR 424)</td><td class="num price">2258</td><td><a class="link" href="https://kiwi.com/u/853795" target="_blank" rel="noopener noreferrer">No bag</a><br><a class="link" href="https://kiwi.com/u/m7j2q3" target="_blank" rel="noopener noreferrer">With bag (2682)</a></td></tr>
-<tr><td><span class="route">AirAsia X</span><span class="sub">D7604 KUL-SAW 09:20-16:05 / D7605 SAW-KUL 17:20-08:45 (+1)</span></td><td>Mon 30 Nov 2026<span class="sub">return Mon 7 Dec 2026 (7 nights)</span></td><td><span class="bag-add">Not included</span> (+MYR 438)</td><td class="num price">2305</td><td><a class="link" href="https://kiwi.com/u/4jh5unb" target="_blank" rel="noopener noreferrer">No bag</a><br><a class="link" href="https://kiwi.com/u/mwzmxz" target="_blank" rel="noopener noreferrer">With bag (2743)</a></td></tr>
-
-        </tbody>
-      </table>
-    </div>
-    <p class="small" style="margin-top:1rem">Even the cheapest AirAsia X fare with a bag (MYR 2,555) costs MYR 630 more than the Turkish Airlines direct fare with a bag included.</p>
-  </section>
-
-  <section aria-labelledby="peak">
-    <h2 id="peak">Avoid: Nov to Dec 2026</h2>
-    <p>Departures before 1 January are far more expensive on Turkish Airlines, from MYR 3,192, which is year-end peak pricing. The cheap fares start in late January 2027.</p>
-    <div class="tablewrap">
-      <table>
-        <caption>Turkish Airlines direct, departures 17 Nov to 31 Dec 2026.</caption>
-        <thead><tr><th>Airline and flights</th><th>Depart / return</th><th>Bags (checked)</th><th class="num">MYR</th><th>Book</th></tr></thead>
-        <tbody>
-<tr><td><span class="route">Turkish Airlines</span><span class="sub">TK61 / TK60</span></td><td>Mon 30 Nov 2026<span class="sub">return Tue 8 Dec 2026 (8 nights)</span></td><td><span class="bag-in">Included</span> (MYR 0)</td><td class="num price">3192</td><td><a class="link" href="https://kiwi.com/u/g4x5q93" target="_blank" rel="noopener noreferrer">Kiwi link</a></td></tr>
-<tr><td><span class="route">Turkish Airlines</span><span class="sub">TK61 / TK62</span></td><td>Wed 30 Dec 2026<span class="sub">return Fri 8 Jan 2027 (9 nights)</span></td><td><span class="bag-in">Included</span> (MYR 0)</td><td class="num price">3330</td><td><a class="link" href="https://kiwi.com/u/p2hcx34" target="_blank" rel="noopener noreferrer">Kiwi link</a></td></tr>
-<tr><td><span class="route">Turkish Airlines</span><span class="sub">TK61 / TK60</span></td><td>Wed 30 Dec 2026<span class="sub">return Fri 8 Jan 2027 (9 nights)</span></td><td><span class="bag-in">Included</span> (MYR 0)</td><td class="num price">3330</td><td><a class="link" href="https://kiwi.com/u/vyycfhc" target="_blank" rel="noopener noreferrer">Kiwi link</a></td></tr>
-<tr><td><span class="route">Turkish Airlines</span><span class="sub">TK63 / TK60</span></td><td>Tue 29 Dec 2026<span class="sub">return Wed 6 Jan 2027 (8 nights)</span></td><td><span class="bag-in">Included</span> (MYR 0)</td><td class="num price">3383</td><td><a class="link" href="https://kiwi.com/u/czk9ubc" target="_blank" rel="noopener noreferrer">Kiwi link</a></td></tr>
-
-        </tbody>
-      </table>
-    </div>
-  </section>
-
-  <section aria-labelledby="method">
-    <h2 id="method">How this was searched</h2>
-    <ul class="notes">
-      <li>Kiwi.com's public MCP server (<code>https://mcp.kiwi.com</code>, tool <code>search-flight</code>) was called over HTTP. It needs no key.</li>
-      <li>Destination was set to the city "Istanbul", which covers both IST and SAW. Departures 17 Nov 2026 to 30 Apr 2027, 7-8 nights, <code>max_sector_stopovers=0</code>, MYR.</li>
-      <li>Searches: all airlines with 0 and 1 checked bags, all airlines excluding Turkish Airlines, AirAsia X only with 0 and 1 bags, and Turkish Airlines only for Nov to Dec.</li>
-      <li>Kiwi does not price bags separately. Bag costs are the difference between the same itinerary searched with 0 and 1 checked bags.</li>
-      <li>The date picker comes from 24 weekly searches (non-stop only, 1 checked bag, 7-8 nights), keeping the cheapest return for each departure day. Kiwi returns 15 results per search, so days without a fare in the cheapest 15 of their week show a dash.</li>
-      <li>Only 15 results come back per search, so some dates may be missing. Prices were not cross-checked against Google Flights.</li>
-      <li>Fares change often. Reconfirm the price and bag allowance on the booking page before paying.</li>
+  <section class="block" aria-labelledby="xcheck">
+    <h2 id="xcheck">Cross-check with other sites</h2>
+    <p class="sub-p">Other flight sites show similar low prices, which supports the Kiwi numbers. Their prices are cached from earlier searches, so use them as a hint and confirm on the booking page.</p>
+    <ul class="flist x">
+      <li class="fr"><div class="fr-d"><strong><a href="https://www.cheapflights.com.my/flights/Kuala-Lumpur-KUL/Istanbul-IST.TK.ksp" target="_blank" rel="noopener noreferrer">Cheapflights Malaysia</a></strong><span>Turkish Airlines, return from MYR 1,828 (14 to 24 Jan, 10 nights). Cached 10 Nov.</span></div><div class="fr-p">1,828</div><span></span></li>
+      <li class="fr"><div class="fr-d"><strong><a href="https://www.momondo.com/flights/kuala-lumpur/istanbul" target="_blank" rel="noopener noreferrer">Momondo</a></strong><span>Turkish Airlines, return from USD 449 (14 to 24 Jan). AirAsia X to SAW from USD 518.</span></div><div class="fr-p">$449</div><span></span></li>
+      <li class="fr"><div class="fr-d"><strong><a href="https://www.trip.com/hot/turkish-airlines%28tk%29-flights-from-kuala-lumpur-to-istanbul/" target="_blank" rel="noopener noreferrer">Trip.com</a></strong><span>Cheapest return ticket on the route, USD 426. Says October is the cheapest month and Tuesday departures are usually cheapest.</span></div><div class="fr-p">$426</div><span></span></li>
+      <li class="fr"><div class="fr-d"><strong><a href="https://www.google.com/travel/flights/flights-from-federal-territory-of-kuala-lumpur-to-istanbul.html" target="_blank" rel="noopener noreferrer">Google Flights</a></strong><span>No prices could be read from here. Its date grid and price graph are worth a manual check for 26 Jan to 2 Feb.</span></div><div class="fr-p">-</div><span></span></li>
     </ul>
+    <p class="fine" style="margin-top:1rem">Where dates overlap, Cheapflights showed 9 to 16 Apr at MYR 1,868 and 23 to 30 Nov at MYR 1,872. Kiwi's cheapest fare for those departures was higher (MYR 2,376 and 2,556), so those two cached deals may no longer be available. Cheapflights' lowest price (MYR 1,828) is within 5% of Kiwi's MYR 1,925, and it covers a longer 10-night stay.</p>
   </section>
-
-  <section aria-labelledby="refs">
-    <h2 id="refs">References</h2>
-    <ul class="refs">
-      <li><a href="https://mcp.kiwi.com" target="_blank" rel="noopener noreferrer">Kiwi.com MCP endpoint</a><span>The server used for every search on this page.</span></li>
-      <li><a href="https://flightpowers.com/guides/best-travel-mcp-servers-2026" target="_blank" rel="noopener noreferrer">Best travel MCP servers in 2026: flights, hotels, compared</a><span>FlightPowers, 6 Oct 2026. Author is a vendor of one listed server.</span></li>
-      <li><a href="https://claude.com/marketplace/connectors/lastminute-com" target="_blank" rel="noopener noreferrer">lastminute.com connector | Claude</a><span>Connector listing supplied by the user. Not used.</span></li>
-      <li><a href="https://hermes-agent.nousresearch.com/marketplace/letsfg" target="_blank" rel="noopener noreferrer">letsfg | Hermes Marketplace</a><span>Listing supplied by the user. Not used (needs OAuth account, fee on bookings).</span></li>
-      <li><a href="https://letsfg.co/llms.txt" target="_blank" rel="noopener noreferrer">LetsFG llms.txt</a><span>Vendor description of sources and fee model.</span></li>
-      <li><a href="https://kastrah.com/blog/flight-price-apis-for-developers/" target="_blank" rel="noopener noreferrer">On flight price APIs</a><span>Kastrah, 7 Jul 2026.</span></li>
-      <li><a href="https://github.com/HasData/google-flights-mcp" target="_blank" rel="noopener noreferrer">HasData/google-flights-mcp</a><span>Hosted Google Flights MCP, not used.</span></li>
-      <li><a href="https://github.com/shayben/all-flights-mcp" target="_blank" rel="noopener noreferrer">shayben/all-flights-mcp</a><span>Federated flight search server, not used.</span></li>
-    </ul>
+  <section class="block" aria-labelledby="about">
+    <h2 id="about">About these prices</h2>
+    <p class="sub-p">Fares come from Kiwi.com's public search, checked on 16 Nov 2026. They change often, so confirm the price and bag allowance before you pay.</p>
+    <details class="more">
+      <summary>How it was searched</summary>
+      <ul class="fine">
+        <li>24 weekly searches for non-stop KUL to Istanbul, 7-8 nights, one checked bag, in MYR. The calendar keeps the cheapest fare for each departure day.</li>
+        <li>Kiwi returns 15 results per search, so a day with no price had no fare among that week's cheapest.</li>
+        <li>Bag costs are the difference between the same flight searched with 0 and 1 checked bags.</li>
+        <li>Not cross-checked against Google Flights. Raw results are in the <code>data/</code> folder.</li>
+      </ul>
+    </details>
+    <details class="more">
+      <summary>Sources</summary>
+      <ul class="refs-q">
+        <li><a href="https://mcp.kiwi.com" target="_blank" rel="noopener noreferrer">Kiwi.com MCP</a> - used for every search</li>
+        <li><a href="https://flightpowers.com/guides/best-travel-mcp-servers-2026" target="_blank" rel="noopener noreferrer">Best travel MCP servers in 2026</a></li>
+        <li><a href="https://claude.com/marketplace/connectors/lastminute-com" target="_blank" rel="noopener noreferrer">lastminute.com connector</a> - not used</li>
+        <li><a href="https://hermes-agent.nousresearch.com/marketplace/letsfg" target="_blank" rel="noopener noreferrer">LetsFG on Hermes</a> - not used</li>
+        <li><a href="https://letsfg.co/llms.txt" target="_blank" rel="noopener noreferrer">LetsFG llms.txt</a></li>
+        <li><a href="https://kastrah.com/blog/flight-price-apis-for-developers/" target="_blank" rel="noopener noreferrer">On flight price APIs</a></li>
+        <li><a href="https://github.com/HasData/google-flights-mcp" target="_blank" rel="noopener noreferrer">HasData google-flights-mcp</a></li>
+        <li><a href="https://github.com/shayben/all-flights-mcp" target="_blank" rel="noopener noreferrer">all-flights-mcp</a></li>
+      </ul>
+    </details>
   </section>
-
 </main>
 
 <footer>
