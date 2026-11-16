@@ -207,10 +207,21 @@ details.more[open] summary::after{content:" \2212"}
 .fine ul{padding-left:1.1rem;margin:.5rem 0 0}
 .refs-q{columns:1;list-style:none;padding:0;margin:.75rem 0 0}
 @media(min-width:56rem){.refs-q{columns:2;column-gap:3rem}}
-.refs-q li{break-inside:avoid;padding:.35rem 0;font-size:.95rem}.flist.x .fr{grid-template-columns:minmax(0,1fr) auto}.flist.x .fr>span:last-child{display:none}.flist.x a{text-underline-offset:.2em}.ph-hero{margin:0;background:var(--ink)}.ph-hero img{display:block;width:100%;height:clamp(14rem,34vw,26rem);object-fit:cover;object-position:50% 45%}figure{margin:0}figcaption{font-size:.82rem;color:var(--ink-2);padding:.6rem 0}.ph-hero figcaption{max-width:68rem;margin:0 auto;padding:.7rem clamp(1.25rem,4vw,3rem);color:#d9d8cf}.ph-hero figcaption a{color:#fff}.ph-pair{display:grid;gap:1.25rem}.ph-pair figure:first-child img{aspect-ratio:16/9;object-fit:cover}.ph-pair img{display:block;width:100%;height:auto}</style>
+.refs-q li{break-inside:avoid;padding:.35rem 0;font-size:.95rem}.flist.x .fr{grid-template-columns:minmax(0,1fr) auto}.flist.x .fr>span:last-child{display:none}.flist.x a{text-underline-offset:.2em}.ph-hero{margin:0;background:var(--ink)}.ph-hero img{display:block;width:100%;height:clamp(14rem,34vw,26rem);object-fit:cover;object-position:50% 45%}figure{margin:0}figcaption{font-size:.82rem;color:var(--ink-2);padding:.6rem 0}.ph-hero figcaption{max-width:68rem;margin:0 auto;padding:.7rem clamp(1.25rem,4vw,3rem);color:#d9d8cf}.ph-hero figcaption a{color:#fff}.ph-pair{display:grid;gap:1.25rem}.ph-pair figure:first-child img{aspect-ratio:16/9;object-fit:cover}.ph-pair img{display:block;width:100%;height:auto}
+/* tabs */
+.tabs{background:var(--ink);border-bottom:1px solid #55534a}
+.tabs .wrap{display:flex;gap:.25rem}
+.tab{font:700 1.05rem/1 var(--display);letter-spacing:.14em;text-transform:uppercase;background:transparent;color:#d9d8cf;border:0;border-bottom:4px solid transparent;padding:1rem 1.1rem .8rem;cursor:pointer;transition:color .2s var(--ease),border-color .2s var(--ease)}
+.tab:hover{color:var(--white)}
+.tab[aria-selected="true"]{color:var(--yellow);border-bottom-color:var(--yellow)}
+.tab:focus-visible{outline-color:var(--white);outline-offset:-3px}
+[hidden]{display:none!important}
+</style>
 </head>
 <body>
+<nav class="tabs" aria-label="Destination"><div class="wrap" role="tablist"><button type="button" class="tab" role="tab" id="tab-ist" data-go="ist" aria-selected="true">Istanbul</button><button type="button" class="tab" role="tab" id="tab-bud" data-go="bud" aria-selected="false">Budapest</button></div></nav>
 
+<div data-tab="ist">
 <header class="on-yellow">
   <div class="wrap">
     <div class="top"><span>Fare report</span><span>Searched 16 Nov 2026 &middot; all prices MYR, 1 adult, economy</span></div>
@@ -350,6 +361,67 @@ details.more[open] summary::after{content:" \2212"}
     </details>
   </section>
 </main>
+</div>
+
+<div data-tab="bud" hidden>
+<header class="on-yellow">
+  <div class="wrap">
+    <div class="top"><span>Fare report</span><span>Searched 16 Nov 2026 &middot; all prices MYR, 1 adult, economy</span></div>
+    <h1>KUL <span class="arrow" aria-hidden="true">&rarr;</span><span style="position:absolute;left:-9999px">to</span> Budapest</h1>
+    <p class="lede">There are no non-stop flights. The cheapest single ticket is <strong>MYR 2,398</strong> via Istanbul, with a personal item only. Building the trip from separate legs through Istanbul costs <strong>MYR 2,300</strong>.</p>
+    <dl class="params">
+      <div><dt>Route</dt><dd>KUL &harr; BUD</dd></div>
+      <div><dt>Depart between</dt><dd>17 Nov 2026 &ndash; 30 Apr 2027</dd></div>
+      <div><dt>Stay</dt><dd>5&ndash;14 nights</dd></div>
+      <div><dt>Trip</dt><dd>Round trip, 1 stop</dd></div>
+      <div><dt>Source</dt><dd>Kiwi.com MCP</dd></div>
+    </dl>
+  </div>
+</header>
+<main class="wrap">
+  <section class="block" aria-labelledby="bud-cheap">
+    <h2 id="bud-cheap">Cheapest ticket in each month</h2>
+    <p class="sub-p">One ticket via Istanbul, 5-14 nights. Cheapest in Tue 9 Feb to Tue 16 Feb. Bags vary, so check the note on each line.</p>
+    <ul class="flist">
+<li class="fr"><div class="fr-d"><strong>Mon 30 Nov &rarr; Sun 6 Dec</strong><span>5 nights &middot; Turkish Airlines + Wizz Air &middot; personal item only &middot; likely separate tickets</span></div><div class="fr-p">2,729</div><a class="fr-l" href="https://kiwi.com/u/zgf3t6" target="_blank" rel="noopener noreferrer">Book<span class="sr-only"> Mon 30 Nov</span></a></li>
+<li class="fr"><div class="fr-d"><strong>Tue 29 Dec &rarr; Mon 11 Jan</strong><span>13 nights &middot; Turkish Airlines + Wizz Air &middot; personal item only &middot; likely separate tickets</span></div><div class="fr-p">2,445</div><a class="fr-l" href="https://kiwi.com/u/9sbsbr" target="_blank" rel="noopener noreferrer">Book<span class="sr-only"> Tue 29 Dec</span></a></li>
+<li class="fr"><div class="fr-d"><strong>Tue 26 Jan &rarr; Wed 3 Feb</strong><span>8 nights &middot; Turkish Airlines + Wizz Air &middot; personal item only &middot; likely separate tickets</span></div><div class="fr-p">2,523</div><a class="fr-l" href="https://kiwi.com/u/7fgvh4" target="_blank" rel="noopener noreferrer">Book<span class="sr-only"> Tue 26 Jan</span></a></li>
+<li class="fr"><div class="fr-d"><strong>Tue 9 Feb &rarr; Tue 16 Feb</strong><span>7 nights &middot; Turkish Airlines + Wizz Air &middot; personal item only &middot; likely separate tickets</span></div><div class="fr-p">2,398</div><a class="fr-l" href="https://kiwi.com/u/mzmbmtu" target="_blank" rel="noopener noreferrer">Book<span class="sr-only"> Tue 9 Feb</span></a></li>
+<li class="fr"><div class="fr-d"><strong>Tue 16 Mar &rarr; Mon 22 Mar</strong><span>5 nights &middot; Turkish Airlines + Wizz Air &middot; personal item only &middot; likely separate tickets</span></div><div class="fr-p">2,463</div><a class="fr-l" href="https://kiwi.com/u/6uwgjm3" target="_blank" rel="noopener noreferrer">Book<span class="sr-only"> Tue 16 Mar</span></a></li>
+<li class="fr"><div class="fr-d"><strong>Thu 8 Apr &rarr; Mon 19 Apr</strong><span>10 nights &middot; Turkish Airlines + Wizz Air &middot; personal item only &middot; likely separate tickets</span></div><div class="fr-p">2,634</div><a class="fr-l" href="https://kiwi.com/u/dfgvz6" target="_blank" rel="noopener noreferrer">Book<span class="sr-only"> Thu 8 Apr</span></a></li>
+    </ul>
+  </section>
+  <section class="block" aria-labelledby="bud-legs">
+    <h2 id="bud-legs">Build it from legs: MYR 2,300</h2>
+    <p class="sub-p">Fly KUL to Istanbul non-stop, take a Wizz Air hop to Budapest and back, then fly home. That is MYR 98 cheaper than the best single ticket, and the long-haul flights carry a checked bag. The three tickets are separate, so book the Wizz Air legs only after the Turkish Airlines fare is secured.</p>
+<ul class="flist"><li class="fr"><div class="fr-d"><strong>KUL &harr; IST return, Turkish Airlines</strong><span>Tue 9 Feb to Thu 18 Feb, non-stop, cabin and checked bag included</span></div><div class="fr-p">1,925</div><a class="fr-l" href="https://kiwi.com/u/37nmgh" target="_blank" rel="noopener noreferrer">Book</a></li><li class="fr"><div class="fr-d"><strong>IST &rarr; BUD, Wizz Air</strong><span>Wed 10 Feb 09:55 &rarr; 10:00 &middot; personal item only</span></div><div class="fr-p">185</div><a class="fr-l" href="https://kiwi.com/u/zf634c" target="_blank" rel="noopener noreferrer">Book</a></li><li class="fr"><div class="fr-d"><strong>BUD &rarr; IST, Wizz Air</strong><span>Sat 13 Feb 12:55 &rarr; 17:10 &middot; personal item only</span></div><div class="fr-p">190</div><a class="fr-l" href="https://kiwi.com/u/zctsjky" target="_blank" rel="noopener noreferrer">Book</a></li></ul>
+  </section>
+  <section class="block" aria-labelledby="bud-bag">
+    <h2 id="bud-bag">With a checked bag on one ticket</h2>
+    <p class="sub-p">Turkish Airlines on every leg, so one booking and one set of protections. Cheapest dates with a checked bag.</p>
+    <ul class="flist">
+<li class="fr"><div class="fr-d"><strong>Wed 10 Mar &rarr; Mon 15 Mar</strong><span>5 nights &middot; Turkish Airlines &middot; checked bag included</span></div><div class="fr-p">2,641</div><a class="fr-l" href="https://kiwi.com/u/dv843w" target="_blank" rel="noopener noreferrer">Book<span class="sr-only"> Wed 10 Mar</span></a></li>
+<li class="fr"><div class="fr-d"><strong>Mon 5 Apr &rarr; Thu 15 Apr</strong><span>10 nights &middot; Turkish Airlines &middot; checked bag included</span></div><div class="fr-p">2,641</div><a class="fr-l" href="https://kiwi.com/u/nbvs93" target="_blank" rel="noopener noreferrer">Book<span class="sr-only"> Mon 5 Apr</span></a></li>
+<li class="fr"><div class="fr-d"><strong>Wed 28 Apr &rarr; Wed 5 May</strong><span>7 nights &middot; Turkish Airlines &middot; checked bag included</span></div><div class="fr-p">2,641</div><a class="fr-l" href="https://kiwi.com/u/pk29vz" target="_blank" rel="noopener noreferrer">Book<span class="sr-only"> Wed 28 Apr</span></a></li>
+<li class="fr"><div class="fr-d"><strong>Wed 28 Apr &rarr; Wed 12 May</strong><span>14 nights &middot; Turkish Airlines &middot; checked bag included</span></div><div class="fr-p">2,641</div><a class="fr-l" href="https://kiwi.com/u/byrf4yg" target="_blank" rel="noopener noreferrer">Book<span class="sr-only"> Wed 28 Apr</span></a></li>
+<li class="fr"><div class="fr-d"><strong>Tue 19 Jan &rarr; Mon 25 Jan</strong><span>6 nights &middot; Turkish Airlines &middot; checked bag included</span></div><div class="fr-p">2,660</div><a class="fr-l" href="https://kiwi.com/u/xpygcfd" target="_blank" rel="noopener noreferrer">Book<span class="sr-only"> Tue 19 Jan</span></a></li>
+    </ul>
+  </section>
+  <section class="block" aria-labelledby="bud-about">
+    <h2 id="bud-about">About these prices</h2>
+    <details class="more" open>
+      <summary>What was and was not checked</summary>
+      <ul class="fine">
+        <li>Kiwi.com search for KUL to BUD return, 5-14 nights, departing 17 Nov 2026 to 30 Apr 2027, six monthly searches, 90 unique itineraries. Raw results are in <code>data/budapest/</code>.</li>
+        <li>Kiwi marks Turkish Airlines plus Wizz Air itineraries as one booking, but they are almost certainly separate airline tickets. This is an inference, not confirmed on the booking page.</li>
+        <li>The Google Flights check with the <code>fli</code> tool returned no results, even for a control route, so it was dropped. Nothing here is cross-checked against Google Flights.</li>
+        <li>Cached fares on Kayak and FlightsFinder show return fares near MYR 2,150-2,200. They are snapshots and were not verified.</li>
+        <li>Fares change often. Confirm the price and bag allowance before you pay.</li>
+      </ul>
+    </details>
+  </section>
+</main>
+</div>
 
 <footer>
   <div class="wrap">
@@ -451,6 +523,14 @@ var c0=DATA.filter(function(x){return x.p===min}).sort(function(a,b){return a.d<
 fareEl.innerHTML='<p class="empty">Select a date to see the flights.</p>';
 idx=2;render();select(c0.d,false);
 })();
-</script></body>
+</script>
+<script>
+(function(){var tabs=document.querySelectorAll('.tab'),ps=document.querySelectorAll('[data-tab]');
+function go(n,push){tabs.forEach(function(t){t.setAttribute('aria-selected',t.dataset.go===n?'true':'false')});ps.forEach(function(p){p.hidden=p.dataset.tab!==n});document.title=n==='bud'?'KUL to Budapest, Nov 2026 to Apr 2027 - round trip fares in MYR':document.documentElement.dataset.t;if(push)history.replaceState(null,'',n==='bud'?'#budapest':location.pathname+location.search)}
+document.documentElement.dataset.t=document.title;
+tabs.forEach(function(t){t.addEventListener('click',function(){go(t.dataset.go,true)})});
+if(location.hash==='#budapest')go('bud',false)})();
+</script>
+</body>
 </html>
 
